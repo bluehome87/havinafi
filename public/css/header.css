@@ -1,0 +1,9 @@
+#top-navbar .navbar-brand{ width:100%;}
+	#top-navbar .navbar-brand img{ margin: 0 auto;}
+
+.navbar-toggle.navbar-brand{ border:0; float: left;}
+.navbar-toggle.navbar-brand:hover, .navbar-toggle.navbar-brand:focus{ background: none; border:0;}
+
+@media (max-width: 768px) {
+	.navbar-collapse .col-xs-2{ display:none;}
+}
