@@ -1,9 +1,14 @@
 #top-navbar .navbar-brand{ width:100%;}
 	#top-navbar .navbar-brand img{ margin: 0 auto;}
-
+	#top-navbar .nav-tabs{border-bottom:0px !important;}
+	#top-navbar.navbar-tabs > li > a{ color:#888888;}
+	#top-navbar .nav-tabs > li.active > a, #top-navbar .nav-tabs > li.active > a:hover, #top-navbar .nav-tabs > li.active > a:focus{ border:0px solid red !important; outline: 0 !important;}
+	#top-navbar .nav-tabs > li > a, #top-navbar .nav-tabs > li > a:hover, #top-navbar .nav-tabs > li > a:focus{ border:0px solid red !important; outline: 0 !important;}
 .navbar-toggle.navbar-brand{ border:0; float: left;}
 .navbar-toggle.navbar-brand:hover, .navbar-toggle.navbar-brand:focus{ background: none; border:0;}
 
 @media (max-width: 768px) {
 	.navbar-collapse .col-xs-2{ display:none;}
+	#top-navbar #top-right-menu > li{ float:right; width:50%; }
+	#top-navbar #top-left-menu > li{ float:none;}
 }
