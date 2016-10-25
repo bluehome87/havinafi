@@ -1,8 +1,8 @@
-<div class="row" id="job-new">
+<!--div class="row" id="job-new">
     <div class="col-xs-4 col-xs-offset-4 new-job">
         <button type="button" class="btn btn-primary btn-block center-block" onclick="showCreateJobForm()">New</button>
     </div>
-</div>
+</div-->
 
 <div class="row">
     <div class="col-xs-12">
@@ -25,7 +25,6 @@
                                 </a>
                             </h4>
                         </div>
-
                         <div id="job-collapse{{$my_job->id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="job-heading{{$my_job->id}}">
                             <div class="panel-body">
                                 <div class="row">

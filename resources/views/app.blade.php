@@ -42,56 +42,55 @@
             @endif
 
             <a class="navbar-toggle navbar-brand collapsed" href="/">
-                <img src="/img/logo-inverse.png" width="140" height="20" />
+                <img src="/img/logo-transp.png" width="125" height="48" />
             </a>
         </div>
 
         <nav id="top-navbar" class="navbar-collapse collapse" aria-expanded="false">
-            <ul class="nav navbar-nav navbar-left col-xs-5">
-                <li><a onclick="showAboutUsBlock()">About Us</a></li>
-                <li><a onclick="showFAQBlock()">F.A.Q.</a></li>
+            <ul class="nav nav-tabs navbar-nav navbar-left col-xs-7" role="tablist" id="top-left-menu">
+                <li role="presentation" class="first">
+                    <a href="#my-vehicles" aria-controls="my-vehicles" role="tab" data-toggle="tab">
+                        <div class="left_menu_item">I'll deliver</div>
+                    </a>
+                </li>
+                <li role="presentation" class="last">
+                    <a href="#my-tasks" aria-controls="my-tasks" role="tab" data-toggle="tab">
+                        <div class="left_menu_item">I need a deliverer</div>
+                    </a>
+                </li>
 
-                @if (Auth::guest())
-                    <li><a onclick="showLoginBlock()">Login</a></li>
-                    <li><a onclick="showRegisterBlock()">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{Auth::user()->name}} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a onclick="showProfileBlock()">Profile</a></li>
-                            <li><a href="/logout">Logout</a></li>
-                        </ul>
-                    </li>
-                @endif
+                <li role="presentation" class="list active">
+                    <a href="#transports" aria-controls="transports" role="tab" data-toggle="tab">
+                        <i class="fa fa-list"></i>
+                        <div class="left_menu_item" style="display:none;">Transports</div>
+                    </a>
+                </li>
             </ul>
-            <div class="col-xs-2">
+            <div class="col-xs-2 logo_block">
                 <a class="navbar-brand" href="/">
-                    <img src="/img/logo-inverse.png" width="140" height="20" />
+                    <img src="/img/logo-transp.png" width="125" height="48" />
                 </a>
             </div>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a onclick="showAboutUsBlock()">About Us</a></li>
-                <li><a onclick="showFAQBlock()">F.A.Q.</a></li>
-
-                @if (Auth::guest())
-                    <li><a onclick="showLoginBlock()">Login</a></li>
-                    <li><a onclick="showRegisterBlock()">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{Auth::user()->name}} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
+            <ul class="nav navbar-nav navbar-right btn-group" id="top-right-menu">
+                <div class="btn-group"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-labelledby="dropdownMenu">
+                    <i class="fa fa-exclamation-circle"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a onclick="showAboutUsBlock()">About Us</a></li>
+                        <li><a onclick="showFAQBlock()">F.A.Q.</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-labelledby="dropdownMenu">
+                    <i class="fa fa-user"></i></a></li>
+                    <ul class="dropdown-menu" role="menu">
+                        @if (Auth::guest())
+                            <li><a onclick="showLoginBlock()">Login</a></li>
+                            <li><a onclick="showRegisterBlock()">Register</a></li>
+                        @else                            
                             <li><a onclick="showProfileBlock()">Profile</a></li>
                             <li><a href="/logout">Logout</a></li>
-                        </ul>
-                    </li>
-                @endif
+                        @endif
+                    </ul>
+                </div>
             </ul>
         </nav>
     </div>
@@ -156,32 +155,6 @@
         <div class="user">
             <div id="sidebar">
                 <div class="col-xs-12">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation">
-                            <a href="#my-vehicles" aria-controls="my-vehicles" role="tab" data-toggle="tab">
-                                My Vehicles
-                            </a>
-                        </li>
-
-                        <li role="presentation">
-                            <a href="#my-tasks" aria-controls="my-tasks" role="tab" data-toggle="tab">
-                                My Tasks
-                            </a>
-                        </li>
-
-                        <li role="presentation" class="active">
-                            <a href="#transports" aria-controls="transports" role="tab" data-toggle="tab">
-                                Transports
-                            </a>
-                        </li>
-
-                        <li role="presentation">
-                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-                                Messages
-                            </a>
-                        </li>
-                    </ul>
-
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane" id="my-vehicles">
                             @include('user.my-vehicles')
@@ -193,10 +166,6 @@
 
                         <div role="tabpanel" class="tab-pane active" id="transports">
                             @include('user.jobs')
-                        </div>
-
-                        <div role="tabpanel" class="tab-pane" id="messages">
-                            @include('user.messages')
                         </div>
                     </div>
                 </div>
@@ -234,7 +203,7 @@
     @endif
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
 <script>window.jQuery || document.write('<script src="/js/system/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="/js/system/bootstrap.min.js"></script>
 <script src="/js/system/bootstrap-select.min.js"></script>

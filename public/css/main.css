@@ -38,7 +38,7 @@ header.navbar {
       margin-top: 0px;
       font-size: 28px;
       text-align: center; }
-  .guest #sections #section-one p { 
+  .guest #sections #section-one p {
     text-align: justify; }
   .guest #sections #section-one .embed-responsive {
     margin-top: 15px;
@@ -88,13 +88,11 @@ header.navbar {
           margin: 0px; }
         .user #sidebar #my-vehicles .nav-tabs li a:hover, .user #sidebar #my-vehicles .nav-tabs li a:focus {
           outline: 0;
-          -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-vehicles .nav-tabs li.active a {
         background-color: #286090;
         border-color: #204d74;
         outline: 0;
-        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-vehicles .nav-tabs li:nth-of-type(1) a {
         border-radius: 4px 0px 0px 4px; }
@@ -140,13 +138,11 @@ header.navbar {
           margin: 0px; }
         .user #sidebar #my-tasks .nav-tabs li a:hover, .user #sidebar #my-tasks .nav-tabs li a:focus {
           outline: 0;
-          -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-tasks .nav-tabs li.active a {
         background-color: #286090;
         border-color: #204d74;
         outline: 0;
-        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-tasks .nav-tabs li:nth-of-type(1) a {
         border-radius: 4px 0px 0px 4px; }
@@ -278,7 +274,6 @@ header.navbar {
           background-color: #286090;
           border-color: #204d74;
           outline: 0;
-          -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #transports #job-choose-vehicles .tab-content {
         border-radius: 4px;
@@ -492,7 +487,7 @@ header.navbar {
     width: 32%;
     left: 0px; }
   .user #sidebar > div > .tab-content {
-    margin-top: 57px;
+    /*margin-top: 57px;*/
     padding-top: 15px; }
   .user #general #map {
     position: absolute;
@@ -533,9 +528,6 @@ header.navbar {
       background-color: #2e8a19;
       border-color: #2b8118; }
     .user #general #section-three #profile-block #profile-is-professional .btn.btn-success:not(.active) {
-      background-image: -webkit-linear-gradient(#6d7070, #474949 50%, #3d3f3f);
-      background-image: -o-linear-gradient(#6d7070, #474949 50%, #3d3f3f);
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#6d7070), color-stop(50%, #474949), to(#3d3f3f));
       background-image: linear-gradient(#6d7070, #474949 50%, #3d3f3f);
       background-repeat: no-repeat;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d7070', endColorstr='#ff3d3f3f', GradientType=0);
@@ -681,8 +673,6 @@ header.navbar {
     margin-bottom: 10px; }
 
 .task-modal.fade, .vehicle-modal.fade.in {
-  -webkit-transition: opacity 0s linear;
-  -o-transition: opacity 0s linear;
   transition: opacity 0s linear; }
 
 .task-modal.fade.in, .vehicle-modal.fade.in {
@@ -694,9 +684,9 @@ header.navbar {
 @media (min-width: 1600px) {
   #sidebar {
     width: 500px; }
-
   #sidebar.closed {
     left: -500px; } }
+
 /* TABLET MD styles */
 @media (min-width: 992px) and (max-width: 1199px) {
   .user #sidebar {
@@ -713,13 +703,13 @@ header.navbar {
     left: 51%; }
   .user #general #sidebar-toggle {
     left: 51%; } }
+
 /* TABLET/PHONE SM styles */
 @media (min-width: 768px) and (max-width: 991px) {
   .guest #sections .section, .user #sections .section {
     font-size: 13px; }
     .guest #sections .section h1, .user #sections .section h1 {
       font-size: 24px; }
-
   .user #sidebar {
     width: 60%; }
   .user #sidebar.closed {
@@ -737,6 +727,7 @@ header.navbar {
   .user #general #section-three {
     z-index: 1052;
     position: relative; } }
+
 /* PHONE XS styles */
 @media (max-width: 767px) {
   #mobile-switcher {
@@ -753,25 +744,22 @@ header.navbar {
     font-size: 24px;
     line-height: 34px;
     color: #fff; }
-
   #mobile-switcher:hover, #mobile-switcher.pressed {
     color: #3cb521;
     border: 1px solid #fff;
     line-height: 32px;
     padding-right: 9px; }
-
   #top-navbar {
     position: absolute;
     width: calc(100% + 2px);
     -webkit-filter: none;
     filter: none;
     border: 1px solid #345578;
-    text-shadow: rgba(0, 0, 0, 0.29804) 0px -1px 0px;
+    text-shadow: rgba(0, 0, 0, 0.298039) 0px -1px 0px;
     z-index: 1053;
     margin-left: -16px;
     margin-right: -15px;
     background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d); }
-
   .guest #map {
     position: fixed;
     z-index: -100;
@@ -782,7 +770,6 @@ header.navbar {
     width: 100%;
     margin-bottom: 0px;
     margin-left: -15px; }
-
   .user #sidebar {
     width: 100%;
     height: 100% !important; }
@@ -806,10 +793,12 @@ header.navbar {
     margin-bottom: 0px;
     margin-left: -15px;
     z-index: 1052; } }
+
 /* PHONE XXS styles (including iPhone 5S portrait/landscape modes) */
 @media (max-width: 500px) {
   .user #general #section-three {
     overflow-y: auto; } }
+
 @media (max-width: 423px) {
   .user #sidebar > div > .nav-tabs li.active a, .user #sidebar > div > .nav-tabs li.active a:hover, .user #sidebar > div > .nav-tabs li.active a:focus {
     border-bottom-color: #dddddd; }
@@ -837,7 +826,7 @@ header.navbar {
     .user #sidebar #my-vehicles #vehicle-passengers .col-xs-1, .user #sidebar #my-vehicles #task-passengers .col-xs-1, .user #sidebar #my-tasks #vehicle-passengers .col-xs-1, .user #sidebar #my-tasks #task-passengers .col-xs-1 {
       margin-right: 25%; }
     .user #sidebar #my-vehicles #vehicle-passengers .col-xs-3, .user #sidebar #my-vehicles #task-passengers .col-xs-3, .user #sidebar #my-tasks #vehicle-passengers .col-xs-3, .user #sidebar #my-tasks #task-passengers .col-xs-3 {
-      width: 41.66667%; }
+      width: 41.66666667%; }
     .user #sidebar #my-vehicles #task-passengers .col-xs-2, .user #sidebar #my-tasks #task-passengers .col-xs-2 {
       margin-right: 25%; }
     .user #sidebar #my-vehicles #vehicle-cargo .col-xs-8, .user #sidebar #my-vehicles #task-cargo .col-xs-8, .user #sidebar #my-tasks #vehicle-cargo .col-xs-8, .user #sidebar #my-tasks #task-cargo .col-xs-8 {
@@ -905,6 +894,7 @@ header.navbar {
       margin-left: 4px;
       float: left;
       text-align: center; } }
+
 /* CROSS-BROWSER FIXES */
 input:disabled {
   -webkit-text-fill-color: #666666;
