@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/find.css">
 
     <script src="/js/system/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -47,22 +48,29 @@
         </div>
 
         <nav id="top-navbar" class="navbar-collapse collapse" aria-expanded="false">
-            <ul class="nav nav-tabs navbar-nav navbar-left col-xs-7" role="tablist" id="top-left-menu">
-                <li role="presentation" class="first">
-                    <a href="#my-vehicles" aria-controls="my-vehicles" role="tab" data-toggle="tab">
+            <ul class="nav nav-tabs navbar-nav navbar-left col-xs-6" role="tablist" id="top-left-menu">
+                <li role="presentation" class="first own_deliver_menu active">
+                    <a href="#own-delivery" aria-controls="my-vehicles" role="tab" data-toggle="tab">
                         <div class="left_menu_item">I'll deliver</div>
                     </a>
                 </li>
-                <li role="presentation" class="last">
-                    <a href="#my-tasks" aria-controls="my-tasks" role="tab" data-toggle="tab">
+                <li role="presentation" class="last need_deliver_menu">
+                    <a href="#need-delivery" aria-controls="my-tasks" role="tab" data-toggle="tab">
                         <div class="left_menu_item">I need a deliverer</div>
                     </a>
                 </li>
-
-                <li role="presentation" class="list active">
+                <li role="presentation" class="list transport_menu">
                     <a href="#transports" aria-controls="transports" role="tab" data-toggle="tab">
                         <i class="fa fa-list"></i>
                         <div class="left_menu_item" style="display:none;">Transports</div>
+                    </a>
+                </li>
+                <li role="presentation" style="display:none;">
+                    <a href="#my-vehicles" aria-controls="transports" role="tab" data-toggle="tab">
+                    </a>
+                </li>
+                <li role="presentation" style="display:none;">
+                    <a href="#my-tasks" aria-controls="transports" role="tab" data-toggle="tab">
                     </a>
                 </li>
             </ul>
@@ -156,16 +164,20 @@
             <div id="sidebar">
                 <div class="col-xs-12">
                     <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane transports active" id="own-delivery">
+                            @include('user.own-deliver')
+                        </div>
+                        <div role="tabpanel" class="tab-pane transports" id="need-delivery">
+                            @include('user.need-deliver')
+                        </div>
+                        <div role="tabpanel" class="tab-pane transports" id="transports">
+                            @include('user.jobs')
+                        </div>
                         <div role="tabpanel" class="tab-pane" id="my-vehicles">
                             @include('user.my-vehicles')
                         </div>
-
                         <div role="tabpanel" class="tab-pane" id="my-tasks">
                             @include('user.my-tasks')
-                        </div>
-
-                        <div role="tabpanel" class="tab-pane active" id="transports">
-                            @include('user.jobs')
                         </div>
                     </div>
                 </div>
@@ -210,5 +222,6 @@
 <script src="/js/system/datetimepicker.full.min.js"></script>
 <script src="/js/system/leaflet.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/additional.js"></script>
 </body>
 </html>

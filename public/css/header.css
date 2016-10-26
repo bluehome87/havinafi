@@ -1,4 +1,3 @@
-html{ overflow:auto; height:100%;}
 .navbar-inverse{ background: white !important; border: 2px solid #C1C1C1; color: #CCCCCC;}
 .navbar-inverse i{ font-size: 20px; line-height:28px;}
 
@@ -37,5 +36,6 @@ html{ overflow:auto; height:100%;}
 	.navbar-inverse #top-left-menu li.list .left_menu_item{ display:block !important;}
 	.navbar-inverse #top-left-menu li.list i{ display:none;}
 }
-
+.user #sidebar > div > .tab-content {padding-bottom: 10px;}
+/* temp */
 #general{ background: #CCCCCC;}

@@ -1,0 +1,52 @@
+#own_delivery_form .panel-heading .find_tasks, #need_delivery_form .panel-heading .find_tasks {
+  color: #83c22c; }
+
+#own_delivery_form .panel-heading .panel-title, #need_delivery_form .panel-heading .panel-title {
+  font-size: 18px; }
+  #own_delivery_form .panel-heading .panel-title a, #need_delivery_form .panel-heading .panel-title a {
+    cursor: pointer !important;
+    font-size: 24px;
+    line-height: 0;
+    color: #666666; }
+
+#own_delivery_form .tab-pane, #need_delivery_form .tab-pane {
+  margin-bottom: 20px; }
+  #own_delivery_form .tab-pane .input-group, #need_delivery_form .tab-pane .input-group {
+    width: 90%; }
+    #own_delivery_form .tab-pane .input-group span.form-control, #need_delivery_form .tab-pane .input-group span.form-control {
+      border: 0;
+      box-shadow: none;
+      padding-left: 40px; }
+      #own_delivery_form .tab-pane .input-group span.form-control .record_name, #need_delivery_form .tab-pane .input-group span.form-control .record_name {
+        margin-left: 10px;
+        cursor: pointer; }
+      #own_delivery_form .tab-pane .input-group span.form-control button, #need_delivery_form .tab-pane .input-group span.form-control button {
+        color: #666666 !important;
+        font-size: 15px;
+        line-height: 0; }
+      #own_delivery_form .tab-pane .input-group span.form-control .add_new_link, #need_delivery_form .tab-pane .input-group span.form-control .add_new_link {
+        color: #666666 !important;
+        cursor: pointer;
+        margin-left: -20px; }
+
+#own_delivery_form .datepicker .panel-heading, #need_delivery_form .datepicker .panel-heading {
+  background: #83c22c;
+  color: white;
+  text-align: center; }
+
+#own_delivery_form .datepicker .xdsoft_datetimepicker.xdsoft_inline, #need_delivery_form .datepicker .xdsoft_datetimepicker.xdsoft_inline {
+  width: 100%; }
+
+#own_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_datepicker.active, #own_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_timepicker.active, #need_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_datepicker.active, #need_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_timepicker.active {
+  width: 100%; }
+
+#own_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_month, #need_delivery_form .datepicker .xdsoft_datetimepicker .xdsoft_month {
+  width: 45%; }
+
+#own_delivery_form .new-job, #need_delivery_form .new-job {
+  padding-top: 20px; }
+  #own_delivery_form .new-job button, #need_delivery_form .new-job button {
+    background: #4E98EC;
+    border: 1px solid #2D6DB1; }
+
+/*# sourceMappingURL=find.css.map */
