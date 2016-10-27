@@ -1,15 +1,19 @@
 #own_delivery_form, #need_delivery_form{
 	.panel-heading{
-		.find_tasks{ 
+		.find_tasks{
+			cursor:pointer;
+		}
+		.find_tasks.checked{
 			color: #83c22c;
 		}
-		.panel-title{ 
-			font-size: 18px; 
-			a { 
+		.panel-title{
+			font-size: 18px;
+			a {
 				cursor:pointer !important;
 				font-size:24px;
 				line-height:0;
 				color:#666666;
+				i{ line-height:18px; }
 			}
 		}
 	}
@@ -21,33 +25,38 @@
 				border: 0;
 				box-shadow:none;
 				padding-left: 40px;
-				.record_name{ 
+				.record_name{
 					margin-left:10px;
 					cursor:pointer;}
-				button{ 
+				button{
 					color: #666666 !important;
 					font-size: 15px;
 					line-height: 0;}
 				.add_new_link{
 					color: #666666 !important;
 					cursor:pointer;
-					margin-left: -20px;
-				}
+					margin-left: -20px;}
+				input[type=checkbox]{display: none}
+			}
+			span.form-control.checked{
+				.record_name{ color:#83c22c; }
+				> i{ color:#83c22c;}
 			}
 		}
 	}
 	.datepicker{
+		margin-bottom:20px;
 		.panel-heading{
 			background: #83c22c;
 			color:white;
-			text-align:center;			
+			text-align:center;
 		}
 		.xdsoft_datetimepicker.xdsoft_inline{ width:100%; }
-		.xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active{ width:100%; }
+		.xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active{ width:calc( 100% - 8px); }
 		.xdsoft_datetimepicker .xdsoft_month{ width:45%; }
 	}
 	.new-job{
-		padding-top:20px;
 		button{ background: #4E98EC; border:1px solid #2D6DB1;}
 	}
 }
+#own_delivery_form .datepicker{ display:none; }

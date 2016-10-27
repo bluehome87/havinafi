@@ -60,7 +60,7 @@ $(window).resize(function() {
 // resize front-end sections
 function resizeSections() {
     winHeight = $(window).height();
-    userSectionsH = winHeight - $('#top-navbar').height() - 2;
+    userSectionsH = winHeight - $('.navbar').height() - 4;
 
     // defined height of sections is 492px. if screen is bigger than this + header and defined margins
     // then set bigger margins (equal from top and bottom)
@@ -92,7 +92,7 @@ function resizeSections() {
 
 // resize the map on background
 function resizeMap() {
-    mapHeight = $(window).height() - 52;
+    mapHeight = $(window).height() - $('.navbar').height() - 4;
     $('#map').css('height', mapHeight);
 
     setTimeout(
@@ -381,13 +381,13 @@ function hideSectionThreeBlocks() {
 
 // show Transports section
 function showTransportsSection() {
-    history.pushState(null, 'Transports', '/transports');
+    /*history.pushState(null, 'Transports', '/transports');
     changePageTitle('Transports - Transportation');
 
     $('#sidebar > div > .nav-tabs > li').removeClass('active');
     $('#sidebar > div > .nav-tabs > li:eq(2)').addClass('active');
     $('#sidebar > div > .tab-content > .tab-pane').removeClass('active');
-    $('#sidebar > div > .tab-content > #transports').addClass('active');
+    $('#sidebar > div > .tab-content > #transports').addClass('active');*/
 }
 
 //
@@ -2310,6 +2310,9 @@ function viewJobTime(id, fresh) {
                 dataType: "json",
                 success: function (data) {
                     if (data['status'] == 'success') {
+console.log( data['data'] );
+console.log( data['job_info'] );
+console.log( data['total_tasks'] );
                         $('#jobDrivingList').html('');
                         solution = $.parseJSON(data['data']);
                         job_info = $.parseJSON(data['job_info']);
