@@ -1,10 +1,15 @@
-#own_delivery_form, #need_delivery_form{
+$green-bg 			: #83c22c;
+$dark-green-border 	: #408333;
+$white-color 		: #ffffff;
+$basic-gray 		: #666666;
+
+.transport_form{
 	.panel-heading{
 		.find_tasks{
 			cursor:pointer;
 		}
 		.find_tasks.checked{
-			color: #83c22c;
+			color: $green-bg;
 		}
 		.panel-title{
 			font-size: 18px;
@@ -12,8 +17,12 @@
 				cursor:pointer !important;
 				font-size:24px;
 				line-height:0;
-				color:#666666;
+				color:$basic-gray;
 				i{ line-height:18px; }
+			}
+			.btn-link:hover{
+				color:$green-bg;
+				background:$white-color;
 			}
 		}
 	}
@@ -29,25 +38,25 @@
 					margin-left:10px;
 					cursor:pointer;}
 				button{
-					color: #666666 !important;
+					color:$basic-gray !important;
 					font-size: 15px;
 					line-height: 0;}
 				.add_new_link{
-					color: #666666 !important;
+					color: $basic-gray !important;
 					cursor:pointer;
 					margin-left: -20px;}
 				input[type=checkbox]{display: none}
 			}
 			span.form-control.checked{
-				.record_name{ color:#83c22c; }
-				> i{ color:#83c22c;}
+				.record_name{ color:$green-bg; }
+				> i{ color:$green-bg;}
 			}
 		}
 	}
 	.datepicker{
 		margin-bottom:20px;
 		.panel-heading{
-			background: #83c22c;
+			background: $green-bg;
 			color:white;
 			text-align:center;
 		}
@@ -57,6 +66,38 @@
 	}
 	.new-job{
 		button{ background: #4E98EC; border:1px solid #2D6DB1;}
+	}
+
+	.nav-tabs li a { 
+		background:$white-color;
+		color: $green-bg; 
+		border: 1px solid $green-bg;
+		.btn-link{
+			color: $green-bg;
+		}
+		.btn-link:hover{
+			color:white;
+			background:$green-bg;
+		}
+	}
+	.nav-tabs li.active a{ 
+		background:$green-bg;
+		color:$white-color; 
+		border: 1px solid $dark-green-border;
+		.btn-link{
+			color:$white-color;
+		}
+		.btn-link:hover{
+			color:$green-bg;
+			background:$white-color;
+		}
+	}
+	#job-own-vehicles{ margin-bottom: 0;}
+	#job-choose-tasks{ 
+		.panel-heading{
+			background-color: $green-bg;
+			border: $dark-green-border;
+		}
 	}
 }
 #own_delivery_form .datepicker{ display:none; }

@@ -1,8 +1,8 @@
-<div class="row" id="job-new">
+<!--div class="row transport_form" id="job-new">
     <div class="col-xs-4 col-xs-offset-4 new-job">
         <button type="button" class="btn btn-primary btn-block center-block" onclick="showCreateJobForm()">New</button>
     </div>
-</div>
+</div-->
 
 <div class="row">
     <div class="col-xs-12">
@@ -64,7 +64,19 @@
                         </div>
                     @endif
 
-                    <div class="row">
+                    <div class="panel-default datepicker">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <span>CHOOSE DATE</span>
+                                <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
+                            </h4>
+                        </div>
+
+                        <div id="find_job_accordion" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="job-date-heading">
+                            <input class="job_datepicker" type="hidden" name="transjob_date">
+                        </div>
+                    </div>
+                    <!--div class="row">
                         <div class="col-xs-12">
                             <div class="panel-group" id="job-date-accordion" role="tablist" aria-multiselectable="false">
                                 <div class="panel panel-default">
@@ -86,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div-->
 
                     <div class="row">
                         <div class="col-xs-12">
@@ -117,21 +129,29 @@
                                     </li>
                                 </ul>
                             </div>
-
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane" id="job-own-vehicles">
                                     @if(count($my_vehicles) > 0)
                                         @foreach($my_vehicles as $my_vehicle)
                                             <div class="input-group">
-                                                <span class="input-group-addon">
-                                                    <input type="checkbox" aria-label="own-vehicles{{$my_vehicle->id}}" name="my_vehicles[{{$my_vehicle->id}}]">
-                                                </span>
-
                                                 <span class="form-control" aria-label="own-vehicles{{$my_vehicle->id}}">
-                                                    {{$my_vehicle->name}}
-
+                                                    @if( $my_vehicle->type == 1 )
+                                                        <i class="fa fa-bicycle"></i>
+                                                    @elseif( $my_vehicle->type == 2 )
+                                                        <i class="fa fa-car"></i>
+                                                    @elseif( $my_vehicle->type == 3 )
+                                                        <i class="fa fa-motorcycle"></i>
+                                                    @elseif( $my_vehicle->type == 4 )
+                                                        <i class="fa fa-truck"></i>
+                                                    @elseif( $my_vehicle->type == 5 )
+                                                        <i class="fa fa-truck"></i>
+                                                    @endif
+                                                    <input type="checkbox" class="vehicle_id" aria-label="own-vehicles{{$my_vehicle->id}}" name="my_vehicles[{{$my_vehicle->id}}]">
+                                                    <span class="record_name">
+                                                        {{$my_vehicle->name}}
+                                                    </span>
                                                     <button class="btn-link pull-right" onclick="showVehiclePopup({{$my_vehicle->id}})" type="button">
-                                                        <span class="glyphicon glyphicon-share" aria-hidden="true"></span>
+                                                        <i class="fa fa-exclamation-circle"></i>
                                                     </button>
                                                 </span>
                                             </div>
@@ -142,7 +162,6 @@
                                         <p class="nothing">You don't have any vehicles.</p>
                                     @endif
                                 </div>
-
                                 <div role="tabpanel" class="tab-pane" id="job-find-vehicles">
                                     <p>We will find suitable vehicles for you!</p>
                                 </div>

@@ -11,7 +11,7 @@ $(document).ready(function() {
         minDate: 0,
         onSelectDate: function() {
             choosen_date = $(this).parent().find('.job_datepicker').val();
-            $(this).parent().parent().parent().find('.panel-title span').html( choosen_date );
+            $(this).parent().parent().find('.panel-title span').html( choosen_date );
         }
     });
     // Initially reset checkbox
@@ -19,10 +19,11 @@ $(document).ready(function() {
 
     $('.record_name').click( function(){
         $(this).parent().toggleClass('checked');
-        if( $(this).parent().find('input[type=checkbox]').is(':checked') )
-            $(this).parent().find('input[type=checkbox]').prop('checked', false);
+        obj = $(this).parent().find('input[type=checkbox]');
+        if( obj.is(':checked') )
+            obj.prop('checked', false);
         else
-            $(this).parent().find('input[type=checkbox]').prop('checked', true );
+            obj.prop('checked', true );
     });
 
     $('.find_tasks').click( function(){
@@ -33,3 +34,14 @@ $(document).ready(function() {
             $('.datepicker').hide();
     });
 });
+
+
+function refreshTaskContents()
+{
+
+}
+
+function refreshVehicleContents()
+{
+
+}

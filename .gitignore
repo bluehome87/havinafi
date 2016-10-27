@@ -5,3 +5,7 @@ Homestead.json
 .env
 .DS_Store
 /config
+find.css
+find.css.map
+main.css
+main.css.map

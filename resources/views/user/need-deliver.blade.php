@@ -1,5 +1,12 @@
 <div id="need_delivery_form" class="transport_form">
     <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="transjob_name" placeholder="Name">
+                </div>
+            </div>
+        </div>        
         <div class="panel-default datepicker">
             <div class="panel-heading">
                 <h4 class="panel-title">

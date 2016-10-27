@@ -2310,9 +2310,6 @@ function viewJobTime(id, fresh) {
                 dataType: "json",
                 success: function (data) {
                     if (data['status'] == 'success') {
-console.log( data['data'] );
-console.log( data['job_info'] );
-console.log( data['total_tasks'] );
                         $('#jobDrivingList').html('');
                         solution = $.parseJSON(data['data']);
                         job_info = $.parseJSON(data['job_info']);
