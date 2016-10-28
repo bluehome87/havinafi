@@ -49,7 +49,7 @@
 
         <nav id="top-navbar" class="navbar-collapse collapse" aria-expanded="false">
             <ul class="nav nav-tabs navbar-nav navbar-left col-xs-6" role="tablist" id="top-left-menu">
-                <li role="presentation" class="first own_deliver_menu">
+                <li role="presentation" class="first own_deliver_menu active">
                     <a href="#own-delivery" aria-controls="my-vehicles" role="tab" data-toggle="tab">
                         <div class="left_menu_item">I'll deliver</div>
                     </a>
@@ -59,7 +59,7 @@
                         <div class="left_menu_item">I need a deliverer</div>
                     </a>
                 </li>
-                <li role="presentation" class="list transport_menu active">
+                <li role="presentation" class="list transport_menu">
                     <a href="#transports" aria-controls="transports" role="tab" data-toggle="tab">
                         <i class="fa fa-list"></i>
                         <div class="left_menu_item" style="display:none;">Transports</div>
@@ -164,13 +164,13 @@
             <div id="sidebar">
                 <div class="col-xs-12">
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane transports" id="own-delivery">
+                        <div role="tabpanel" class="tab-pane transports active" id="own-delivery">
                             @include('user.own-deliver')
                         </div>
                         <div role="tabpanel" class="tab-pane transports" id="need-delivery">
                             @include('user.need-deliver')
                         </div>
-                        <div role="tabpanel" class="tab-pane transports active" id="transports">
+                        <div role="tabpanel" class="tab-pane transports" id="transports">
                             @include('user.jobs')
                         </div>
                         <div role="tabpanel" class="tab-pane" id="my-vehicles">
