@@ -1,8 +1,8 @@
-<div id="own_delivery_form" class="transport_form">
+<div id="own_delivery_form">
     <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
         <div class="row">
             <div class="col-xs-12">
-                <div class="form-group">
+                <div class="form-group panel-heading">
                     <input class="form-control" type="text" name="transjob_name" placeholder="Name">
                 </div>
             </div>
@@ -34,7 +34,7 @@
                                     {{$my_vehicle->name}}
                                 </span>
                                 <button class="btn-link pull-right" onclick="showVehiclePopup({{$my_vehicle->id}})" type="button">
-                                    <i class="fa fa-exclamation-circle"></i>
+                                    <i class="fa fa-info-circle"></i>
                                 </button>
                             </span>
                         </div>
@@ -72,7 +72,7 @@
                                     {{$my_task->name}}
                                 </span>
                                 <button class="btn-link pull-right" onclick="showTaskPopup({{$my_task->id}})" type="button">
-                                    <i class="fa fa-exclamation-circle"></i>
+                                    <i class="fa fa-info-circle"></i>
                                 </button>
                             </span>
                         </div>
@@ -87,8 +87,10 @@
                             <a class="add_new_link" href="#" onclick="showCreateTaskForm()"><i class="fa fa-plus"></i> ADD NEW TASK</a>
                         </span>
                     </div>
+            </div>
+            <div role="tabpanel" class="tab-pane">
                 <div class="panel-heading">
-                    <h4 class="panel-title find_tasks"><i class="fa fa-search"></i> FIND TASKS FROM OTHER USERS
+                    <h4 class="panel-title find_tasks"><div class="pull-left"><i class="fa fa-search"></i> FIND TASKS FROM OTHER USERS</div>
                         <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
                     </h4>
                 </div>

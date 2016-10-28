@@ -1,3 +1,8 @@
+$sidebar-width1 : 35%; /* 992 ~ 1199 */
+$toggle-left1 : 36%; /* 992 ~ 1199 */
+$sidebar-width2 : 40%; /* 768 ~ 991 */
+$toggle-left2 : 40%; /* 768 ~ 991 */
+
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset!important;
 }
@@ -127,8 +132,8 @@ header.navbar {
                     margin: 0px -2px;
 
                     a {
-                        color: #fff;
-                        /*background-color: #337ab7;
+                        /*color: #fff;
+                        background-color: #337ab7;
                         border-color: #2e6da4;*/
                         margin: 0px;
                     }
@@ -142,8 +147,8 @@ header.navbar {
 
                 li.active {
                     a {
-                        background-color: #286090;
-                        border-color: #204d74;
+                        /*background-color: #286090;
+                        border-color: #204d74;*/
                         outline: 0;
                         -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
                         box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
@@ -217,8 +222,8 @@ header.navbar {
                     margin: 0px -2px;
 
                     a {
-                        color: #fff;
-                        /*background-color: #337ab7;
+                        /*color: #fff;
+                        background-color: #337ab7;
                         border-color: #2e6da4;*/
                         margin: 0px;
                     }
@@ -232,8 +237,8 @@ header.navbar {
 
                 li.active {
                     a {
-                        background-color: #286090;
-                        border-color: #204d74;
+                        /*background-color: #286090;
+                        border-color: #204d74;*/
                         outline: 0;
                         -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
                         box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
@@ -306,6 +311,7 @@ header.navbar {
                     .job-name {
                         display: inline-block;
                         margin-right: 15px;
+                        text-overflow: ellipsis;
                     }
                 }
 
@@ -353,8 +359,8 @@ header.navbar {
 
             #job-date-accordion {
                 .panel-heading {
-                    color: #fff;
-                    /*background-color: #337ab7;
+                    /*color: #fff;
+                    background-color: #337ab7;
                     border-color: #2e6da4;*/
                     margin: 0px;
                 }
@@ -485,8 +491,8 @@ header.navbar {
 
             #job-choose-tasks {
                 .panel-heading {
-                    color: #fff;
-                    /*background-color: #337ab7;
+                    /*color: #fff;
+                    background-color: #337ab7;
                     border-color: #2e6da4;*/
                     margin: 0px;
 
@@ -1103,15 +1109,15 @@ header.navbar {
 @media(min-width: 992px) and (max-width: 1199px) {
     .user {
         #sidebar {
-            width: 50%;
+            width: $sidebar-width1;
         }
 
         #sidebar.closed {
-            left: -50%;
+            left: -($sidebar-width1);
         }
 
         #sidebar > div > .nav-tabs {
-            width: 50%;
+            width: $sidebar-width1;
         }
 
         #sidebar > div > .tab-content {
@@ -1122,11 +1128,11 @@ header.navbar {
 
         #general {
             #map .leaflet-control-container .leaflet-left.open {
-                left: 51%;
+                left: $toggle-left1;
             }
 
             #sidebar-toggle {
-                left: 51%;
+                left: $toggle-left1;
             }
         }
     }
@@ -1146,15 +1152,15 @@ header.navbar {
 
     .user {
         #sidebar {
-            width: 60%;
+            width: $sidebar-width2;
         }
 
         #sidebar.closed {
-            left: -60%;
+            left: -($sidebar-width2);
         }
 
         #sidebar > div > .nav-tabs {
-            width: 60%;
+            width: $sidebar-width2;
         }
 
         #sidebar > div > .tab-content {
@@ -1165,11 +1171,11 @@ header.navbar {
 
         #general {
             #map .leaflet-control-container .leaflet-left.open {
-                left: 61%;
+                left: $toggle-left2;
             }
 
             #sidebar-toggle {
-                left: 61%;
+                left: $toggle-left2;
             }
 
             #section-three {
@@ -1300,7 +1306,7 @@ header.navbar {
             }
 
             .tab-content {
-                margin-top: 98px;
+                /*margin-top: 98px;*/
             }
         }
 

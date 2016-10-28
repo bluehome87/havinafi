@@ -1,8 +1,8 @@
-<div id="need_delivery_form" class="transport_form">
+<div id="need_delivery_form">
     <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
         <div class="row">
             <div class="col-xs-12">
-                <div class="form-group">
+                <div class="form-group panel-heading">
                     <input class="form-control" type="text" name="transjob_name" placeholder="Name">
                 </div>
             </div>
@@ -40,7 +40,7 @@
                                     {{$my_task->name}}
                                 </span>
                                 <button class="btn-link pull-right" onclick="showTaskPopup({{$my_task->id}})" type="button">
-                                    <i class="fa fa-exclamation-circle"></i>
+                                    <i class="fa fa-info-circle"></i>
                                 </button>
                             </span>
                         </div>

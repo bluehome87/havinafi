@@ -1,9 +1,3 @@
-<!--div class="row transport_form" id="job-new">
-    <div class="col-xs-4 col-xs-offset-4 new-job">
-        <button type="button" class="btn btn-primary btn-block center-block" onclick="showCreateJobForm()">New</button>
-    </div>
-</div-->
-
 <div class="row">
     <div class="col-xs-12">
         <div class="panel-group" id="jobs-accordion" role="tablist" aria-multiselectable="false">
@@ -42,7 +36,7 @@
         </div>
     </div>
 </div>
-<div id="transport_edit_block" class="transport_form active">
+<div id="transport_edit_block" class="active">
     <div class="row" id="job-edit">
         <div class="col-xs-12">
             <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
@@ -151,7 +145,7 @@
                                                         {{$my_vehicle->name}}
                                                     </span>
                                                     <button class="btn-link pull-right" onclick="showVehiclePopup({{$my_vehicle->id}})" type="button">
-                                                        <i class="fa fa-exclamation-circle"></i>
+                                                        <i class="fa fa-info-circle"></i>
                                                     </button>
                                                 </span>
                                             </div>

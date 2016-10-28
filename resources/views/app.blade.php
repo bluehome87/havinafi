@@ -26,7 +26,7 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
+<div id="loadingDiv"><div class="loading_gif"><img src="/img/ajax-loader.gif" width="30" height="30"/></div></div>
 <header class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -164,10 +164,10 @@
             <div id="sidebar">
                 <div class="col-xs-12">
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane transports active" id="own-delivery">
+                        <div role="tabpanel" class="tab-pane transport_form transports active" id="own-delivery">
                             @include('user.own-deliver')
                         </div>
-                        <div role="tabpanel" class="tab-pane transports" id="need-delivery">
+                        <div role="tabpanel" class="tab-pane transport_form transports" id="need-delivery">
                             @include('user.need-deliver')
                         </div>
                         <div role="tabpanel" class="tab-pane transports" id="transports">

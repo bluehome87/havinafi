@@ -29,12 +29,29 @@ $(document).ready(function() {
     $('.find_tasks').click( function(){
         $(this).toggleClass('checked');
         if( $(this).hasClass('checked') )
-            $('.datepicker').show();
+            $('#own_delivery_form .datepicker').show();
         else
-            $('.datepicker').hide();
+            $('#own_delivery_form .datepicker').hide();
     });
-});
 
+    // loading spinner function
+    $(document)
+        .ajaxStart(function() {
+            $('#loadingDiv').show();
+        })
+        .ajaxStop(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxComplete(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxSuccess(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxError(function() {
+            $('#loadingDiv').hide();
+        });
+});
 
 function refreshTaskContents()
 {

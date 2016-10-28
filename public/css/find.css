@@ -1,5 +1,27 @@
+#loadingDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 10000;
+  opacity: 0.7;
+  display: none; }
+  #loadingDiv .loading_gif {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+
+.transport_form .form-group {
+  margin-bottom: 0; }
+
 .transport_form .panel-heading .find_tasks {
   cursor: pointer; }
+  .transport_form .panel-heading .find_tasks div {
+    max-width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
 
 .transport_form .panel-heading .find_tasks.checked {
   color: #83c22c; }
@@ -8,11 +30,10 @@
   font-size: 18px; }
   .transport_form .panel-heading .panel-title a {
     cursor: pointer !important;
-    font-size: 24px;
-    line-height: 0;
     color: #666666; }
     .transport_form .panel-heading .panel-title a i {
-      line-height: 18px; }
+      line-height: 20px;
+      font-size: 24px; }
   .transport_form .panel-heading .panel-title .btn-link:hover {
     color: #83c22c;
     background: #ffffff; }
@@ -20,7 +41,7 @@
 .transport_form .tab-pane {
   margin-bottom: 20px; }
   .transport_form .tab-pane .input-group {
-    width: 90%; }
+    width: 95%; }
     .transport_form .tab-pane .input-group span.form-control {
       border: 0;
       box-shadow: none;
@@ -44,10 +65,12 @@
       color: #83c22c; }
 
 .transport_form .datepicker {
-  margin-bottom: 20px; }
+  padding: 10px 15px; }
   .transport_form .datepicker .panel-heading {
-    background: #83c22c;
-    color: white;
+    background: #ffffff;
+    color: #83c22c;
+    border: 1px solid #CCCCCC;
+    border-bottom: 0;
     text-align: center; }
   .transport_form .datepicker .xdsoft_datetimepicker.xdsoft_inline {
     width: 100%; }
@@ -56,9 +79,11 @@
   .transport_form .datepicker .xdsoft_datetimepicker .xdsoft_month {
     width: 45%; }
 
-.transport_form .new-job button {
-  background: #4E98EC;
-  border: 1px solid #2D6DB1; }
+.transport_form .new-job {
+  margin-top: 10px; }
+  .transport_form .new-job button {
+    background: #4E98EC;
+    border: 1px solid #2D6DB1; }
 
 .transport_form .nav-tabs li a {
   background: #ffffff;
@@ -89,5 +114,14 @@
 
 #own_delivery_form .datepicker {
   display: none; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .transport_form .panel-heading {
+    padding: 10px 5px; }
+  .transport_form .tab-pane .input-group {
+    width: 100%; }
+    .transport_form .tab-pane .input-group span.form-control {
+      padding-left: 20px;
+      padding-right: 5px; } }
 
 /*# sourceMappingURL=find.css.map */

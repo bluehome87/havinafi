@@ -1,3 +1,7 @@
+/* 992 ~ 1199 */
+/* 992 ~ 1199 */
+/* 768 ~ 991 */
+/* 768 ~ 991 */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
 
@@ -82,16 +86,16 @@ header.navbar {
         float: none;
         margin: 0px -2px; }
         .user #sidebar #my-vehicles .nav-tabs li a {
-          color: #fff;
-          /*background-color: #337ab7;
+          /*color: #fff;
+                        background-color: #337ab7;
                         border-color: #2e6da4;*/
           margin: 0px; }
         .user #sidebar #my-vehicles .nav-tabs li a:hover, .user #sidebar #my-vehicles .nav-tabs li a:focus {
           outline: 0;
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-vehicles .nav-tabs li.active a {
-        background-color: #286090;
-        border-color: #204d74;
+        /*background-color: #286090;
+                        border-color: #204d74;*/
         outline: 0;
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-vehicles .nav-tabs li:nth-of-type(1) a {
@@ -132,16 +136,16 @@ header.navbar {
         float: none;
         margin: 0px -2px; }
         .user #sidebar #my-tasks .nav-tabs li a {
-          color: #fff;
-          /*background-color: #337ab7;
+          /*color: #fff;
+                        background-color: #337ab7;
                         border-color: #2e6da4;*/
           margin: 0px; }
         .user #sidebar #my-tasks .nav-tabs li a:hover, .user #sidebar #my-tasks .nav-tabs li a:focus {
           outline: 0;
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-tasks .nav-tabs li.active a {
-        background-color: #286090;
-        border-color: #204d74;
+        /*background-color: #286090;
+                        border-color: #204d74;*/
         outline: 0;
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
       .user #sidebar #my-tasks .nav-tabs li:nth-of-type(1) a {
@@ -180,7 +184,8 @@ header.navbar {
         background-color: white; }
         .user #sidebar .transports #jobs-accordion .panel-heading .job-name {
           display: inline-block;
-          margin-right: 15px; }
+          margin-right: 15px;
+          text-overflow: ellipsis; }
       .user #sidebar .transports #jobs-accordion .job-details .tab-content {
         margin-top: 20px; }
       .user #sidebar .transports #jobs-accordion .job-details .route h5 {
@@ -203,8 +208,8 @@ header.navbar {
       .user #sidebar .transports #job-edit .buttons #job-clear {
         margin: 0px 20px; }
     .user #sidebar .transports #job-date-accordion .panel-heading {
-      color: #fff;
-      /*background-color: #337ab7;
+      /*color: #fff;
+                    background-color: #337ab7;
                     border-color: #2e6da4;*/
       margin: 0px; }
     .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline {
@@ -290,8 +295,8 @@ header.navbar {
         text-align: center;
         margin: 20px 0px; }
     .user #sidebar .transports #job-choose-tasks .panel-heading {
-      color: #fff;
-      /*background-color: #337ab7;
+      /*color: #fff;
+                    background-color: #337ab7;
                     border-color: #2e6da4;*/
       margin: 0px; }
       .user #sidebar .transports #job-choose-tasks .panel-heading i.fa.fa-map-marker {
@@ -690,19 +695,19 @@ header.navbar {
 /* TABLET MD styles */
 @media (min-width: 992px) and (max-width: 1199px) {
   .user #sidebar {
-    width: 50%; }
+    width: 35%; }
   .user #sidebar.closed {
-    left: -50%; }
+    left: -35%; }
   .user #sidebar > div > .nav-tabs {
-    width: 50%; }
+    width: 35%; }
   .user #sidebar > div > .tab-content {
     display: block;
     float: left;
     width: 100%; }
   .user #general #map .leaflet-control-container .leaflet-left.open {
-    left: 51%; }
+    left: 36%; }
   .user #general #sidebar-toggle {
-    left: 51%; } }
+    left: 36%; } }
 
 /* TABLET/PHONE SM styles */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -711,19 +716,19 @@ header.navbar {
     .guest #sections .section h1, .user #sections .section h1 {
       font-size: 24px; }
   .user #sidebar {
-    width: 60%; }
+    width: 40%; }
   .user #sidebar.closed {
-    left: -60%; }
+    left: -40%; }
   .user #sidebar > div > .nav-tabs {
-    width: 60%; }
+    width: 40%; }
   .user #sidebar > div > .tab-content {
     display: block;
     float: left;
     width: 100%; }
   .user #general #map .leaflet-control-container .leaflet-left.open {
-    left: 61%; }
+    left: 40%; }
   .user #general #sidebar-toggle {
-    left: 61%; }
+    left: 40%; }
   .user #general #section-three {
     z-index: 1052;
     position: relative; } }
@@ -803,7 +808,7 @@ header.navbar {
   .user #sidebar > div > .nav-tabs li.active a, .user #sidebar > div > .nav-tabs li.active a:hover, .user #sidebar > div > .nav-tabs li.active a:focus {
     border-bottom-color: #dddddd; }
   .user #sidebar > div > .tab-content {
-    margin-top: 98px; }
+    /*margin-top: 98px;*/ }
   .user #sidebar {
     padding-bottom: 50px; }
     .user #sidebar #my-vehicles .vehicle-selector, .user #sidebar #my-vehicles .task-selector, .user #sidebar #my-tasks .vehicle-selector, .user #sidebar #my-tasks .task-selector {
