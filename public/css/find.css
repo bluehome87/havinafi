@@ -1,0 +1,93 @@
+.transport_form .panel-heading .find_tasks {
+  cursor: pointer; }
+
+.transport_form .panel-heading .find_tasks.checked {
+  color: #83c22c; }
+
+.transport_form .panel-heading .panel-title {
+  font-size: 18px; }
+  .transport_form .panel-heading .panel-title a {
+    cursor: pointer !important;
+    font-size: 24px;
+    line-height: 0;
+    color: #666666; }
+    .transport_form .panel-heading .panel-title a i {
+      line-height: 18px; }
+  .transport_form .panel-heading .panel-title .btn-link:hover {
+    color: #83c22c;
+    background: #ffffff; }
+
+.transport_form .tab-pane {
+  margin-bottom: 20px; }
+  .transport_form .tab-pane .input-group {
+    width: 90%; }
+    .transport_form .tab-pane .input-group span.form-control {
+      border: 0;
+      box-shadow: none;
+      padding-left: 40px; }
+      .transport_form .tab-pane .input-group span.form-control .record_name {
+        margin-left: 10px;
+        cursor: pointer; }
+      .transport_form .tab-pane .input-group span.form-control button {
+        color: #666666 !important;
+        font-size: 15px;
+        line-height: 0; }
+      .transport_form .tab-pane .input-group span.form-control .add_new_link {
+        color: #666666 !important;
+        cursor: pointer;
+        margin-left: -20px; }
+      .transport_form .tab-pane .input-group span.form-control input[type=checkbox] {
+        display: none; }
+    .transport_form .tab-pane .input-group span.form-control.checked .record_name {
+      color: #83c22c; }
+    .transport_form .tab-pane .input-group span.form-control.checked > i {
+      color: #83c22c; }
+
+.transport_form .datepicker {
+  margin-bottom: 20px; }
+  .transport_form .datepicker .panel-heading {
+    background: #83c22c;
+    color: white;
+    text-align: center; }
+  .transport_form .datepicker .xdsoft_datetimepicker.xdsoft_inline {
+    width: 100%; }
+  .transport_form .datepicker .xdsoft_datetimepicker .xdsoft_datepicker.active, .transport_form .datepicker .xdsoft_datetimepicker .xdsoft_timepicker.active {
+    width: calc( 100% - 8px); }
+  .transport_form .datepicker .xdsoft_datetimepicker .xdsoft_month {
+    width: 45%; }
+
+.transport_form .new-job button {
+  background: #4E98EC;
+  border: 1px solid #2D6DB1; }
+
+.transport_form .nav-tabs li a {
+  background: #ffffff;
+  color: #83c22c;
+  border: 1px solid #83c22c; }
+  .transport_form .nav-tabs li a .btn-link {
+    color: #83c22c; }
+  .transport_form .nav-tabs li a .btn-link:hover {
+    color: white;
+    background: #83c22c; }
+
+.transport_form .nav-tabs li.active a {
+  background: #83c22c;
+  color: #ffffff;
+  border: 1px solid #408333; }
+  .transport_form .nav-tabs li.active a .btn-link {
+    color: #ffffff; }
+  .transport_form .nav-tabs li.active a .btn-link:hover {
+    color: #83c22c;
+    background: #ffffff; }
+
+.transport_form #job-own-vehicles {
+  margin-bottom: 0; }
+
+.transport_form #job-choose-tasks .panel-heading {
+  background-color: #83c22c;
+  border: #408333; }
+
+#own_delivery_form .datepicker {
+  display: none; }
+
+/*# sourceMappingURL=find.css.map */

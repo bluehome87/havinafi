@@ -1,0 +1,921 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
+
+header.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px; }
+  header.navbar #mobile-switcher {
+    display: none; }
+  header.navbar li a {
+    cursor: pointer; }
+  header.navbar ul.dropdown-menu {
+    z-index: 1051; }
+
+#system-message {
+  position: absolute;
+  width: 100%;
+  margin-top: -52px;
+  z-index: 10000;
+  text-align: center; }
+  #system-message .alert-dismissible {
+    display: none;
+    margin-bottom: 0px;
+    border-radius: 0px; }
+
+.guest {
+  position: relative;
+  padding-top: 20px; }
+  .guest #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .guest #sections .section {
+    max-height: 492px;
+    overflow-y: auto; }
+    .guest #sections .section h1 {
+      margin-top: 0px;
+      font-size: 28px;
+      text-align: center; }
+  .guest #sections #section-one p {
+    text-align: justify; }
+  .guest #sections #section-one .embed-responsive {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .guest #sections #section-one .signin-buttons {
+    margin-top: 20px;
+    text-align: center; }
+  .guest #sections #section-three {
+    display: none; }
+    .guest #sections #section-three .block {
+      display: none; }
+  .guest #sections #section-three > .row > button.close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 32px; }
+    .guest #sections #section-three > .row > button.close span {
+      background: transparent; }
+  .guest #sections #section-three > .row > button.close:focus {
+    outline: none; }
+
+.user {
+  position: relative; }
+  .user #sidebar {
+    width: 33%;
+    position: fixed;
+    left: 0;
+    background: #fff;
+    z-index: 1050;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: all ease-in 300ms;
+    padding-bottom: 15px; }
+    .user #sidebar #my-vehicles .nav-tabs {
+      display: none;
+      text-align: center;
+      border: 0px; }
+      .user #sidebar #my-vehicles .nav-tabs li {
+        margin-bottom: -1px;
+        display: inline-block;
+        float: none;
+        margin: 0px -2px; }
+        .user #sidebar #my-vehicles .nav-tabs li a {
+          color: #fff;
+          /*background-color: #337ab7;
+                        border-color: #2e6da4;*/
+          margin: 0px; }
+        .user #sidebar #my-vehicles .nav-tabs li a:hover, .user #sidebar #my-vehicles .nav-tabs li a:focus {
+          outline: 0;
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .user #sidebar #my-vehicles .nav-tabs li.active a {
+        background-color: #286090;
+        border-color: #204d74;
+        outline: 0;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .user #sidebar #my-vehicles .nav-tabs li:nth-of-type(1) a {
+        border-radius: 4px 0px 0px 4px; }
+      .user #sidebar #my-vehicles .nav-tabs li:nth-of-type(2) a {
+        border-radius: 0px 4px 4px 0px; }
+    .user #sidebar #my-vehicles .tab-content {
+      display: none;
+      padding-top: 10px; }
+    .user #sidebar #my-vehicles .buttons {
+      display: none; }
+    .user #sidebar #my-vehicles .vehicle-selector {
+      margin-bottom: 15px; }
+    .user #sidebar #my-vehicles .cargo-items {
+      position: relative; }
+    .user #sidebar #my-vehicles #vehicle-carry-form, .user #sidebar #my-vehicles #quick-vehicle-carry-form {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%; }
+    .user #sidebar #my-vehicles #quick_max_passengers, .user #sidebar #my-vehicles #quick_trunk_volume {
+      display: none; }
+    .user #sidebar #my-vehicles #vehicle-passengers input {
+      text-align: right; }
+    .user #sidebar #my-vehicles #vehicle-detailed-mode > .row:first-of-type {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px; }
+    .user #sidebar #my-vehicles #vehicle-quick-mode > .row:first-of-type {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px; }
+    .user #sidebar #my-tasks .nav-tabs {
+      display: none;
+      text-align: center;
+      border: 0px; }
+      .user #sidebar #my-tasks .nav-tabs li {
+        margin-bottom: -1px;
+        display: inline-block;
+        float: none;
+        margin: 0px -2px; }
+        .user #sidebar #my-tasks .nav-tabs li a {
+          color: #fff;
+          /*background-color: #337ab7;
+                        border-color: #2e6da4;*/
+          margin: 0px; }
+        .user #sidebar #my-tasks .nav-tabs li a:hover, .user #sidebar #my-tasks .nav-tabs li a:focus {
+          outline: 0;
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .user #sidebar #my-tasks .nav-tabs li.active a {
+        background-color: #286090;
+        border-color: #204d74;
+        outline: 0;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .user #sidebar #my-tasks .nav-tabs li:nth-of-type(1) a {
+        border-radius: 4px 0px 0px 4px; }
+      .user #sidebar #my-tasks .nav-tabs li:nth-of-type(2) a {
+        border-radius: 0px 4px 4px 0px; }
+    .user #sidebar #my-tasks .tab-content {
+      display: none;
+      padding-top: 10px; }
+    .user #sidebar #my-tasks .buttons {
+      display: none; }
+    .user #sidebar #my-tasks .task-selector {
+      margin-bottom: 15px; }
+    .user #sidebar #my-tasks .cargo-items {
+      position: relative; }
+    .user #sidebar #my-tasks #task-carry-form, .user #sidebar #my-tasks #quick-task-carry-form {
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%; }
+    .user #sidebar #my-tasks #quick_max_passengers, .user #sidebar #my-tasks #quick_total_volume, .user #sidebar #my-tasks #quick_loading_time {
+      display: none; }
+    .user #sidebar #my-tasks #task-passengers input {
+      text-align: right; }
+    .user #sidebar #my-tasks #task-detailed-mode > .row:first-of-type {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px; }
+    .user #sidebar #my-tasks #task-quick-mode > .row:first-of-type {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px; }
+    .user #sidebar .transports #jobs-accordion {
+      margin-left: -14px;
+      margin-right: -14px; }
+      .user #sidebar .transports #jobs-accordion .panel-heading {
+        color: #408333;
+        background-color: white; }
+        .user #sidebar .transports #jobs-accordion .panel-heading .job-name {
+          display: inline-block;
+          margin-right: 15px; }
+      .user #sidebar .transports #jobs-accordion .job-details .tab-content {
+        margin-top: 20px; }
+      .user #sidebar .transports #jobs-accordion .job-details .route h5 {
+        background-color: #444444;
+        display: block;
+        margin-bottom: 0px;
+        padding: 10px 16px;
+        border: 1px solid #dddddd;
+        border-bottom: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: #fff; }
+        .user #sidebar .transports #jobs-accordion .job-details .route h5 i {
+          color: #fff; }
+      .user #sidebar .transports #jobs-accordion .job-details .route table td {
+        border-right: none;
+        border-left: none; }
+    .user #sidebar .transports #job-edit {
+      display: none; }
+      .user #sidebar .transports #job-edit .buttons #job-clear {
+        margin: 0px 20px; }
+    .user #sidebar .transports #job-date-accordion .panel-heading {
+      color: #fff;
+      /*background-color: #337ab7;
+                    border-color: #2e6da4;*/
+      margin: 0px; }
+    .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline {
+      width: 100%;
+      padding: 0px;
+      border: 0px; }
+      .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline .xdsoft_datepicker {
+        width: 100%;
+        margin: 0px; }
+        .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline .xdsoft_datepicker .xdsoft_mounthpicker {
+          display: block;
+          float: left;
+          width: 100%;
+          margin-top: -10px;
+          position: relative; }
+          .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline .xdsoft_datepicker .xdsoft_mounthpicker .xdsoft_month {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 74px;
+            padding-bottom: 2px; }
+          .user #sidebar .transports #job-date-accordion .xdsoft_datetimepicker.xdsoft_inline .xdsoft_datepicker .xdsoft_mounthpicker .xdsoft_year {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 74px;
+            right: 0;
+            padding-bottom: 2px; }
+    .user #sidebar .transports .new-job {
+      margin-bottom: 15px; }
+    .user #sidebar .transports #job-choose-vehicles {
+      margin-bottom: 10px; }
+      .user #sidebar .transports #job-choose-vehicles .nav-tabs {
+        text-align: center;
+        border: 0px; }
+        .user #sidebar .transports #job-choose-vehicles .nav-tabs li {
+          margin-bottom: -1px;
+          display: inline-block;
+          float: none;
+          margin: 0px -2px; }
+          .user #sidebar .transports #job-choose-vehicles .nav-tabs li a {
+            /*color: #fff;
+                            background-color: #337ab7;
+                            border-color: #2e6da4;*/
+            margin: 0px; }
+          .user #sidebar .transports #job-choose-vehicles .nav-tabs li .btn-link {
+            padding: 0px;
+            border: 1px solid #fff;
+            width: 22px;
+            height: 22px;
+            margin: -1px;
+            margin-left: 8px;
+            border-radius: 4px;
+            /*color: #fff;*/ }
+          .user #sidebar .transports #job-choose-vehicles .nav-tabs li .btn-link:hover, .user #sidebar .transports #job-choose-vehicles .nav-tabs li .btn-link.focus {
+            /*background: #3399f3;*/ }
+        .user #sidebar .transports #job-choose-vehicles .nav-tabs li:nth-of-type(1) {
+          padding-right: 0px; }
+          .user #sidebar .transports #job-choose-vehicles .nav-tabs li:nth-of-type(1) a {
+            border-radius: 4px 0px 0px 0px; }
+        .user #sidebar .transports #job-choose-vehicles .nav-tabs li:nth-of-type(2) {
+          padding-left: 0px; }
+          .user #sidebar .transports #job-choose-vehicles .nav-tabs li:nth-of-type(2) a {
+            border-radius: 0px 4px 0px 0px; }
+        .user #sidebar .transports #job-choose-vehicles .nav-tabs li.active a {
+          /*background-color: #286090;
+                        border-color: #204d74;*/
+          outline: 0;
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .user #sidebar .transports #job-choose-vehicles .tab-content {
+        border-radius: 4px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border: 1px solid #dddddd;
+        margin-bottom: 30px;
+        margin-top: -16px;
+        max-height: 205px;
+        overflow-y: scroll; }
+        .user #sidebar .transports #job-choose-vehicles .tab-content .tab-pane {
+          padding: 15px; }
+      .user #sidebar .transports #job-choose-vehicles p {
+        text-align: center;
+        margin: 20px 0px; }
+    .user #sidebar .transports #job-choose-tasks .panel-heading {
+      color: #fff;
+      /*background-color: #337ab7;
+                    border-color: #2e6da4;*/
+      margin: 0px; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading i.fa.fa-map-marker {
+        font-size: 20px;
+        padding-top: 4px; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading .btn-link {
+        padding: 0px;
+        border: 1px solid #fff;
+        width: 22px;
+        height: 22px;
+        margin: -1px;
+        margin-left: 8px;
+        border-radius: 4px;
+        color: #fff; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading .btn-link:hover, .user #sidebar .transports #job-choose-tasks .panel-heading .btn-link:focus {
+        background: #3399f3; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading #search-toggle {
+        border: none;
+        outline: none;
+        background: transparent; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading i.fa.fa-plus {
+        font-size: 14px; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input {
+        height: 23px;
+        background: transparent;
+        border: none;
+        outline: none;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 16px;
+        border-bottom: 1px solid transparent; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input.active-input {
+        border-bottom: 1px solid #fff; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: #ccc; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #ccc;
+        opacity: 1; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #ccc;
+        opacity: 1; }
+      .user #sidebar .transports #job-choose-tasks .panel-heading input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #ccc; }
+    .user #sidebar .transports #job-choose-tasks .panel-body {
+      max-height: 205px;
+      overflow-y: scroll;
+      display: none; }
+      .user #sidebar .transports #job-choose-tasks .panel-body #input-find-tasks .form-control {
+        color: #fff; }
+    .user #sidebar .overflow {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 100; }
+    .user #sidebar .actions {
+      display: none;
+      margin: 5px 0px; }
+      .user #sidebar .actions i {
+        cursor: pointer;
+        font-size: 18px;
+        margin: 2px; }
+    .user #sidebar .input-show, .user #sidebar .select-show {
+      border: none;
+      box-shadow: none;
+      outline: none;
+      cursor: text;
+      background-color: #ffffff;
+      text-overflow: ellipsis; }
+    .user #sidebar .select-show {
+      display: block;
+      width: 100%;
+      height: 38px;
+      padding: 8px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #666666;
+      background-color: #ffffff; }
+    .user #sidebar .select-show[name="select-vehicle-type"] i {
+      font-size: 24px; }
+    .user #sidebar .form-group.data-toggle .btn-link {
+      color: #666666;
+      text-decoration: none; }
+    .user #sidebar .form-group.data-toggle i {
+      color: #999999;
+      font-size: 24px;
+      line-height: 26px; }
+    .user #sidebar .form-group.data-toggle .active {
+      box-shadow: none; }
+      .user #sidebar .form-group.data-toggle .active i {
+        color: #0057bd; }
+    .user #sidebar .form-group.data-toggle .active.btn-link {
+      color: #0057bd; }
+    .user #sidebar textarea.disabled {
+      background: #fff;
+      border: none;
+      outline: none;
+      text-shadow: none;
+      box-shadow: none;
+      resize: none;
+      cursor: text; }
+    .user #sidebar .panel .panel-title {
+      text-align: center; }
+      .user #sidebar .panel .panel-title a {
+        text-decoration: none; }
+    .user #sidebar .panel .panel-body {
+      position: relative; }
+    .user #sidebar .panel .form-group {
+      margin-bottom: 0px; }
+    .user #sidebar .quick-location {
+      position: relative; }
+    .user #sidebar .glyphicon.glyphicon-chevron-right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 48px;
+      font-size: 48px;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      z-index: -1; }
+    .user #sidebar .cost-label {
+      margin-left: -50px;
+      display: block;
+      padding: 10px; }
+    .user #sidebar .cost-label.edit {
+      margin-left: -35px; }
+    .user #sidebar .cost-label.cargo-label {
+      display: inline-block;
+      float: left;
+      margin-left: -14px;
+      margin-right: -14px; }
+    .user #sidebar #cargo-weight {
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .user #sidebar #cost_eur_task, .user #sidebar #cost_eur_h, .user #sidebar #cost_eur_km, .user #sidebar #total_packages {
+      text-align: right; }
+    .user #sidebar .icon.food {
+      background-image: url("/img/food_grey.png");
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      display: block;
+      float: left; }
+    .user #sidebar .icon.crane {
+      background-image: url("/img/crane_grey.png");
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      display: block;
+      float: left; }
+    .user #sidebar .icon.lift {
+      background-image: url("/img/lift_grey.png");
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      display: block;
+      float: left; }
+    .user #sidebar .icon.temperature {
+      background-image: url("/img/temperature_grey.png");
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      display: block;
+      float: left; }
+    .user #sidebar .active > .icon.food {
+      background-image: url("/img/food_blue.png"); }
+    .user #sidebar .active > .icon.crane {
+      background-image: url("/img/crane_blue.png"); }
+    .user #sidebar .active > .icon.lift {
+      background-image: url("/img/lift_blue.png"); }
+    .user #sidebar .active > .icon.temperature {
+      background-image: url("/img/temperature_blue.png"); }
+    .user #sidebar .nothing {
+      margin-top: 15px;
+      text-align: center; }
+  .user #sidebar.closed {
+    left: -33%; }
+  .user #sidebar > div > .nav-tabs {
+    display: block;
+    position: fixed;
+    z-index: 12000;
+    background: #fff;
+    padding-top: 15px;
+    width: 32%;
+    left: 0px; }
+  .user #sidebar > div > .tab-content {
+    /*margin-top: 57px;*/
+    padding-top: 15px; }
+  .user #general #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .user #general #map .leaflet-control-container .leaflet-left.open {
+      left: 34%; }
+  .user #general #sidebar-toggle {
+    position: absolute;
+    left: 34%;
+    top: calc(50% - 35px);
+    margin-left: 10px;
+    text-align: right;
+    background: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all ease-in 300ms; }
+    .user #general #sidebar-toggle span {
+      width: 26px;
+      color: #000000;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 48px;
+      text-align: center; }
+  .user #general #sidebar-toggle.closed {
+    left: 0px; }
+  .user #general #section-three {
+    display: none; }
+    .user #general #section-three .block {
+      display: none; }
+    .user #general #section-three #profile-block textarea {
+      resize: none; }
+    .user #general #section-three #profile-block #profile-is-professional .btn.btn-default.active {
+      color: #ffffff;
+      background-color: #2e8a19;
+      border-color: #2b8118; }
+    .user #general #section-three #profile-block #profile-is-professional .btn.btn-success:not(.active) {
+      background-image: linear-gradient(#6d7070, #474949 50%, #3d3f3f);
+      background-repeat: no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d7070', endColorstr='#ff3d3f3f', GradientType=0);
+      -webkit-filter: none;
+      filter: none;
+      border: 1px solid #2e2f2f; }
+  .user #general #section-three > .row > button.close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 32px; }
+    .user #general #section-three > .row > button.close span {
+      background: transparent; }
+  .user #general #section-three > .row > button.close:focus {
+    outline: none; }
+
+.vehicle-modal, .task-modal {
+  background-color: transparent; }
+  .vehicle-modal .modal-content, .task-modal .modal-content {
+    margin: 0 auto; }
+  .vehicle-modal .modal-header, .task-modal .modal-header {
+    background-color: #3399f3;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom: none; }
+    .vehicle-modal .modal-header .modal-title, .task-modal .modal-header .modal-title {
+      color: #fff;
+      text-align: center; }
+      .vehicle-modal .modal-header .modal-title i, .task-modal .modal-header .modal-title i {
+        float: left;
+        margin-top: 4px;
+        color: #fff; }
+  .vehicle-modal .modal-body, .task-modal .modal-body {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #3399f3;
+    border-top: none; }
+    .vehicle-modal .modal-body .owner .owner-name, .task-modal .modal-body .owner .owner-name {
+      display: inline-block;
+      float: left; }
+    .vehicle-modal .modal-body .owner .owner-phone, .task-modal .modal-body .owner .owner-phone {
+      display: inline-block;
+      float: right; }
+    .vehicle-modal .modal-body textarea, .task-modal .modal-body textarea {
+      background: #fff;
+      border: none;
+      outline: none;
+      text-shadow: none;
+      box-shadow: none;
+      resize: none;
+      cursor: text;
+      width: 100%;
+      max-height: 82px; }
+    .vehicle-modal .modal-body .location, .task-modal .modal-body .location {
+      display: block;
+      float: left;
+      width: 100%;
+      position: relative; }
+      .vehicle-modal .modal-body .location .from, .task-modal .modal-body .location .from {
+        width: 40%;
+        display: inline-block;
+        float: left; }
+      .vehicle-modal .modal-body .location .arrow, .task-modal .modal-body .location .arrow {
+        width: 20%;
+        display: inline-block;
+        float: left;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 48px;
+        font-size: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+      .vehicle-modal .modal-body .location .to, .task-modal .modal-body .location .to {
+        width: 40%;
+        display: inline-block;
+        float: left;
+        margin-left: 20%; }
+    .vehicle-modal .modal-body .seats, .task-modal .modal-body .seats {
+      display: block;
+      float: left;
+      width: 100%; }
+    .vehicle-modal .modal-body .packages, .task-modal .modal-body .packages {
+      display: block;
+      float: left;
+      width: 100%; }
+      .vehicle-modal .modal-body .packages .size, .task-modal .modal-body .packages .size {
+        display: inline-block;
+        float: left; }
+      .vehicle-modal .modal-body .packages .weight, .task-modal .modal-body .packages .weight {
+        display: inline-block;
+        float: right; }
+    .vehicle-modal .modal-body .icons, .task-modal .modal-body .icons {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-top: 4px; }
+      .vehicle-modal .modal-body .icons .icon, .task-modal .modal-body .icons .icon {
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: left;
+        margin-left: 2px;
+        margin-right: 2px; }
+      .vehicle-modal .modal-body .icons .icon.crane, .task-modal .modal-body .icons .icon.crane {
+        background-image: url("/img/crane_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.crane, .task-modal .modal-body .icons .icon.icon-active.crane {
+        background-image: url("/img/crane_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.lift, .task-modal .modal-body .icons .icon.lift {
+        background-image: url("/img/lift_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.lift, .task-modal .modal-body .icons .icon.icon-active.lift {
+        background-image: url("/img/lift_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.food, .task-modal .modal-body .icons .icon.food {
+        background-image: url("/img/food_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.food, .task-modal .modal-body .icons .icon.icon-active.food {
+        background-image: url("/img/food_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.temperature, .task-modal .modal-body .icons .icon.temperature {
+        background-image: url("/img/temperature_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.temperature, .task-modal .modal-body .icons .icon.icon-active.temperature {
+        background-image: url("/img/temperature_blue.png"); }
+      .vehicle-modal .modal-body .icons i, .task-modal .modal-body .icons i {
+        color: #999999;
+        font-size: 24px;
+        line-height: 26px; }
+      .vehicle-modal .modal-body .icons .icon-active i, .task-modal .modal-body .icons .icon-active i {
+        color: #0057bd; }
+      .vehicle-modal .modal-body .icons .temp, .task-modal .modal-body .icons .temp {
+        display: inline-block;
+        float: right; }
+  .vehicle-modal hr, .task-modal hr {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.task-modal.fade, .vehicle-modal.fade.in {
+  transition: opacity 0s linear; }
+
+.task-modal.fade.in, .vehicle-modal.fade.in {
+  background: transparent; }
+
+.modal-backdrop.in {
+  opacity: 0; }
+
+@media (min-width: 1600px) {
+  #sidebar {
+    width: 500px; }
+  #sidebar.closed {
+    left: -500px; } }
+
+/* TABLET MD styles */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .user #sidebar {
+    width: 50%; }
+  .user #sidebar.closed {
+    left: -50%; }
+  .user #sidebar > div > .nav-tabs {
+    width: 50%; }
+  .user #sidebar > div > .tab-content {
+    display: block;
+    float: left;
+    width: 100%; }
+  .user #general #map .leaflet-control-container .leaflet-left.open {
+    left: 51%; }
+  .user #general #sidebar-toggle {
+    left: 51%; } }
+
+/* TABLET/PHONE SM styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .guest #sections .section, .user #sections .section {
+    font-size: 13px; }
+    .guest #sections .section h1, .user #sections .section h1 {
+      font-size: 24px; }
+  .user #sidebar {
+    width: 60%; }
+  .user #sidebar.closed {
+    left: -60%; }
+  .user #sidebar > div > .nav-tabs {
+    width: 60%; }
+  .user #sidebar > div > .tab-content {
+    display: block;
+    float: left;
+    width: 100%; }
+  .user #general #map .leaflet-control-container .leaflet-left.open {
+    left: 61%; }
+  .user #general #sidebar-toggle {
+    left: 61%; }
+  .user #general #section-three {
+    z-index: 1052;
+    position: relative; } }
+
+/* PHONE XS styles */
+@media (max-width: 767px) {
+  #mobile-switcher {
+    display: block !important;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 0px 10px;
+    margin-top: 8px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 24px;
+    line-height: 34px;
+    color: #fff; }
+  #mobile-switcher:hover, #mobile-switcher.pressed {
+    color: #3cb521;
+    border: 1px solid #fff;
+    line-height: 32px;
+    padding-right: 9px; }
+  #top-navbar {
+    position: absolute;
+    width: calc(100% + 2px);
+    -webkit-filter: none;
+    filter: none;
+    border: 1px solid #345578;
+    text-shadow: rgba(0, 0, 0, 0.298039) 0px -1px 0px;
+    z-index: 1053;
+    margin-left: -16px;
+    margin-right: -15px;
+    background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d); }
+  .guest #map {
+    position: fixed;
+    z-index: -100;
+    height: 100% !important; }
+  .guest #sections .section {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: -15px; }
+  .user #sidebar {
+    width: 100%;
+    /*height: 100% !important;*/ }
+  .user #sidebar.closed {
+    left: -100%; }
+  .user #sidebar > div > .nav-tabs {
+    width: 96%; }
+  .user #sidebar > div > .tab-content {
+    display: block;
+    float: left;
+    width: 100%; }
+  .user #general #map .leaflet-control-container .leaflet-left.open {
+    left: 1%; }
+  .user #general #sidebar-toggle {
+    left: 1%;
+    display: none; }
+  .user #general #section-three {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    z-index: 1052; } }
+
+/* PHONE XXS styles (including iPhone 5S portrait/landscape modes) */
+@media (max-width: 500px) {
+  .user #general #section-three {
+    overflow-y: auto; } }
+
+@media (max-width: 423px) {
+  .user #sidebar > div > .nav-tabs li.active a, .user #sidebar > div > .nav-tabs li.active a:hover, .user #sidebar > div > .nav-tabs li.active a:focus {
+    border-bottom-color: #dddddd; }
+  .user #sidebar > div > .tab-content {
+    margin-top: 98px; }
+  .user #sidebar {
+    padding-bottom: 50px; }
+    .user #sidebar #my-vehicles .vehicle-selector, .user #sidebar #my-vehicles .task-selector, .user #sidebar #my-tasks .vehicle-selector, .user #sidebar #my-tasks .task-selector {
+      width: 75%; }
+    .user #sidebar #my-vehicles .actions, .user #sidebar #my-tasks .actions {
+      width: 240px;
+      float: left !important;
+      text-align: center; }
+    .user #sidebar #my-vehicles #vehicle-location .col-xs-5, .user #sidebar #my-vehicles .quick-location .col-xs-5, .user #sidebar #my-vehicles #task-location .col-xs-5, .user #sidebar #my-tasks #vehicle-location .col-xs-5, .user #sidebar #my-tasks .quick-location .col-xs-5, .user #sidebar #my-tasks #task-location .col-xs-5 {
+      width: 100%;
+      margin-left: 0px; }
+    .user #sidebar #my-vehicles #vehicle-location .glyphicon, .user #sidebar #my-vehicles .quick-location .glyphicon, .user #sidebar #my-vehicles #task-location .glyphicon, .user #sidebar #my-tasks #vehicle-location .glyphicon, .user #sidebar #my-tasks .quick-location .glyphicon, .user #sidebar #my-tasks #task-location .glyphicon {
+      position: relative;
+      margin-left: 18px;
+      font-size: 32px;
+      line-height: 44px; }
+    .user #sidebar #my-vehicles #vehicle-quick-mode .row:last-child button, .user #sidebar #my-vehicles #task-quick-mode .row:last-child button, .user #sidebar #my-tasks #vehicle-quick-mode .row:last-child button, .user #sidebar #my-tasks #task-quick-mode .row:last-child button {
+      float: right;
+      margin-bottom: 20px; }
+    .user #sidebar #my-vehicles #vehicle-passengers .col-xs-1, .user #sidebar #my-vehicles #task-passengers .col-xs-1, .user #sidebar #my-tasks #vehicle-passengers .col-xs-1, .user #sidebar #my-tasks #task-passengers .col-xs-1 {
+      margin-right: 25%; }
+    .user #sidebar #my-vehicles #vehicle-passengers .col-xs-3, .user #sidebar #my-vehicles #task-passengers .col-xs-3, .user #sidebar #my-tasks #vehicle-passengers .col-xs-3, .user #sidebar #my-tasks #task-passengers .col-xs-3 {
+      width: 41.66666667%; }
+    .user #sidebar #my-vehicles #task-passengers .col-xs-2, .user #sidebar #my-tasks #task-passengers .col-xs-2 {
+      margin-right: 25%; }
+    .user #sidebar #my-vehicles #vehicle-cargo .col-xs-8, .user #sidebar #my-vehicles #task-cargo .col-xs-8, .user #sidebar #my-tasks #vehicle-cargo .col-xs-8, .user #sidebar #my-tasks #task-cargo .col-xs-8 {
+      width: 58.33333333%; }
+    .user #sidebar #my-vehicles #vehicle-cargo .col-xs-4, .user #sidebar #my-vehicles #task-cargo .col-xs-4, .user #sidebar #my-tasks #vehicle-cargo .col-xs-4, .user #sidebar #my-tasks #task-cargo .col-xs-4 {
+      width: 41.66666667%; }
+    .user #sidebar #my-vehicles #vehicle-cargo .col-xs-3, .user #sidebar #my-vehicles #task-cargo .col-xs-3, .user #sidebar #my-tasks #vehicle-cargo .col-xs-3, .user #sidebar #my-tasks #task-cargo .col-xs-3 {
+      width: 45%; }
+    .user #sidebar #my-vehicles #vehicle-cargo .col-xs-2, .user #sidebar #my-vehicles #task-cargo .col-xs-2, .user #sidebar #my-tasks #vehicle-cargo .col-xs-2, .user #sidebar #my-tasks #task-cargo .col-xs-2 {
+      width: auto;
+      height: 44px; }
+    .user #sidebar #my-vehicles #vehicle-temperature-values .col-xs-4, .user #sidebar #my-vehicles #task-temperature-values .col-xs-4, .user #sidebar #my-tasks #vehicle-temperature-values .col-xs-4, .user #sidebar #my-tasks #task-temperature-values .col-xs-4 {
+      width: 50%;
+      margin-left: 50%;
+      text-align: right; }
+    .user #sidebar #my-vehicles #vehicle-costs .col-xs-1, .user #sidebar #my-vehicles #task-costs .col-xs-1, .user #sidebar #my-tasks #vehicle-costs .col-xs-1, .user #sidebar #my-tasks #task-costs .col-xs-1 {
+      width: 16.66666667%; }
+    .user #sidebar #my-vehicles #vehicle-costs .col-xs-3, .user #sidebar #my-vehicles #task-costs .col-xs-3, .user #sidebar #my-tasks #vehicle-costs .col-xs-3, .user #sidebar #my-tasks #task-costs .col-xs-3 {
+      width: 33.33333333%; }
+    .user #sidebar #my-vehicles #vehicle-detailed-mode > .row:first-child .col-xs-3, .user #sidebar #my-tasks #vehicle-detailed-mode > .row:first-child .col-xs-3 {
+      width: 50%; }
+    .user #sidebar #my-vehicles #vehicle-detailed-mode > .row:first-child .col-xs-4, .user #sidebar #my-tasks #vehicle-detailed-mode > .row:first-child .col-xs-4 {
+      width: 50%; }
+    .user #sidebar #my-vehicles #vehicle-detailed-mode > .row:first-child .col-xs-5, .user #sidebar #my-tasks #vehicle-detailed-mode > .row:first-child .col-xs-5 {
+      width: 100%; }
+    .user #sidebar #my-vehicles #task-detailed-mode > .row:first-child .col-xs-8, .user #sidebar #my-tasks #task-detailed-mode > .row:first-child .col-xs-8 {
+      width: 100%; }
+    .user #sidebar #my-vehicles #task-carry-form .col-xs-4, .user #sidebar #my-tasks #task-carry-form .col-xs-4 {
+      width: 50%; }
+    .user #sidebar #my-vehicles #total-packages, .user #sidebar #my-tasks #total-packages {
+      float: left; }
+    .user #sidebar #my-vehicles #trunk-size .col-xs-3, .user #sidebar #my-tasks #trunk-size .col-xs-3 {
+      width: 40%; }
+    .user #sidebar #my-vehicles #trunk-size .col-xs-4, .user #sidebar #my-tasks #trunk-size .col-xs-4 {
+      width: 60%; }
+    .user #sidebar #my-vehicles #trunk-size .col-xs-5, .user #sidebar #my-tasks #trunk-size .col-xs-5 {
+      width: 100%; }
+    .user #sidebar #my-vehicles .buttons, .user #sidebar #my-tasks .buttons {
+      margin-bottom: 20px; }
+    .user #sidebar #my-vehicles #task-quick-mode .col-xs-4, .user #sidebar #my-tasks #task-quick-mode .col-xs-4 {
+      width: 50%; }
+    .user #sidebar .transports .xdsoft_datetimepicker .xdsoft_today_button {
+      z-index: 10001; }
+    .user #sidebar .transports #job-choose-tasks #filter-choose-tasks {
+      padding-left: 8px;
+      margin-right: -8px; }
+    .user #sidebar .transports #job-choose-tasks #search-toggle {
+      margin-left: 0px; }
+    .user #sidebar .transports #input-find-tasks .form-control {
+      height: auto; }
+    .user #sidebar .transports .buttons {
+      margin-bottom: 20px; }
+    .user #sidebar .panel-default > .panel-heading {
+      height: 37px; }
+    .user #sidebar .panel .panel-title a {
+      text-decoration: none;
+      font-size: 13px; }
+    .user #sidebar .panel-heading .job-name {
+      margin-right: 0px !important;
+      text-overflow: ellipsis;
+      width: 124px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: left;
+      margin-left: 4px;
+      float: left;
+      text-align: center; } }
+
+/* CROSS-BROWSER FIXES */
+input:disabled {
+  -webkit-text-fill-color: #666666;
+  -webkit-opacity: 1;
+  color: #666666; }
+
+textarea:disabled {
+  -webkit-text-fill-color: #666666;
+  -webkit-opacity: 1;
+  color: #666666; }
+
+input#filter-choose-tasks:disabled {
+  color: #fff;
+  -webkit-text-fill-color: #fff; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
