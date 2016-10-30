@@ -41,6 +41,7 @@ $basic-gray 		: #666666;
 				cursor:pointer !important;
 				color:$basic-gray;
 				i{ line-height:20px; font-size:24px; }
+				i:hover{ color: $white-color; background: $basic-gray; border-radius:50%; box-shadow: $basic-gray; }
 			}
 			.btn-link:hover{
 				color:$green-bg;
@@ -137,6 +138,9 @@ $basic-gray 		: #666666;
 
 @media(min-width: 768px) and (max-width: 991px) {
 	.transport_form{
+		.datepicker{
+			padding: 10px 5px;
+		}
 		.panel-heading{
 			padding: 10px 5px;
 		}

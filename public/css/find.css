@@ -34,6 +34,11 @@
     .transport_form .panel-heading .panel-title a i {
       line-height: 20px;
       font-size: 24px; }
+    .transport_form .panel-heading .panel-title a i:hover {
+      color: #ffffff;
+      background: #666666;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2px #888; }
   .transport_form .panel-heading .panel-title .btn-link:hover {
     color: #83c22c;
     background: #ffffff; }
@@ -128,6 +133,8 @@
     border: 1px solid #921514; }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .transport_form .datepicker {
+    padding: 10px 5px; }
   .transport_form .panel-heading {
     padding: 10px 5px; }
   .transport_form .tab-pane .input-group {

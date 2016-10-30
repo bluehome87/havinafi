@@ -10,7 +10,13 @@
         <div class="my_vehicle_block">
             <div class="panel-heading">
                 <h4 class="panel-title">CHOOSE VEHICLE(S)
-                    <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
+                    <a class="pull-right" data-toggle="tooltip" title="Tooltip">
+<!-- <span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+</span>
+ -->                        <i class="fa fa-question-circle"></i>
+                    </a>
                 </h4>
             </div>
             <div role="tabpanel" class="tab-pane">
