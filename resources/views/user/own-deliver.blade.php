@@ -30,7 +30,7 @@
                                     <i class="fa fa-truck"></i>
                                 @endif
                                 <input type="checkbox" class="vehicle_id" data-vehicle-id="{{$my_vehicle->id}}">
-                                <span class="record_name">
+                                <span class="record_name ellipsis_label">
                                     {{$my_vehicle->name}}
                                 </span>
                                 <button class="btn-link pull-right" onclick="showVehiclePopup({{$my_vehicle->id}})" type="button">
@@ -68,7 +68,7 @@
                                     <i class="fa fa-dropbox"></i>
                                 @endif
                                 <input type="checkbox" aria-label="own-tasks{{$my_task->id}}" name="my_tasks[{{$my_task->id}}]">
-                                <span class="record_name">
+                                <span class="record_name ellipsis_label">
                                     {{$my_task->name}}
                                 </span>
                                 <button class="btn-link pull-right" onclick="showTaskPopup({{$my_task->id}})" type="button">

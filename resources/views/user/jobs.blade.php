@@ -141,7 +141,7 @@
                                                         <i class="fa fa-truck"></i>
                                                     @endif
                                                     <input type="checkbox" class="vehicle_id" aria-label="own-vehicles{{$my_vehicle->id}}" name="my_vehicles[{{$my_vehicle->id}}]">
-                                                    <span class="record_name">
+                                                    <span class="record_name ellipsis_label">
                                                         {{$my_vehicle->name}}
                                                     </span>
                                                     <button class="btn-link pull-right" onclick="showVehiclePopup({{$my_vehicle->id}})" type="button">

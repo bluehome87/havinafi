@@ -2260,7 +2260,7 @@ function updateTransjobsList() {
                 $.each( data['data'], function( index, value ){
                     element = '<div class="panel panel-default">'+'<div class="panel-heading" role="tab" id="job-heading'+value['id']+'">';
                     element += '<h4 class="panel-title">'+'<a role="button" onclick="viewJobTime('+value['id']+',1)" data-toggle="collapse" data-parent="#jobs-accordion" href="#job-collapse'+value['id']+'" aria-expanded="false" aria-controls="job-collapse'+value['id']+'">';
-                    element += '<div class="job-date pull-left">'+value['job_date']+'</div>'+'<div class="job-name">'+value['name']+'</div>';
+                    element += '<div class="job-date pull-left">'+value['job_date']+'</div>'+'<div class="job-name ellipsis_label">'+value['name']+'</div>';
                     element += '<div class="job-actions pull-right">'+'<i class="fa fa-clone text-success" onclick="cloneJob('+value['id']+')"></i>';
                     element += ' <i class="fa fa-pencil-square-o text-warning" onclick="showEditJobForm('+value['id']+')"></i>';
                     element += ' <i class="fa fa-trash-o text-danger" onclick="deleteJob('+value['id']+')"></i>';
