@@ -184,7 +184,6 @@ header.navbar {
         background-color: white; }
         .user #sidebar .transports #jobs-accordion .panel-heading .job-name {
           display: inline-block;
-          margin-right: 15px;
           text-overflow: ellipsis; }
       .user #sidebar .transports #jobs-accordion .job-details .tab-content {
         margin-top: 20px; }

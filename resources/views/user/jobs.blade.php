@@ -3,13 +3,13 @@
         <div class="panel-group" id="jobs-accordion" role="tablist" aria-multiselectable="false">
             @if(count($my_jobs) > 0)
                 @foreach($my_jobs as $my_job)
-                    <div class="panel panel-default">
+                    <div class="panel panel-default job_row">
                         <div class="panel-heading" role="tab" id="job-heading{{$my_job->id}}">
                             <h4 class="panel-title">
                                 <a role="button" onclick="viewJobTime({{$my_job->id}},1)" data-toggle="collapse" data-parent="#jobs-accordion" href="#job-collapse{{$my_job->id}}" aria-expanded="false" aria-controls="job-collapse{{$my_job->id}}">
                                     <div class="job-date pull-left">{{$my_job->job_date}}</div>
 
-                                    <div class="job-name">{{$my_job->name}}</div>
+                                    <div class="job-name ellipsis_label">{{$my_job->name}}</div>
 
                                     <div class="job-actions pull-right">
                                         <i class="fa fa-clone text-success" onclick="cloneJob({{$my_job->id}})"></i>

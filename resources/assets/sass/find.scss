@@ -41,7 +41,7 @@ $basic-gray 		: #666666;
 				cursor:pointer !important;
 				color:$basic-gray;
 				i{ line-height:20px; font-size:24px; }
-				i:hover{ color: $white-color; background: $basic-gray; border-radius:50%; box-shadow: $basic-gray; }
+				i:hover{ color: $white-color; background: $basic-gray; border-radius:50%; box-shadow:0px 0px 2px $basic-gray; }
 			}
 			.btn-link:hover{
 				color:$green-bg;
@@ -58,12 +58,17 @@ $basic-gray 		: #666666;
 				box-shadow:none;
 				padding-left: 40px;
 				.record_name{
+					width: calc( 100% - 80px);
 					margin-left:10px;
-					cursor:pointer;}
+					cursor:pointer;
+					display: -moz-box;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;}
 				button{
 					color:$basic-gray !important;
 					font-size: 15px;
-					line-height: 0;}
+					line-height: 15px;}
 				.add_new_link{
 					color: $basic-gray !important;
 					cursor:pointer;
@@ -125,9 +130,21 @@ $basic-gray 		: #666666;
 		}
 	}
 }
-#own_delivery_form .datepicker, #need_delivery_form .datepicker{ 
+.job_row .panel-title {
+	.job-name{ 
+		width: calc( 100% - 95px - 55px);
+	}
+}
+.ellipsis_label{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+#own_delivery_form .datepicker { 
 	display:none; 
 }
+
 /* generic button styles */
 .btn-primary{ background: #4E98EC; border:1px solid #2D6DB1;
 	&:hover, &:active, &:focus{ background: #3173BA; border:1px solid #1A4777;}

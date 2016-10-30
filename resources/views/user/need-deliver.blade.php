@@ -44,13 +44,6 @@
                         </span>
                     </div>
             </div>
-            <div role="tabpanel" class="tab-pane">
-                <div class="panel-heading">
-                    <h4 class="panel-title find_tasks"><div class="pull-left"><i class="fa fa-search"></i> FIND TASKS FROM OTHER USERS</div>
-                        <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
-                    </h4>
-                </div>
-            </div>
         </div>
         <div class="panel-default datepicker">
             <div class="panel-heading">
