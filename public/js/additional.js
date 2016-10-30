@@ -29,9 +29,9 @@ $(document).ready(function() {
     $('.find_tasks').click( function(){
         $(this).toggleClass('checked');
         if( $(this).hasClass('checked') )
-            $('#own_delivery_form .datepicker').show();
+            $(this).closest( ".transport_form" ).find('.datepicker').show();
         else
-            $('#own_delivery_form .datepicker').hide();
+            $(this).closest( ".transport_form" ).find('.datepicker').hide();
     });
 
     // loading spinner function

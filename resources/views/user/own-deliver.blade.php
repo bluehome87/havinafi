@@ -2,7 +2,7 @@
     <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
         <div class="row">
             <div class="col-xs-12">
-                <div class="form-group panel-heading">
+                <div class="form-group panel-heading no-margin">
                     <input class="form-control" type="text" name="transjob_name" placeholder="Name">
                 </div>
             </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-xs-offset-3 new-job">
+            <div class="col-xs-6 col-xs-offset-3 find-route">
                 <button type="button" class="btn btn-primary btn-block center-block find_route">FIND ROUTE</button>
             </div>
         </div>

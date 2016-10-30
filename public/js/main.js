@@ -100,6 +100,7 @@ function resizeMap() {
             map.invalidateSize();
         }, 200
     );*/
+    map.invalidateSize();
 }
 
 // toggle sidebar when button is clicked

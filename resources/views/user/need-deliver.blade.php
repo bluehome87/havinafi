@@ -2,21 +2,9 @@
     <form role="form" method="POST" action="{{ url('/optimize-problem') }}">
         <div class="row">
             <div class="col-xs-12">
-                <div class="form-group panel-heading">
+                <div class="form-group panel-heading no-margin">
                     <input class="form-control" type="text" name="transjob_name" placeholder="Name">
                 </div>
-            </div>
-        </div>        
-        <div class="panel-default datepicker">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <span>CHOOSE DATE</span>
-                    <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
-                </h4>
-            </div>
-
-            <div id="find_job_accordion" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="job-date-heading">
-                <input class="job_datepicker" type="hidden" name="find_job_date">
             </div>
         </div>        
         <div class="my_task_block">
@@ -56,9 +44,28 @@
                         </span>
                     </div>
             </div>
+            <div role="tabpanel" class="tab-pane">
+                <div class="panel-heading">
+                    <h4 class="panel-title find_tasks"><div class="pull-left"><i class="fa fa-search"></i> FIND TASKS FROM OTHER USERS</div>
+                        <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
+                    </h4>
+                </div>
+            </div>
         </div>
+        <div class="panel-default datepicker">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <span>CHOOSE DATE</span>
+                    <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
+                </h4>
+            </div>
+
+            <div id="find_job_accordion" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="job-date-heading">
+                <input class="job_datepicker" type="hidden" name="find_job_date">
+            </div>
+        </div> 
         <div class="row">
-            <div class="col-xs-6 col-xs-offset-3 new-job">
+            <div class="col-xs-6 col-xs-offset-3 find-route">
                 <button type="button" class="btn btn-primary btn-block center-block find_route">FIND ROUTE</button>
             </div>
         </div>

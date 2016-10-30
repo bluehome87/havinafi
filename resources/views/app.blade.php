@@ -173,10 +173,10 @@
                         <div role="tabpanel" class="tab-pane transports" id="transports">
                             @include('user.jobs')
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="my-vehicles">
+                        <div role="tabpanel" class="tab-pane transport_form" id="my-vehicles">
                             @include('user.my-vehicles')
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="my-tasks">
+                        <div role="tabpanel" class="tab-pane transport_form" id="my-tasks">
                             @include('user.my-tasks')
                         </div>
                     </div>

@@ -12,8 +12,8 @@
     top: 50%;
     left: 50%; }
 
-.transport_form .form-group {
-  margin-bottom: 0; }
+.transport_form .no-margin {
+  margin: 0 !important; }
 
 .transport_form .panel-heading .find_tasks {
   cursor: pointer; }
@@ -68,7 +68,7 @@
   padding: 10px 15px; }
   .transport_form .datepicker .panel-heading {
     background: #ffffff;
-    color: #83c22c;
+    color: #666666;
     border: 1px solid #CCCCCC;
     border-bottom: 0;
     text-align: center; }
@@ -79,11 +79,8 @@
   .transport_form .datepicker .xdsoft_datetimepicker .xdsoft_month {
     width: 45%; }
 
-.transport_form .new-job {
-  margin-top: 10px; }
-  .transport_form .new-job button {
-    background: #4E98EC;
-    border: 1px solid #2D6DB1; }
+.transport_form .find-route {
+  padding: 20px; }
 
 .transport_form .nav-tabs li a {
   background: #ffffff;
@@ -112,8 +109,23 @@
   background-color: #83c22c;
   border: #408333; }
 
-#own_delivery_form .datepicker {
+#own_delivery_form .datepicker, #need_delivery_form .datepicker {
   display: none; }
+
+/* generic button styles */
+.btn-primary {
+  background: #4E98EC;
+  border: 1px solid #2D6DB1; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #3173BA;
+    border: 1px solid #1A4777; }
+
+.btn-danger {
+  background: #f64a4a;
+  border: 1px solid #ce0604; }
+  .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+    background: #de2b2b;
+    border: 1px solid #921514; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .transport_form .panel-heading {
