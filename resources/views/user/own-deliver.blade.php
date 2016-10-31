@@ -90,7 +90,7 @@
             </div>
             <div role="tabpanel" class="tab-pane">
                 <div class="panel-heading">
-                    <h4 class="panel-title find_tasks"><div class="pull-left"><i class="fa fa-search"></i> FIND TASKS FROM OTHER USERS</div>
+                    <h4 class="panel-title find_tasks"><div class="pull-left"><i class="fa fa-search"></i>FIND TASKS FROM OTHER USERS</div>
                         <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
                     </h4>
                 </div>
@@ -112,7 +112,7 @@
 
         <div class="row">
             <div class="col-xs-6 col-xs-offset-3 find-route">
-                <button type="button" class="btn btn-primary btn-block center-block find_route">FIND ROUTE</button>
+                <button type="button" class="btn btn-primary btn-block center-block find_route"><span class="button-text">FIND ROUTE</span></button>
             </div>
         </div>
     </form>

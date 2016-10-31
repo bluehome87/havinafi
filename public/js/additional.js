@@ -28,10 +28,14 @@ $(document).ready(function() {
 
     $('.find_tasks').click( function(){
         $(this).toggleClass('checked');
-        if( $(this).hasClass('checked') )
+        if( $(this).hasClass('checked') ){
             $(this).closest( ".transport_form" ).find('.datepicker').show();
-        else
+            $('#own_delivery_form .button-text').html('FIND ROUTE & TASKS');
+        }
+        else{
             $(this).closest( ".transport_form" ).find('.datepicker').hide();
+            $('#own_delivery_form .button-text').html('FIND ROUTE');
+        }
     });
 
     // loading spinner function

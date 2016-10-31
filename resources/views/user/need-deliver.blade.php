@@ -59,7 +59,7 @@
         </div> 
         <div class="row">
             <div class="col-xs-6 col-xs-offset-3 find-route">
-                <button type="button" class="btn btn-primary btn-block center-block find_route">FIND ROUTE</button>
+                <button type="button" class="btn btn-primary btn-block center-block find_route">FIND DELIVERER</button>
             </div>
         </div>
     </form>
