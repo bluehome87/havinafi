@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	showNewVehiclePopup();
+	//showNewVehiclePopup();
 });
 
 function showNewVehiclePopup()

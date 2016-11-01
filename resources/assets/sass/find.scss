@@ -99,8 +99,10 @@ $basic-gray 		: #666666;
 		.xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active{ width:calc( 100% - 8px); }
 		.xdsoft_datetimepicker .xdsoft_month{ width:45%; }
 	}
-	.find-route{
-		padding:20px;
+	.find_route{
+		padding:10px 20px;
+		width: inherit;
+		margin: 20px auto;
 	}
 
 	.nav-tabs li a { 
