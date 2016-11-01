@@ -14,4 +14,5 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.sass('main.scss');
     mix.sass('find.scss');
+    mix.sass('modal.scss');
 });

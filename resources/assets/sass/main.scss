@@ -7,6 +7,9 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset!important;
 }
 
+a{ 
+    outline:none !important; 
+}
 header.navbar {
     margin-bottom: 0px;
     border-radius: 0px;
@@ -177,10 +180,6 @@ header.navbar {
                 margin-bottom: 15px;
             }
 
-            .cargo-items {
-                position: relative;
-            }
-
             #vehicle-carry-form, #quick-vehicle-carry-form {
                 display: block;
                 position: relative;
@@ -265,10 +264,6 @@ header.navbar {
 
             .task-selector {
                 margin-bottom: 15px;
-            }
-
-            .cargo-items {
-                position: relative;
             }
 
             #task-carry-form, #quick-task-carry-form {
@@ -690,23 +685,6 @@ header.navbar {
             z-index: -1;
         }
 
-        .cost-label {
-            margin-left: -50px;
-            display: block;
-            padding: 10px;
-        }
-
-        .cost-label.edit {
-            margin-left: -35px;
-        }
-
-        .cost-label.cargo-label {
-            display: inline-block;
-            float: left;
-            margin-left: -14px;
-            margin-right: -14px;
-        }
-
         #cargo-weight {
             margin-top: 15px;
             margin-bottom: 10px;
@@ -886,212 +864,7 @@ header.navbar {
     }
 }
 
-.vehicle-modal, .task-modal {
-    background-color: transparent;
 
-    .modal-content {
-        margin: 0 auto;
-    }
-
-    .modal-header {
-        background-color: #3399f3;
-        border-top-right-radius: 4px;
-        border-top-left-radius: 4px;
-        border-bottom: none;
-
-        .modal-title {
-            color: #fff;
-            text-align: center;
-
-            i {
-                float: left;
-                margin-top: 4px;
-                color: #fff;
-            }
-        }
-    }
-
-    .modal-body {
-        display: block;
-        float: left;
-        width: 100%;
-        background: #fff;
-        border: 1px solid #3399f3;
-        border-top: none;
-
-        .owner {
-            .owner-name {
-                display: inline-block;
-                float: left;
-            }
-
-            .owner-phone {
-                display: inline-block;
-                float: right;
-            }
-        }
-
-        textarea {
-            background: #fff;
-            border: none;
-            outline: none;
-            text-shadow: none;
-            box-shadow: none;
-            resize: none;
-            cursor: text;
-            width: 100%;
-            max-height: 82px;
-        }
-
-        .location {
-            display: block;
-            float: left;
-            width: 100%;
-            position: relative;
-
-            .from {
-                width: 40%;
-                display: inline-block;
-                float: left;
-            }
-
-            .arrow {
-                width: 20%;
-                display: inline-block;
-                float: left;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                height: 48px;
-                font-size: 40px;
-                margin-top: auto;
-                margin-bottom: auto;
-                left: 0;
-                right: 0;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-
-            .to {
-                width: 40%;
-                display: inline-block;
-                float: left;
-                margin-left: 20%;
-            }
-        }
-
-        .seats {
-            display: block;
-            float: left;
-            width: 100%;
-        }
-
-        .packages {
-            display: block;
-            float: left;
-            width: 100%;
-
-            .size {
-                display: inline-block;
-                float: left;
-            }
-
-            .weight {
-                display: inline-block;
-                float: right;
-            }
-        }
-
-        .icons {
-            display: block;
-            float: left;
-            width: 100%;
-            margin-top: 4px;
-
-            .icon {
-                background-size: contain;
-                width: 24px;
-                height: 24px;
-                display: block;
-                float: left;
-                margin-left: 2px;
-                margin-right: 2px;
-            }
-
-            .icon.crane {
-                background-image: url("/img/crane_grey.png");
-            }
-
-            .icon.icon-active.crane {
-                background-image: url("/img/crane_blue.png");
-            }
-
-            .icon.lift {
-                background-image: url("/img/lift_grey.png");
-            }
-
-            .icon.icon-active.lift {
-                background-image: url("/img/lift_blue.png");
-            }
-
-            .icon.food {
-                background-image: url("/img/food_grey.png");
-            }
-
-            .icon.icon-active.food {
-                background-image: url("/img/food_blue.png");
-            }
-
-            .icon.temperature {
-                background-image: url("/img/temperature_grey.png");
-            }
-
-            .icon.icon-active.temperature {
-                background-image: url("/img/temperature_blue.png");
-            }
-
-            i {
-                color: #999999;
-                font-size: 24px;
-                line-height: 26px;
-            }
-
-            .icon-active {
-                i {
-                    color: #0057bd;
-                }
-            }
-
-            .temp {
-                display: inline-block;
-                float: right;
-            }
-        }
-    }
-
-    hr {
-        display: block;
-        float: left;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.task-modal.fade, .vehicle-modal.fade.in {
-    -webkit-transition: opacity 0s linear;
-    -o-transition: opacity 0s linear;
-    transition: opacity 0s linear;
-}
-
-.task-modal.fade.in, .vehicle-modal.fade.in {
-    background: transparent;
-}
-
-.modal-backdrop.in {
-    opacity: 0;
-}
 
 @media(min-width: 1600px) {
     #sidebar {
@@ -1282,7 +1055,6 @@ header.navbar {
         }
     }
 }
-
 
 /* PHONE XXS styles (including iPhone 5S portrait/landscape modes) */
 @media(max-width: 500px) {

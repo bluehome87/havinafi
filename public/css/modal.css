@@ -1,0 +1,261 @@
+.vehicle-modal, .task-modal {
+  background-color: transparent; }
+  .vehicle-modal .modal-content, .task-modal .modal-content {
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #3399f3;
+    max-width: 480px; }
+  .vehicle-modal .form-group input, .task-modal .form-group input {
+    width: 100% !important; }
+  .vehicle-modal .modal-header, .task-modal .modal-header {
+    background-color: #3399f3;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom: none; }
+    .vehicle-modal .modal-header .modal-title, .task-modal .modal-header .modal-title {
+      color: #FFFFFF;
+      text-align: center; }
+      .vehicle-modal .modal-header .modal-title input, .task-modal .modal-header .modal-title input {
+        color: #666666; }
+      .vehicle-modal .modal-header .modal-title i, .task-modal .modal-header .modal-title i {
+        float: left;
+        margin-top: 4px;
+        color: #FFFFFF; }
+  .vehicle-modal .modal-body, .task-modal .modal-body {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    .vehicle-modal .modal-body .row, .task-modal .modal-body .row {
+      margin-left: -20px;
+      margin-right: -20px; }
+    .vehicle-modal .modal-body .owner .owner-name, .task-modal .modal-body .owner .owner-name {
+      display: inline-block;
+      float: left; }
+    .vehicle-modal .modal-body .owner .owner-phone, .task-modal .modal-body .owner .owner-phone {
+      display: inline-block;
+      float: right; }
+    .vehicle-modal .modal-body textarea, .task-modal .modal-body textarea {
+      resize: none;
+      width: 100%;
+      max-height: 82px; }
+    .vehicle-modal .modal-body .location, .task-modal .modal-body .location {
+      display: block;
+      float: left;
+      width: 100%;
+      position: relative; }
+      .vehicle-modal .modal-body .location .from, .task-modal .modal-body .location .from {
+        width: 40%;
+        display: inline-block;
+        float: left; }
+      .vehicle-modal .modal-body .location .arrow, .task-modal .modal-body .location .arrow {
+        width: 20%;
+        display: inline-block;
+        float: left;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 48px;
+        font-size: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+      .vehicle-modal .modal-body .location .to, .task-modal .modal-body .location .to {
+        width: 40%;
+        display: inline-block;
+        float: left;
+        margin-left: 20%; }
+    .vehicle-modal .modal-body .seats, .task-modal .modal-body .seats {
+      display: block;
+      float: left;
+      width: 100%; }
+    .vehicle-modal .modal-body .packages, .task-modal .modal-body .packages {
+      display: block;
+      float: left;
+      width: 100%; }
+      .vehicle-modal .modal-body .packages .size, .task-modal .modal-body .packages .size {
+        display: inline-block;
+        float: left; }
+      .vehicle-modal .modal-body .packages .weight, .task-modal .modal-body .packages .weight {
+        display: inline-block;
+        float: right; }
+    .vehicle-modal .modal-body .icons, .task-modal .modal-body .icons {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-top: 4px; }
+      .vehicle-modal .modal-body .icons .icon, .task-modal .modal-body .icons .icon {
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        display: block;
+        float: left;
+        margin-left: 2px;
+        margin-right: 2px; }
+      .vehicle-modal .modal-body .icons .icon.crane, .task-modal .modal-body .icons .icon.crane {
+        background-image: url("/img/crane_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.crane, .task-modal .modal-body .icons .icon.icon-active.crane {
+        background-image: url("/img/crane_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.lift, .task-modal .modal-body .icons .icon.lift {
+        background-image: url("/img/lift_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.lift, .task-modal .modal-body .icons .icon.icon-active.lift {
+        background-image: url("/img/lift_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.food, .task-modal .modal-body .icons .icon.food {
+        background-image: url("/img/food_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.food, .task-modal .modal-body .icons .icon.icon-active.food {
+        background-image: url("/img/food_blue.png"); }
+      .vehicle-modal .modal-body .icons .icon.temperature, .task-modal .modal-body .icons .icon.temperature {
+        background-image: url("/img/temperature_grey.png"); }
+      .vehicle-modal .modal-body .icons .icon.icon-active.temperature, .task-modal .modal-body .icons .icon.icon-active.temperature {
+        background-image: url("/img/temperature_blue.png"); }
+      .vehicle-modal .modal-body .icons i, .task-modal .modal-body .icons i {
+        color: #999999;
+        font-size: 24px;
+        line-height: 26px; }
+      .vehicle-modal .modal-body .icons .icon-active i, .task-modal .modal-body .icons .icon-active i {
+        color: #0057bd; }
+      .vehicle-modal .modal-body .icons .temp, .task-modal .modal-body .icons .temp {
+        display: inline-block;
+        float: right; }
+  .vehicle-modal hr, .task-modal hr {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .vehicle-modal .glyphicon.glyphicon-chevron-right, .task-modal .glyphicon.glyphicon-chevron-right {
+    /*position: absolute;*/
+    top: 0;
+    bottom: 0;
+    height: 48px;
+    font-size: 48px;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 100; }
+  .vehicle-modal .action_row, .task-modal .action_row {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 20px;
+    margin-top: 10px; }
+  .vehicle-modal .nav-tabs, .task-modal .nav-tabs {
+    margin-bottom: 0; }
+    .vehicle-modal .nav-tabs li, .task-modal .nav-tabs li {
+      width: 20%;
+      text-align: center;
+      border: 1px solid #CCCCCC;
+      border-right: 0; }
+    .vehicle-modal .nav-tabs li:last-child, .task-modal .nav-tabs li:last-child {
+      border-right: 1px solid #CCCCCC; }
+    .vehicle-modal .nav-tabs li > a, .task-modal .nav-tabs li > a {
+      border-radius: 0; }
+    .vehicle-modal .nav-tabs li > a:hover, .task-modal .nav-tabs li > a:hover {
+      width: 100%; }
+    .vehicle-modal .nav-tabs li.active > a, .task-modal .nav-tabs li.active > a {
+      background: #85BBF8;
+      width: 100%; }
+  .vehicle-modal .tab-content .panel-heading, .task-modal .tab-content .panel-heading {
+    background: #85BBF8;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 0; }
+  .vehicle-modal .cost-label, .task-modal .cost-label {
+    margin-left: -20px;
+    display: block;
+    padding: 10px; }
+  .vehicle-modal .cost-label.edit, .task-modal .cost-label.edit {
+    margin-left: -35px; }
+  .vehicle-modal .cargo-items, .task-modal .cargo-items {
+    position: relative; }
+  .vehicle-modal .cost-label.cargo-label, .task-modal .cost-label.cargo-label {
+    display: inline-block;
+    float: left;
+    margin-left: -14px;
+    margin-right: -14px; }
+  .vehicle-modal .input-show, .vehicle-modal .select-show, .task-modal .input-show, .task-modal .select-show {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: text;
+    background-color: #ffffff;
+    text-overflow: ellipsis; }
+  .vehicle-modal .select-show, .task-modal .select-show {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff; }
+  .vehicle-modal .select-show[name="select-vehicle-type"] i, .task-modal .select-show[name="select-vehicle-type"] i {
+    font-size: 24px; }
+  .vehicle-modal .form-group.data-toggle .btn-link, .task-modal .form-group.data-toggle .btn-link {
+    color: #666666;
+    text-decoration: none;
+    box-shadow: none; }
+  .vehicle-modal .form-group.data-toggle i, .task-modal .form-group.data-toggle i {
+    color: #999999;
+    font-size: 24px;
+    line-height: 26px; }
+  .vehicle-modal .form-group.data-toggle .active, .task-modal .form-group.data-toggle .active {
+    box-shadow: none; }
+    .vehicle-modal .form-group.data-toggle .active i, .task-modal .form-group.data-toggle .active i {
+      color: #0057bd; }
+  .vehicle-modal .form-group.data-toggle .active.btn-link, .task-modal .form-group.data-toggle .active.btn-link {
+    color: #0057bd; }
+  .vehicle-modal .next-row, .task-modal .next-row {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #CCCCCC; }
+  .vehicle-modal .bootstrap-select.btn-group:not(.input-group-btn), .vehicle-modal .bootstrap-select.btn-group[class*="col-"], .task-modal .bootstrap-select.btn-group:not(.input-group-btn), .task-modal .bootstrap-select.btn-group[class*="col-"] {
+    float: left; }
+
+/* FontAwesome Select Element*/
+.bootstrap-select .filter-option, .bootstrap-select .dropdown-menu li a {
+  text-align: center;
+  color: #666666;
+  font-family: FontAwesome; }
+  .bootstrap-select .filter-option span, .bootstrap-select .dropdown-menu li a span {
+    font-size: 20px; }
+  .bootstrap-select .filter-option:hover, .bootstrap-select .dropdown-menu li a:hover {
+    color: #3399f3;
+    background: none; }
+
+.bootstrap-select .dropdown-menu li.selected a {
+  color: #3399f3;
+  background: none; }
+
+.bootstrap-select .btn.dropdown-toggle {
+  background: #CCCCCC;
+  border-color: #CCCCCC; }
+  .bootstrap-select .btn.dropdown-toggle:hover {
+    background: #999999; }
+
+.bootstrap-select .big_truck {
+  transform: scale(1.5, 1); }
+
+.bootstrap-select .dropdown-menu.inner {
+  overflow: hidden !important; }
+
+.task-modal.fade, .vehicle-modal.fade.in {
+  transition: opacity 0s linear; }
+
+.task-modal.fade.in, .vehicle-modal.fade.in {
+  background: transparent; }
+
+.modal-backdrop.in {
+  opacity: 0; }
+
+/*# sourceMappingURL=modal.css.map */

@@ -5,6 +5,9 @@
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
 
+a {
+  outline: none !important; }
+
 header.navbar {
   margin-bottom: 0px;
   border-radius: 0px; }
@@ -109,8 +112,6 @@ header.navbar {
       display: none; }
     .user #sidebar #my-vehicles .vehicle-selector {
       margin-bottom: 15px; }
-    .user #sidebar #my-vehicles .cargo-items {
-      position: relative; }
     .user #sidebar #my-vehicles #vehicle-carry-form, .user #sidebar #my-vehicles #quick-vehicle-carry-form {
       display: block;
       position: relative;
@@ -159,8 +160,6 @@ header.navbar {
       display: none; }
     .user #sidebar #my-tasks .task-selector {
       margin-bottom: 15px; }
-    .user #sidebar #my-tasks .cargo-items {
-      position: relative; }
     .user #sidebar #my-tasks #task-carry-form, .user #sidebar #my-tasks #quick-task-carry-form {
       display: block;
       position: relative;
@@ -425,17 +424,6 @@ header.navbar {
       margin-right: auto;
       text-align: center;
       z-index: -1; }
-    .user #sidebar .cost-label {
-      margin-left: -50px;
-      display: block;
-      padding: 10px; }
-    .user #sidebar .cost-label.edit {
-      margin-left: -35px; }
-    .user #sidebar .cost-label.cargo-label {
-      display: inline-block;
-      float: left;
-      margin-left: -14px;
-      margin-right: -14px; }
     .user #sidebar #cargo-weight {
       margin-top: 15px;
       margin-bottom: 10px; }
@@ -547,143 +535,6 @@ header.navbar {
       background: transparent; }
   .user #general #section-three > .row > button.close:focus {
     outline: none; }
-
-.vehicle-modal, .task-modal {
-  background-color: transparent; }
-  .vehicle-modal .modal-content, .task-modal .modal-content {
-    margin: 0 auto; }
-  .vehicle-modal .modal-header, .task-modal .modal-header {
-    background-color: #3399f3;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom: none; }
-    .vehicle-modal .modal-header .modal-title, .task-modal .modal-header .modal-title {
-      color: #fff;
-      text-align: center; }
-      .vehicle-modal .modal-header .modal-title i, .task-modal .modal-header .modal-title i {
-        float: left;
-        margin-top: 4px;
-        color: #fff; }
-  .vehicle-modal .modal-body, .task-modal .modal-body {
-    display: block;
-    float: left;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #3399f3;
-    border-top: none; }
-    .vehicle-modal .modal-body .owner .owner-name, .task-modal .modal-body .owner .owner-name {
-      display: inline-block;
-      float: left; }
-    .vehicle-modal .modal-body .owner .owner-phone, .task-modal .modal-body .owner .owner-phone {
-      display: inline-block;
-      float: right; }
-    .vehicle-modal .modal-body textarea, .task-modal .modal-body textarea {
-      background: #fff;
-      border: none;
-      outline: none;
-      text-shadow: none;
-      box-shadow: none;
-      resize: none;
-      cursor: text;
-      width: 100%;
-      max-height: 82px; }
-    .vehicle-modal .modal-body .location, .task-modal .modal-body .location {
-      display: block;
-      float: left;
-      width: 100%;
-      position: relative; }
-      .vehicle-modal .modal-body .location .from, .task-modal .modal-body .location .from {
-        width: 40%;
-        display: inline-block;
-        float: left; }
-      .vehicle-modal .modal-body .location .arrow, .task-modal .modal-body .location .arrow {
-        width: 20%;
-        display: inline-block;
-        float: left;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 48px;
-        font-size: 40px;
-        margin-top: auto;
-        margin-bottom: auto;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; }
-      .vehicle-modal .modal-body .location .to, .task-modal .modal-body .location .to {
-        width: 40%;
-        display: inline-block;
-        float: left;
-        margin-left: 20%; }
-    .vehicle-modal .modal-body .seats, .task-modal .modal-body .seats {
-      display: block;
-      float: left;
-      width: 100%; }
-    .vehicle-modal .modal-body .packages, .task-modal .modal-body .packages {
-      display: block;
-      float: left;
-      width: 100%; }
-      .vehicle-modal .modal-body .packages .size, .task-modal .modal-body .packages .size {
-        display: inline-block;
-        float: left; }
-      .vehicle-modal .modal-body .packages .weight, .task-modal .modal-body .packages .weight {
-        display: inline-block;
-        float: right; }
-    .vehicle-modal .modal-body .icons, .task-modal .modal-body .icons {
-      display: block;
-      float: left;
-      width: 100%;
-      margin-top: 4px; }
-      .vehicle-modal .modal-body .icons .icon, .task-modal .modal-body .icons .icon {
-        background-size: contain;
-        width: 24px;
-        height: 24px;
-        display: block;
-        float: left;
-        margin-left: 2px;
-        margin-right: 2px; }
-      .vehicle-modal .modal-body .icons .icon.crane, .task-modal .modal-body .icons .icon.crane {
-        background-image: url("/img/crane_grey.png"); }
-      .vehicle-modal .modal-body .icons .icon.icon-active.crane, .task-modal .modal-body .icons .icon.icon-active.crane {
-        background-image: url("/img/crane_blue.png"); }
-      .vehicle-modal .modal-body .icons .icon.lift, .task-modal .modal-body .icons .icon.lift {
-        background-image: url("/img/lift_grey.png"); }
-      .vehicle-modal .modal-body .icons .icon.icon-active.lift, .task-modal .modal-body .icons .icon.icon-active.lift {
-        background-image: url("/img/lift_blue.png"); }
-      .vehicle-modal .modal-body .icons .icon.food, .task-modal .modal-body .icons .icon.food {
-        background-image: url("/img/food_grey.png"); }
-      .vehicle-modal .modal-body .icons .icon.icon-active.food, .task-modal .modal-body .icons .icon.icon-active.food {
-        background-image: url("/img/food_blue.png"); }
-      .vehicle-modal .modal-body .icons .icon.temperature, .task-modal .modal-body .icons .icon.temperature {
-        background-image: url("/img/temperature_grey.png"); }
-      .vehicle-modal .modal-body .icons .icon.icon-active.temperature, .task-modal .modal-body .icons .icon.icon-active.temperature {
-        background-image: url("/img/temperature_blue.png"); }
-      .vehicle-modal .modal-body .icons i, .task-modal .modal-body .icons i {
-        color: #999999;
-        font-size: 24px;
-        line-height: 26px; }
-      .vehicle-modal .modal-body .icons .icon-active i, .task-modal .modal-body .icons .icon-active i {
-        color: #0057bd; }
-      .vehicle-modal .modal-body .icons .temp, .task-modal .modal-body .icons .temp {
-        display: inline-block;
-        float: right; }
-  .vehicle-modal hr, .task-modal hr {
-    display: block;
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-
-.task-modal.fade, .vehicle-modal.fade.in {
-  transition: opacity 0s linear; }
-
-.task-modal.fade.in, .vehicle-modal.fade.in {
-  background: transparent; }
-
-.modal-backdrop.in {
-  opacity: 0; }
 
 @media (min-width: 1600px) {
   #sidebar {

@@ -1,0 +1,379 @@
+$color-text: #666666;
+$blue-background: #3399f3;
+$white-color: #FFFFFF;
+$light-blue : #85BBF8;
+$gray-border-color: #CCCCCC;
+
+.vehicle-modal, .task-modal {
+    background-color: transparent;
+
+    .modal-content {
+        margin: 0 auto;
+        overflow: hidden;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px solid $blue-background;
+        max-width:480px;
+    }
+	.form-group{
+		input { width: 100% !important; }
+	}
+
+    .modal-header {
+        background-color: $blue-background;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-bottom: none;
+
+        .modal-title {
+            color: $white-color;
+            text-align: center;
+            input {
+                color: $color-text;
+            }
+            i {
+                float: left;
+                margin-top: 4px;
+                color: $white-color;
+            }
+        }
+    }
+
+    .modal-body {
+        display: block;
+        float: left;
+        width: 100%;
+        background: $white-color;
+        border-top: none;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        .row{
+        	margin-left:-20px;
+        	margin-right:-20px;
+        }
+        .owner {
+            .owner-name {
+                display: inline-block;
+                float: left;
+            }
+
+            .owner-phone {
+                display: inline-block;
+                float: right;
+            }
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            max-height: 82px;
+        }
+
+        .location {
+            display: block;
+            float: left;
+            width: 100%;
+            position: relative;
+
+            .from {
+                width: 40%;
+                display: inline-block;
+                float: left;
+            }
+
+            .arrow {
+                width: 20%;
+                display: inline-block;
+                float: left;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                height: 48px;
+                font-size: 40px;
+                margin-top: auto;
+                margin-bottom: auto;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .to {
+                width: 40%;
+                display: inline-block;
+                float: left;
+                margin-left: 20%;
+            }
+        }
+
+        .seats {
+            display: block;
+            float: left;
+            width: 100%;
+        }
+
+        .packages {
+            display: block;
+            float: left;
+            width: 100%;
+
+            .size {
+                display: inline-block;
+                float: left;
+            }
+
+            .weight {
+                display: inline-block;
+                float: right;
+            }
+        }
+
+        .icons {
+            display: block;
+            float: left;
+            width: 100%;
+            margin-top: 4px;
+
+            .icon {
+                background-size: contain;
+                width: 24px;
+                height: 24px;
+                display: block;
+                float: left;
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+
+            .icon.crane {
+                background-image: url("/img/crane_grey.png");
+            }
+
+            .icon.icon-active.crane {
+                background-image: url("/img/crane_blue.png");
+            }
+
+            .icon.lift {
+                background-image: url("/img/lift_grey.png");
+            }
+
+            .icon.icon-active.lift {
+                background-image: url("/img/lift_blue.png");
+            }
+
+            .icon.food {
+                background-image: url("/img/food_grey.png");
+            }
+
+            .icon.icon-active.food {
+                background-image: url("/img/food_blue.png");
+            }
+
+            .icon.temperature {
+                background-image: url("/img/temperature_grey.png");
+            }
+
+            .icon.icon-active.temperature {
+                background-image: url("/img/temperature_blue.png");
+            }
+
+            i {
+                color: #999999;
+                font-size: 24px;
+                line-height: 26px;
+            }
+
+            .icon-active {
+                i {
+                    color: #0057bd;
+                }
+            }
+
+            .temp {
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+
+    hr {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+	.glyphicon.glyphicon-chevron-right {
+	    /*position: absolute;*/
+	    top: 0;
+	    bottom: 0;
+	    height: 48px;
+	    font-size: 48px;
+	    margin-top: auto;
+	    margin-bottom: auto;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    text-align: center;
+	    z-index: 100;
+	}
+	.action_row{
+		border-top: 1px solid $gray-border-color;
+		padding-top: 20px;
+		margin-top: 10px;
+	}
+	.nav-tabs{
+		margin-bottom:0;
+		li{ 
+			width:20%; 
+			text-align:center;
+			border:1px solid $gray-border-color;
+			border-right:0;
+		}
+		li:last-child{
+			border-right:1px solid $gray-border-color;
+		}
+        li > a{
+            border-radius:0;
+        }
+        li > a:hover{
+            width:100%;
+        }
+		li.active > a {
+			background: $light-blue;
+			width:100%;
+		}
+	}
+	.tab-content .panel-heading{
+		background: $light-blue;
+		text-align:	center;
+		color: $white-color;
+        border-radius: 0;
+	}
+
+    .cost-label {
+        margin-left: -20px;
+        display: block;
+        padding: 10px;
+    }
+
+    .cost-label.edit {
+        margin-left: -35px;
+    }
+    .cargo-items {
+        position: relative;
+    }
+    .cost-label.cargo-label {
+        display: inline-block;
+        float: left;
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+    .input-show, .select-show {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        cursor: text;
+        background-color: #ffffff;
+        text-overflow: ellipsis;
+    }
+
+    .select-show {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: #666666;
+        background-color: #ffffff;
+    }
+
+    .select-show[name="select-vehicle-type"] {
+        i {
+            font-size: 24px;
+        }
+    }
+
+    .form-group.data-toggle {
+        .btn-link {
+            color: #666666;
+            text-decoration: none;
+            box-shadow: none;
+        }
+
+        i {
+            color: #999999;
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+
+    .form-group.data-toggle {
+        .active {
+            box-shadow: none;
+
+            i {
+                color: #0057bd;
+            }
+        }
+        .active.btn-link {
+            color: #0057bd;
+        }
+    }
+    .next-row{ 
+        margin-left:-25px;
+        margin-right:-25px;
+        margin-top:20px;
+        padding-top: 20px;
+        border-top: 1px solid $gray-border-color;
+    }
+    .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"]
+    {
+        float:left;
+    }
+}
+
+/* FontAwesome Select Element*/
+.bootstrap-select{
+    .filter-option, .dropdown-menu li a{
+        text-align:center;
+        color: $color-text;
+        font-family: FontAwesome;
+        span{
+            font-size:20px;
+        }
+        &:hover{
+            color: $blue-background;
+            background: none;
+        }
+    }
+    .dropdown-menu li.selected a{
+        color: $blue-background;
+        background: none;
+    }
+    .btn.dropdown-toggle{
+        background: $gray-border-color;
+        border-color: $gray-border-color;
+        &:hover{ background: #999999; };
+    }
+    .big_truck{
+        transform: scale(1.5,1);
+    }
+    .dropdown-menu.inner{
+        overflow: hidden !important;
+    }
+}
+
+.task-modal.fade, .vehicle-modal.fade.in {
+    -webkit-transition: opacity 0s linear;
+    -o-transition: opacity 0s linear;
+    transition: opacity 0s linear;
+}
+
+.task-modal.fade.in, .vehicle-modal.fade.in {
+    background: transparent;
+}
+
+.modal-backdrop.in {
+    opacity: 0;
+}

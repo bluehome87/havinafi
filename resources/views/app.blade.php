@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/find.css">
+    <link rel="stylesheet" href="/css/modal.css">
 
     <script src="/js/system/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -63,14 +64,6 @@
                     <a href="#transports" aria-controls="transports" role="tab" data-toggle="tab">
                         <i class="fa fa-list"></i>
                         <div class="left_menu_item" style="display:none;">Transports</div>
-                    </a>
-                </li>
-                <li role="presentation" style="display:none;">
-                    <a href="#my-vehicles" aria-controls="transports" role="tab" data-toggle="tab">
-                    </a>
-                </li>
-                <li role="presentation" style="display:none;">
-                    <a href="#my-tasks" aria-controls="transports" role="tab" data-toggle="tab">
                     </a>
                 </li>
             </ul>
@@ -173,12 +166,6 @@
                         <div role="tabpanel" class="tab-pane transports" id="transports">
                             @include('user.jobs')
                         </div>
-                        <div role="tabpanel" class="tab-pane transport_form" id="my-vehicles">
-                            @include('user.my-vehicles')
-                        </div>
-                        <div role="tabpanel" class="tab-pane transport_form" id="my-tasks">
-                            @include('user.my-tasks')
-                        </div>
                     </div>
                 </div>
             </div>
@@ -212,6 +199,7 @@
                 </div>
             </div>
         </div>
+        @include('user.my-vehicles')
     @endif
 </div>
 
@@ -222,6 +210,7 @@
 <script src="/js/system/datetimepicker.full.min.js"></script>
 <script src="/js/system/leaflet.js"></script>
 <script src="/js/main.js"></script>
-<script src="/js/additional.js"></script>
+<script src="/js/style.js"></script>
+<script src="/js/workflow.js"></script>
 </body>
 </html>

@@ -18,10 +18,16 @@ $basic-gray 		: #666666;
     	left:50%;
     }
 }
+.no-margin{
+	margin:0 !important;
+}
+.no-padding{
+	padding:0 !important;
+}
+.fa-question-circle{
+	cursor: pointer !important;
+}
 .transport_form{
-	.no-margin{
-		margin:0 !important;
-	}
 	.panel-heading{
 		.find_tasks{
 			cursor:pointer;
@@ -38,7 +44,6 @@ $basic-gray 		: #666666;
 		.panel-title{
 			font-size: 18px;
 			a {
-				cursor:pointer !important;
 				color:$basic-gray;
 				i{ line-height:20px; font-size:24px; }
 				i:hover{ color: $white-color; background: $basic-gray; border-radius:50%; box-shadow:0px 0px 2px $basic-gray; }
@@ -171,4 +176,56 @@ $basic-gray 		: #666666;
 			}
 		}
 	}
+}
+
+.icon.food {
+    background-image: url("/img/food_grey.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+}
+
+.icon.crane {
+    background-image: url("/img/crane_grey.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+}
+
+.icon.lift {
+    background-image: url("/img/lift_grey.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+}
+
+.icon.temperature {
+    background-image: url("/img/temperature_grey.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+}
+
+.active > .icon.food {
+    background-image: url("/img/food_blue.png");
+}
+
+.active > .icon.crane {
+    background-image: url("/img/crane_blue.png");
+}
+
+.active > .icon.lift {
+    background-image: url("/img/lift_blue.png");
+}
+
+.active > .icon.temperature {
+    background-image: url("/img/temperature_blue.png");
 }

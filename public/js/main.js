@@ -875,18 +875,6 @@ function toggleVehicleTypeQuickControl() {
     }, 50);
 }
 
-// show or hide Temperature Control input fields
-function toggleVehicleTempControl() {
-    setTimeout(function() {
-        if ($('#my-vehicles #temp_control').hasClass("active")) {
-            $('#vehicle-temperature-values').show();
-        }
-        else {
-            $('#vehicle-temperature-values').hide();
-        }
-    }, 50);
-}
-
 // show vehicle details when appropriate vehicle is selected in My Vehicles list
 $('#my-vehicles .vehicle-selector select').on('change', function() {
     viewVehicle(this.value);
@@ -1046,7 +1034,7 @@ function setVehicleQuickEndAddress() {
     $('#my-vehicles form input[name="quick_to_city"]').val($('#my-vehicles form input[name="quick_from_city"]').val());
 }
 
-// show Vehicle details in popup
+// show Vehicle details in popup --- redefined on workflow.js ( Yakov )
 function showVehiclePopup(id) {
     $.ajax({
         type: "POST",
@@ -1132,10 +1120,11 @@ function showVehiclePopup(id) {
     });
 }
 
-// remove Vehicle Details Modal from DOM when close button is clicked
+//remove Vehicle Details Modal from DOM when close button is clicked --- removed because of useless
 function closeVehicleModal(id) {
     setTimeout(function(){
         $('#vehicle-modal'+id).remove();
+        $('.vehicle-modal').modal('hide');
     }, 500);
 };
 
