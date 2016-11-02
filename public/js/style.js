@@ -61,7 +61,6 @@ $(document).ready(function() {
         style: 'btn-default',
         showIcon: true,
     });
-    $('#vehicle-modal .bootstrap-select').addClass('open');
     $('#vehicle-modal #trunk_length, #vehicle-modal #trunk_width, #vehicle-modal #trunk_height').change(function(){
         t_length = parseFloat( $('#vehicle-modal #trunk_length').val()); 
         t_width = parseFloat( $('#vehicle-modal #trunk_width').val()); 

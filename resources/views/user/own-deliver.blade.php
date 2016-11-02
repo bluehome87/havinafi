@@ -46,7 +46,7 @@
                 @endif
                     <div class="input-group">
                         <span class="form-control">
-                            <a class="add_new_link" href="#" onclick="showNewVehiclePopup()"><i class="fa fa-plus"></i> ADD NEW VEHICLE</a>
+                            <a class="add_new_link new_vehicle_link" href="#"><i class="fa fa-plus"></i> ADD NEW VEHICLE</a>
                         </span>
                     </div>
             </div>
