@@ -369,6 +369,25 @@ $gray-color: #CCCCCC;
     #cargo-tab input{ 
         padding: 3px 6px !important;
     }
+    .passenger_content{
+        width: 250px;
+        margin: 0 auto;
+        float: none;
+    }
+    .time_content{
+        width: 300px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #driving-cost {
+        input.form-control{
+            width:58px;
+        }
+        .cost-label{
+            margin-left:1px;
+        }
+    }
 }
 
 /* FontAwesome Select Element*/
@@ -430,11 +449,14 @@ $gray-color: #CCCCCC;
                 clear:left;
                 margin-left: 18%;
             }
-            input{ 
-                padding: 3px 6px !important;
-            }
             .col-xs-2{
                 width:32%;
+            }
+            .row-4-elem{
+                width:23%;
+            }
+            #cargo-size .col-xs-offset-1{
+                margin-left:0;
             }
         }
     }
