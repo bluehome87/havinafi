@@ -2,7 +2,7 @@ $color-text: #666666;
 $blue-background: #3399f3;
 $white-color: #FFFFFF;
 $light-blue : #85BBF8;
-$gray-border-color: #CCCCCC;
+$gray-color: #CCCCCC;
 
 .vehicle-modal, .task-modal {
     background-color: transparent;
@@ -24,7 +24,14 @@ $gray-border-color: #CCCCCC;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         border-bottom: none;
-
+        padding: 20px 20px;
+        .form-group{
+            margin-bottom:0px;
+        }
+        .form-control{
+            height:30px;
+            padding: 3px 12px;
+        }
         .modal-title {
             color: $white-color;
             text-align: center;
@@ -35,6 +42,7 @@ $gray-border-color: #CCCCCC;
                 float: left;
                 margin-top: 4px;
                 color: $white-color;
+                font-size:22px;
             }
         }
     }
@@ -51,6 +59,22 @@ $gray-border-color: #CCCCCC;
         .row{
         	margin-left:-20px;
         	margin-right:-20px;
+            z-index: 100;
+        }
+        .address_row {
+            position:relative; margin-bottom: 5px !important;
+            margin-left: -15px;
+            margin-right: -15px;
+            .col-xs-6{
+                &:first-child{
+                    padding-left:0;
+                    padding-right:20px;
+                }
+                &:last-child{
+                    padding-left:20px;
+                    padding-right:0;
+                }
+            }
         }
         .owner {
             .owner-name {
@@ -138,8 +162,8 @@ $gray-border-color: #CCCCCC;
 
             .icon {
                 background-size: contain;
-                width: 24px;
-                height: 24px;
+                width: 26px;
+                height: 26px;
                 display: block;
                 float: left;
                 margin-left: 2px;
@@ -180,7 +204,7 @@ $gray-border-color: #CCCCCC;
 
             i {
                 color: #999999;
-                font-size: 24px;
+                font-size: 26px;
                 line-height: 26px;
             }
 
@@ -205,10 +229,10 @@ $gray-border-color: #CCCCCC;
         margin-bottom: 10px;
     }
 	.glyphicon.glyphicon-chevron-right {
-	    /*position: absolute;*/
+	    position: absolute;
 	    top: 0;
 	    bottom: 0;
-	    height: 48px;
+	    height: 68px;
 	    font-size: 48px;
 	    margin-top: auto;
 	    margin-bottom: auto;
@@ -217,26 +241,28 @@ $gray-border-color: #CCCCCC;
 	    margin-left: auto;
 	    margin-right: auto;
 	    text-align: center;
-	    z-index: 100;
+	    z-index:-1;
+        color:$gray-color;
 	}
 	.action_row{
-		border-top: 1px solid $gray-border-color;
+		border-top: 1px solid $gray-color;
 		padding-top: 20px;
-		margin-top: 10px;
 	}
 	.nav-tabs{
 		margin-bottom:0;
 		li{ 
 			width:20%; 
 			text-align:center;
-			border:1px solid $gray-border-color;
+			border:1px solid $gray-color;
 			border-right:0;
 		}
 		li:last-child{
-			border-right:1px solid $gray-border-color;
+			border-right:1px solid $gray-color;
 		}
         li > a{
             border-radius:0;
+            font-size: 26px;
+            padding: 5px 15px;
         }
         li > a:hover{
             width:100%;
@@ -251,12 +277,16 @@ $gray-border-color: #CCCCCC;
 		text-align:	center;
 		color: $white-color;
         border-radius: 0;
+        padding: 15px 20px;
 	}
-
+    .tab-pane .panel-body
+    {
+        padding: 20px 10px;
+    }    
     .cost-label {
         margin-left: -20px;
         display: block;
-        padding: 10px;
+        padding: 9px;
     }
 
     .cost-label.edit {
@@ -299,6 +329,7 @@ $gray-border-color: #CCCCCC;
             color: #666666;
             text-decoration: none;
             box-shadow: none;
+            padding: 5px;
         }
 
         i {
@@ -325,11 +356,18 @@ $gray-border-color: #CCCCCC;
         margin-right:-25px;
         margin-top:20px;
         padding-top: 20px;
-        border-top: 1px solid $gray-border-color;
+        border-top: 1px solid $gray-color;
     }
     .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"]
     {
         float:left;
+    }
+    .cargo-items{
+        .form-group { margin-bottom:0 !important;}
+        .col-xs-1{ padding-left: 10px; margin-right:10px;}
+    }
+    #cargo-tab input{ 
+        padding: 3px 6px !important;
     }
 }
 
@@ -352,9 +390,16 @@ $gray-border-color: #CCCCCC;
         background: none;
     }
     .btn.dropdown-toggle{
-        background: $gray-border-color;
-        border-color: $gray-border-color;
-        &:hover{ background: #999999; };
+        background: $white-color;
+        border-color: $gray-color;
+        &:hover{ 
+            background: #DDDDDD; border-color: $gray-color;
+        }
+        max-height: 30px;
+        padding: 5px 10px;
+        .bs-caret{
+            color: $gray-color;
+        }
     }
     .big_truck{
         transform: scale(1.5,1);
@@ -376,4 +421,21 @@ $gray-border-color: #CCCCCC;
 
 .modal-backdrop.in {
     opacity: 0;
+}
+
+@media(max-width: 480px) {
+    .vehicle-modal, .task-modal {
+        #cargo-tab{
+            .responsive_input{
+                clear:left;
+                margin-left: 18%;
+            }
+            input{ 
+                padding: 3px 6px !important;
+            }
+            .col-xs-2{
+                width:32%;
+            }
+        }
+    }
 }

@@ -57,16 +57,24 @@ $(document).ready(function() {
         });
 
     $('.vehicle-temperature-values, .vehicle-temperature-icon').hide();
+
     $('.selectpicker').selectpicker({
         style: 'btn-default',
         showIcon: true,
     });
-    $('#vehicle-modal #trunk_length, #vehicle-modal #trunk_width, #vehicle-modal #trunk_height').change(function(){
+
+    $('#vehicle-modal #trunk_length, #vehicle-modal #trunk_width, #vehicle-modal #trunk_height').keyup(function(){
         t_length = parseFloat( $('#vehicle-modal #trunk_length').val()); 
         t_width = parseFloat( $('#vehicle-modal #trunk_width').val()); 
         t_height = parseFloat( $('#vehicle-modal #trunk_height').val()); 
 
         $('#vehicle-modal #trunk_volume').val( t_length * t_width * t_height );
+    });
+
+    $('#vehicle-modal #trunk_volume').keypress(function(){
+        $('#vehicle-modal #trunk_length').val('');
+        $('#vehicle-modal #trunk_width').val('');
+        $('#vehicle-modal #trunk_height').val('');
     });
 
     $('.selectpicker').on('change', function (e) {

@@ -3,9 +3,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">
-                    <div class="panel-heading">
+                    <div class="panel-heading no-padding">
                         <h4 class="panel-title">
-                            <select class="selectpicker col-xs-3">
+                            <select class="selectpicker col-xs-2 no-padding">
                               <option value=1>&#xf206</option>
                               <option value=2>&#xf1b9</option>
                               <option value=3>&#xf21c</option>
@@ -21,22 +21,26 @@
                 </h4>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-xs-5">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Street Address"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="City"/>
+                <div class="row no-padding address_row">
+                    <div class="col-xs-6">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Street Address"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="City"/>
+                            </div>
                         </div>
                     </div>
-                    <span class="glyphicon glyphicon-chevron-right col-xs-2"></span>
-                    <div class="col-xs-5 pull-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Street Address"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="City"/>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <div class="col-xs-6">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Street Address"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="City"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,22 +101,28 @@
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">m</span>
-                                            <div class="col-xs-3 col-xs-offset-2">
+                                            <div class="col-xs-2 col-xs-offset-1 responsive_input">
                                                 <div class="form-group">
                                                     <input class="form-control" type="number" name="trunk_volume" id="trunk_volume" placeholder="" step="0.3" min="0">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">&#13221;</span>
-                                        </div>
-
-                                        <div class="row" id="cargo-weight">
-                                            <div class="col-xs-5">
+                                            <div class="col-xs-2">
                                                 <div class="form-group">
                                                     <input class="form-control" type="number" name="max_weight" id="max_weight" placeholder="300">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">kg</span>
                                         </div>
+
+                                        <!-- <div class="row" id="cargo-weight">
+                                            <div class="col-xs-5">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="number" name="max_weight" id="max_weight" placeholder="300">
+                                                </div>
+                                            </div>
+                                            <span class="cost-label cargo-label">kg</span>
+                                        </div> -->
 
                                         <div class="row cargo-items">
                                             <div class="overflow"></div>
@@ -144,7 +154,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-xs-1">
+                                            <div class="col-xs-1" style="margin-right:1px;">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
                                                     <label class="btn btn-link food_accepted" onclick="toggleVehicleTempIcon( this )">
                                                         <span class="icon food"></span>
@@ -162,22 +172,20 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-xs-7 vehicle-temperature-values">
-                                                <div class="col-xs-5">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="temp_min" id="temp_min" placeholder="Min">
-                                                        <span class="select-show" name="select-temp-min"></span>
-                                                    </div>
+                                            <div class="col-xs-2 col-xs-offset-1 vehicle-temperature-values responsive_input">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="number" name="temp_min" id="temp_min" placeholder="Min">
+                                                    <span class="select-show" name="select-temp-min"></span>
                                                 </div>
-                                                <span class="cost-label cargo-label">-</span>
-                                                <div class="col-xs-5">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="temp_max" id="temp_max" placeholder="Max">
-                                                        <span class="select-show" name="select-temp-max"></span>
-                                                    </div>
-                                                </div>
-                                                <span class="cost-label cargo-label">°C</span>
                                             </div>
+                                            <span class="cost-label cargo-label vehicle-temperature-values">&#151</span>
+                                            <div class="col-xs-2 vehicle-temperature-values">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="number" name="temp_max" id="temp_max" placeholder="Max">
+                                                    <span class="select-show" name="select-temp-max"></span>
+                                                </div>
+                                            </div>
+                                            <span class="cost-label cargo-label vehicle-temperature-values">°C</span>
                                         </div>
                                     </div>
                                 </div>
@@ -190,12 +198,17 @@
                                         <a class="pull-right" data-toggle="tooltip" title="Tooltip"><i class="fa fa-question-circle"></i></a>
                                     </h4>
                                 </div>
-                                <div class="tabpanel col-xs-12">
+                                <div class="tabpanel col-xs-10 col-xs-offset-1">
                                     <div class="panel-body col-xs-12">
-                                        <div class="col-xs-6 col-xs-offset-1">
-                                            <input class="form-control" type="number" name="max_passengers" id="max_passengers" placeholder="3">
+                                        <div class="col-xs-1 no-padding col-xs-offset-1">
+                                            <span class="cost-label cargo-label">Max</span>
                                         </div>
-                                        <span class="cost-label"> Passengers</span>
+                                        <div class="col-xs-7">
+                                            <input class="form-control" type="number" name="max_passengers" id="max_passengers" placeholder="3" min="0">
+                                        </div>
+                                        <div class="col-xs-3 no-padding">
+                                            <span class="cost-label cargo-label">Passengers</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +248,7 @@
                                                     <span class="cost-label cargo-label">Max Vehicle Speed</span>
                                                 </div>
                                                 <div class="col-xs-5">
-                                                    <input class="form-control" type="text" name="select-max-speed" id="select-max-speed" step="10" min="0">
+                                                    <input class="form-control" type="text" name="select-max-speed" id="select-max-speed" step="10" min="0" value="80">
                                                 </div>
                                                 <div class="col-xs-1 no-padding">
                                                     <span class="cost-label cargo-label">km/h</span>
