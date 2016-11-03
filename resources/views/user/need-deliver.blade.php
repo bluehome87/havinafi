@@ -40,7 +40,7 @@
                 @endif
                     <div class="input-group">
                         <span class="form-control">
-                            <a class="add_new_link" href="#" onclick="showCreateTaskForm()"><i class="fa fa-plus"></i> ADD NEW TASK</a>
+                            <a class="add_new_link new_task_link" href="#"><i class="fa fa-plus"></i> ADD NEW TASK</a>
                         </span>
                     </div>
             </div>

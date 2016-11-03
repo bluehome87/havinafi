@@ -594,7 +594,7 @@ function viewVehicle(id) {
                         $('#my-vehicles form input[name="weather_protection"]').attr('data-checked', 'true');
                     }
                     else {
-                        $('#my-vehicles form #weather_protection').removeClass('active');
+                        $('#my-vehicles form .weather_protection').removeClass('active');
                         $('#my-vehicles form input[name="weather_protection"]').prop('checked', false);
                         $('#my-vehicles form input[name="weather_protection"]').attr('data-checked', 'false');
                     }
@@ -609,7 +609,7 @@ function viewVehicle(id) {
                         $('#my-vehicles form input[name="food_accepted"]').attr('data-checked', 'false');
                     }
                     if(data['data']['crane'] == 1) {
-                        $('#my-vehicles form #crane').addClass('active');
+                        $('#my-vehicles form .crane').addClass('active');
                         $('#my-vehicles form input[name="crane"]').prop('checked', true);
                         $('#my-vehicles form input[name="crane"]').attr('data-checked', 'true');
                     }
@@ -619,22 +619,22 @@ function viewVehicle(id) {
                         $('#my-vehicles form input[name="crane"]').attr('data-checked', 'false');
                     }
                     if(data['data']['rear_lift'] == 1) {
-                        $('#my-vehicles form #rear_lift').addClass('active');
+                        $('#my-vehicles form .rear_lift').addClass('active');
                         $('#my-vehicles form input[name="rear_lift"]').prop('checked', true);
                         $('#my-vehicles form input[name="rear_lift"]').attr('data-checked', 'true');
                     }
                     else {
-                        $('#my-vehicles form #rear_lift').removeClass('active');
+                        $('#my-vehicles form .rear_lift').removeClass('active');
                         $('#my-vehicles form input[name="rear_lift"]').prop('checked', false);
                         $('#my-vehicles form input[name="rear_lift"]').attr('data-checked', 'false');
                     }
                     if(data['data']['temp_control'] == 1) {
-                        $('#my-vehicles form #temp_control').addClass('active');
+                        $('#my-vehicles form .temp_control').addClass('active');
                         $('#my-vehicles form input[name="temp_control"]').prop('checked', true);
                         $('#my-vehicles form input[name="temp_control"]').attr('data-checked', 'true');
                     }
                     else {
-                        $('#my-vehicles form #temp_control').removeClass('active');
+                        $('#my-vehicles form .temp_control').removeClass('active');
                         $('#my-vehicles form input[name="temp_control"]').prop('checked', false);
                         $('#my-vehicles form input[name="temp_control"]').attr('data-checked', 'false');
                     }
@@ -1888,6 +1888,7 @@ function showTaskPopup(id) {
 function closeTaskModal(id) {
     setTimeout(function(){
         $('#task-modal'+id).remove();
+        $('.task-modal').modal('hide');
     }, 500);
 };
 

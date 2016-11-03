@@ -166,32 +166,32 @@
 .icon.food {
   background-image: url("/img/food_grey.png");
   background-size: contain;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: block;
   float: left; }
 
 .icon.crane {
   background-image: url("/img/crane_grey.png");
   background-size: contain;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: block;
   float: left; }
 
 .icon.lift {
   background-image: url("/img/lift_grey.png");
   background-size: contain;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: block;
   float: left; }
 
 .icon.temperature {
   background-image: url("/img/temperature_grey.png");
   background-size: contain;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: block;
   float: left; }
 
@@ -206,5 +206,11 @@
 
 .active > .icon.temperature {
   background-image: url("/img/temperature_blue.png"); }
+
+.input-time-field {
+  width: 92px; }
+
+.input-small-field {
+  width: 88px; }
 
 /*# sourceMappingURL=find.css.map */

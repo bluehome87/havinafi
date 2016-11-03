@@ -1,8 +1,8 @@
-<div id="vehicle-modal" class="vehicle-modal popup-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="vehicle-modal">
+<div id="vehicle-modal" class="vehicle-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="vehicle-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">
+                <h4 class="modal-title" id="myModalLabel">
                     <div class="panel-heading no-padding">
                         <h4 class="panel-title">
                             <select class="selectpicker col-xs-2 no-padding">
@@ -45,35 +45,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
+                    <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist" id="vehicle-tab-menu">
                         <li role="presentation" class="active">
-                            <a href="#v_cargo-tab" aria-controls="my-vehicles" role="tab" data-toggle="tab">
+                            <a href="#cargo-tab" aria-controls="my-vehicles" role="tab" data-toggle="tab">
                                 <i class="fa fa-cubes"></i>
                             </a>
                         </li>
                         <li role="presentation">
-                            <a href="#v_passenger-tab" aria-controls="my-vehicles" role="tab" data-toggle="tab">
+                            <a href="#passenger-tab" aria-controls="my-tasks" role="tab" data-toggle="tab">
                                 <i class="fa fa-male"></i>
                             </a>
                         </li>
                         <li role="presentation">
-                            <a href="#v_other-spec" aria-controls="transports" role="tab" data-toggle="tab">
+                            <a href="#other-spec" aria-controls="transports" role="tab" data-toggle="tab">
                                 <i class="fa fa-clock-o"></i>
                             </a>
                         </li>
                         <li role="presentation">
-                            <a href="#v_description-tab" aria-controls="transports" role="tab" data-toggle="tab">
+                            <a href="#description-tab" aria-controls="transports" role="tab" data-toggle="tab">
                                 <i class="fa fa-file-text-o"></i>
                             </a>
                         </li>
                         <li role="presentation">
-                            <a href="#v_driving-cost" aria-controls="transports" role="tab" data-toggle="tab">
+                            <a href="#driving-cost" aria-controls="transports" role="tab" data-toggle="tab">
                                 <i class="fa fa-euro"></i>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane transports active cargo-tab" id="v_cargo-tab">
+                        <div class="tab-pane transports active" id="cargo-tab">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">CargoSpace Details
@@ -82,45 +82,54 @@
                                 </div>
                                 <div class="tabpanel col-xs-12">
                                     <div class="panel-body col-xs-12">
-                                        <div class="row cargo-size">
+                                        <div class="row" id="cargo-size">
                                             <div class="col-xs-2 row-4-elem">
                                                 <div class="form-group">
-                                                    <input class="form-control trunk_length" type="number" name="trunk_length" placeholder="L" step="0.3" min="0">
+                                                    <input class="form-control" type="number" name="trunk_length" id="trunk_length" placeholder="L" step="0.3" min="0">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">x</span>
                                             <div class="col-xs-2 row-4-elem">
                                                 <div class="form-group">
-                                                    <input class="form-control trunk_width" type="number" name="trunk_width" placeholder="W" step="0.3" min="0">
+                                                    <input class="form-control" type="number" name="trunk_width" id="trunk_width" placeholder="W" step="0.3" min="0">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">x</span>
                                             <div class="col-xs-2 row-4-elem">
                                                 <div class="form-group">
-                                                    <input class="form-control trunk_height" type="number" name="trunk_height" placeholder="H" step="0.3" min="0">
+                                                    <input class="form-control" type="number" name="trunk_height" id="trunk_height" placeholder="H" step="0.3" min="0">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">m</span>
                                             <div class="col-xs-2 row-4-elem">
                                                 <div class="form-group">
-                                                    <input class="form-control trunk_volume" type="number" name="trunk_volume" placeholder="" step="0.3" min="0">
+                                                    <input class="form-control" type="number" name="trunk_volume" id="trunk_volume" placeholder="" step="0.3" min="0">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">&#13221;</span>
                                             <div class="col-xs-2 col-xs-offset-1 responsive_input">
                                                 <div class="form-group">
-                                                    <input class="form-control" type="number" name="max_weight" placeholder="300">
+                                                    <input class="form-control" type="number" name="max_weight" id="max_weight" placeholder="300">
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">kg</span>
                                         </div>
+
+                                        <!-- <div class="row" id="cargo-weight">
+                                            <div class="col-xs-5">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="number" name="max_weight" id="max_weight" placeholder="300">
+                                                </div>
+                                            </div>
+                                            <span class="cost-label cargo-label">kg</span>
+                                        </div> -->
 
                                         <div class="row cargo-items">
                                             <div class="overflow"></div>
 
                                             <div class="col-xs-1">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-link weather_protection">
+                                                    <label id="weather_protection" class="btn btn-link">
                                                         <i class="fa fa-umbrella" aria-hidden="true"></i>
                                                         <input type="checkbox" autocomplete="off" name="weather_protection">
                                                     </label>
@@ -129,7 +138,7 @@
 
                                             <div class="col-xs-1">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-link crane">
+                                                    <label id="crane" class="btn btn-link">
                                                         <span class="icon crane"></span>
                                                         <input type="checkbox" autocomplete="off" name="crane">
                                                     </label>
@@ -138,7 +147,7 @@
 
                                             <div class="col-xs-1">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-link rear_lift">
+                                                    <label id="rear_lift" class="btn btn-link">
                                                         <span class="icon lift"></span>
                                                         <input type="checkbox" autocomplete="off" name="rear_lift">
                                                     </label>
@@ -147,7 +156,7 @@
 
                                             <div class="col-xs-1" style="margin-right:1px;">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-link food_accepted" onclick="toggleTempIcon( this )">
+                                                    <label class="btn btn-link food_accepted" onclick="toggleVehicleTempIcon( this )">
                                                         <span class="icon food"></span>
                                                         <input type="checkbox" autocomplete="off" name="food_accepted">
                                                     </label>
@@ -156,7 +165,7 @@
 
                                             <div class="col-xs-1 vehicle-temperature-icon">
                                                 <div class="form-group data-toggle" data-toggle="buttons">
-                                                    <label class="btn btn-link temp_control" onclick="toggleTempControl( this )">
+                                                    <label class="btn btn-link temp_control" onclick="toggleVehicleTempControl( this )">
                                                         <i class="icon temperature"></i>
                                                         <input type="checkbox" autocomplete="off" name="temp_control">
                                                     </label>
@@ -165,14 +174,14 @@
 
                                             <div class="col-xs-2 col-xs-offset-1 vehicle-temperature-values responsive_input">
                                                 <div class="form-group">
-                                                    <input class="form-control" type="number" name="temp_min" placeholder="Min">
+                                                    <input class="form-control" type="number" name="temp_min" id="temp_min" placeholder="Min">
                                                     <span class="select-show" name="select-temp-min"></span>
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label vehicle-temperature-values">&#151</span>
                                             <div class="col-xs-2 vehicle-temperature-values">
                                                 <div class="form-group">
-                                                    <input class="form-control" type="number" name="temp_max" placeholder="Max">
+                                                    <input class="form-control" type="number" name="temp_max" id="temp_max" placeholder="Max">
                                                     <span class="select-show" name="select-temp-max"></span>
                                                 </div>
                                             </div>
@@ -182,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane transports" id="v_passenger-tab">
+                        <div class="tab-pane transports" id="passenger-tab">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Passenger Details
@@ -194,8 +203,8 @@
                                         <div class="col-xs-3 no-padding ">
                                             <span class="cost-label cargo-label pull-right">Max</span>
                                         </div>
-                                        <div class="col-xs-2 input-small-field">
-                                            <input class="form-control" type="number" name="max_passengers" placeholder="3" min="0">
+                                        <div class="col-xs-2" style="width:88px;">
+                                            <input class="form-control" type="number" name="max_passengers" id="max_passengers" placeholder="3" min="0">
                                         </div>
                                         <div class="col-xs-4 no-padding">
                                             <span class="cost-label cargo-label">Passengers</span>
@@ -204,7 +213,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane transports" id="v_other-spec">
+                        <div class="tab-pane transports" id="other-spec">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Time details
@@ -219,7 +228,7 @@
                                                 <div class="col-xs-4 no-padding col-xs-offset-2">
                                                     <span class="cost-label cargo-label">At earliest</span>
                                                 </div>
-                                                <div class="col-xs-7 input-time-field">
+                                                <div class="col-xs-7" style="width:95px">
                                                     <input class="form-control" type="text" name="from_time" placeholder="08:00" step="60" min="0">
                                                 </div>
                                             </div>
@@ -228,7 +237,7 @@
                                                 <div class="col-xs-4 no-padding col-xs-offset-2">
                                                     <span class="cost-label cargo-label">At latest</span>
                                                 </div>
-                                                <div class="col-xs-7 input-time-field">
+                                                <div class="col-xs-7" style="width:95px">
                                                     <input class="form-control" type="text" name="to_time" placeholder="21:00" step="60" min="0">
                                                 </div>
                                             </div>
@@ -238,8 +247,8 @@
                                                 <div class="col-xs-6 no-padding">
                                                     <span class="cost-label cargo-label">Max Vehicle Speed</span>
                                                 </div>
-                                                <div class="col-xs-2 input-small-field">
-                                                    <input class="form-control" type="number" name="select-max-speed" id="select-max-speed" step="10" min="0" value="80">
+                                                <div class="col-xs-2" style="width:88px;">
+                                                    <input class="form-control" type="text" name="select-max-speed" id="select-max-speed" step="10" min="0" value="80">
                                                 </div>
                                                 <div class="col-xs-2 no-padding">
                                                     <span class="cost-label cargo-label">km/h</span>
@@ -250,7 +259,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane transports" id="v_description-tab">
+                        <div class="tab-pane transports" id="description-tab">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Vehicle Description
@@ -264,7 +273,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane transports" id="v_driving-cost">
+                        <div class="tab-pane transports" id="driving-cost">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title"> Driving Costs
@@ -274,14 +283,14 @@
                                 <div class="tabpanel col-xs-12">
                                     <div class="panel-body col-xs-12">
                                         <div class="col-xs-2 col-xs-offset-2">
-                                            <input class="form-control" type="number" name="cost_eur_km" id="cost_eur_km" placeholder="10" min="0">
+                                            <input class="form-control" type="number" name="cost_eur_km" id="cost_eur_km" placeholder="10" step="0.1" min="0">
                                         </div>
                                         <div class="col-xs-2">
                                             <span class="cost-label">€/km</span>
                                         </div>  
 
                                         <div class="col-xs-2 col-xs-offset-1">
-                                            <input class="form-control" type="number" name="cost_eur_h" id="cost_eur_h" placeholder="10" min="0">
+                                            <input class="form-control" type="number" name="cost_eur_h" id="cost_eur_h" placeholder="10" step="0.1" min="0">
                                         </div>
                                         <div class="col-xs-2">
                                             <span class="cost-label">€/h</span>

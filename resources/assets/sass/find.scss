@@ -180,11 +180,12 @@ $basic-gray 		: #666666;
 	}
 }
 
+$icon-size: 26px;
 .icon.food {
     background-image: url("/img/food_grey.png");
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: $icon-size;
+    height: $icon-size;
     display: block;
     float: left;
 }
@@ -192,8 +193,8 @@ $basic-gray 		: #666666;
 .icon.crane {
     background-image: url("/img/crane_grey.png");
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: $icon-size;
+    height: $icon-size;
     display: block;
     float: left;
 }
@@ -201,8 +202,8 @@ $basic-gray 		: #666666;
 .icon.lift {
     background-image: url("/img/lift_grey.png");
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: $icon-size;
+    height: $icon-size;
     display: block;
     float: left;
 }
@@ -210,8 +211,8 @@ $basic-gray 		: #666666;
 .icon.temperature {
     background-image: url("/img/temperature_grey.png");
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: $icon-size;
+    height: $icon-size;
     display: block;
     float: left;
 }
@@ -231,3 +232,6 @@ $basic-gray 		: #666666;
 .active > .icon.temperature {
     background-image: url("/img/temperature_blue.png");
 }
+
+.input-time-field{ width:92px;}
+.input-small-field{ width:88px;}

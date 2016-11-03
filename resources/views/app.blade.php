@@ -200,6 +200,7 @@
             </div>
         </div>
         @include('user.my-vehicles')
+        @include('user.my-tasks')
     @endif
 </div>
 
