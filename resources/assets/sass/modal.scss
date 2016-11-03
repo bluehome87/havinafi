@@ -287,6 +287,9 @@ $dark-green : #5C8A1C;
     .tab-pane .panel-body
     {
         padding: 20px 10px;
+        -webkit-transition: height 0.5s linear;
+        -o-transition: height 0.5s linear;
+        transition: height 0.5s linear;
     }    
     .cost-label {
         margin-left: -20px;
@@ -305,6 +308,9 @@ $dark-green : #5C8A1C;
         float: left;
         margin-left: -14px;
         margin-right: -14px;
+    }
+    .cost-label.cargo-label.last{
+        float:right; margin-right:0;
     }
     .input-show, .select-show {
         border: none;
@@ -765,6 +771,9 @@ $dark-green : #5C8A1C;
         color: $blue-background;
         background: none;
     }
+    .dropdown-menu>li>a{
+        padding:3px 10px;
+    }
     .btn.dropdown-toggle{
         background: $white-color;
         border-color: $gray-color;
@@ -816,8 +825,10 @@ $dark-green : #5C8A1C;
             .row-4-elem{
                 width:23%;
             }
-            .cargo-size .col-xs-offset-1{
-                margin-left:0;
+            .cargo-size {
+                .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3{
+                    margin-left:0;
+                }                
             }
         }
 

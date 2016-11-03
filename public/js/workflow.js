@@ -14,4 +14,7 @@ $(document).ready(function() {
 			$('#task-modal .bootstrap-select').addClass('open');
 		}, 50);
 	});
+
+	$('.modal-body .tab-pane').removeClass('active');
+	$('.modal-body .nav-tabs li').removeClass('active');
 });

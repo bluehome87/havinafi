@@ -57,6 +57,7 @@
       box-shadow: none;
       padding-left: 40px; }
       .transport_form .tab-pane .input-group span.form-control .record_name {
+        display: inline-block;
         width: calc( 100% - 80px);
         margin-left: 10px;
         cursor: pointer;

@@ -209,7 +209,8 @@
     border-radius: 0;
     padding: 15px 20px; }
   .popup-modal .tab-pane .panel-body {
-    padding: 20px 10px; }
+    padding: 20px 10px;
+    transition: height 0.5s linear; }
   .popup-modal .cost-label {
     margin-left: -20px;
     display: block;
@@ -223,6 +224,9 @@
     float: left;
     margin-left: -14px;
     margin-right: -14px; }
+  .popup-modal .cost-label.cargo-label.last {
+    float: right;
+    margin-right: 0; }
   .popup-modal .input-show, .popup-modal .select-show {
     border: none;
     box-shadow: none;
@@ -548,6 +552,9 @@
   color: #3399F3;
   background: none; }
 
+.bootstrap-select .dropdown-menu > li > a {
+  padding: 3px 10px; }
+
 .bootstrap-select .btn.dropdown-toggle {
   background: #FFFFFF;
   border-color: #CCCCCC;
@@ -587,7 +594,7 @@
     width: 32%; }
   .vehicle-modal .cargo-tab .row-4-elem, .task-modal .cargo-tab .row-4-elem {
     width: 23%; }
-  .vehicle-modal .cargo-tab .cargo-size .col-xs-offset-1, .task-modal .cargo-tab .cargo-size .col-xs-offset-1 {
+  .vehicle-modal .cargo-tab .cargo-size .col-xs-offset-1, .vehicle-modal .cargo-tab .cargo-size .col-xs-offset-2, .vehicle-modal .cargo-tab .cargo-size .col-xs-offset-3, .task-modal .cargo-tab .cargo-size .col-xs-offset-1, .task-modal .cargo-tab .cargo-size .col-xs-offset-2, .task-modal .cargo-tab .cargo-size .col-xs-offset-3 {
     margin-left: 0; } }
 
 /*# sourceMappingURL=modal.css.map */

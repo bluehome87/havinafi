@@ -742,7 +742,7 @@ header.navbar {
     .user #sidebar .panel-heading .job-name {
       margin-right: 0px !important;
       text-overflow: ellipsis;
-      width: 124px;
+      width: calc( 100% - 75px - 55px);
       overflow: hidden;
       white-space: nowrap;
       text-align: left;

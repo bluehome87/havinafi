@@ -1125,6 +1125,8 @@ function closeVehicleModal(id) {
     setTimeout(function(){
         $('#vehicle-modal'+id).remove();
         $('.vehicle-modal').modal('hide');
+        $('.modal-body .tab-pane').removeClass('active');
+        $('.modal-body .nav-tabs li').removeClass('active');
     }, 500);
 };
 
@@ -1889,6 +1891,8 @@ function closeTaskModal(id) {
     setTimeout(function(){
         $('#task-modal'+id).remove();
         $('.task-modal').modal('hide');
+        $('.modal-body .tab-pane').removeClass('active');
+        $('.modal-body .nav-tabs li').removeClass('active');
     }, 500);
 };
 

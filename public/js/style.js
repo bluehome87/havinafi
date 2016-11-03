@@ -77,20 +77,6 @@ $(document).ready(function() {
         $('.trunk_height').val('');
     });
     // -------------------------------
-    // // W x H x L event for Vehicle Popup : TODO this block can be merged task popup
-    // $('#v_trunk_length, #v_trunk_width, #v_trunk_height').keyup(function(){
-    //     v_length = parseFloat( $('#v_trunk_length').val()); 
-    //     v_width = parseFloat( $('#v_trunk_width').val()); 
-    //     v_height = parseFloat( $('#v_trunk_height').val()); 
-
-    //     $('#v_trunk_volume').val( v_length * v_width * v_height );
-    // });
-    // $('#v_trunk_volume').keypress(function(){
-    //     $('#v_trunk_length').val('');
-    //     $('#v_trunk_width').val('');
-    //     $('#v_trunk_height').val('');
-    // });
-    // // -------------------------------
 
     $('#vehicle-modal .selectpicker').on('change', function (e) {
         setMaxVehicleSpeed( $(this) );

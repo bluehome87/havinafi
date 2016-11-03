@@ -44,7 +44,7 @@
                 </div>
                 <div class="row">
                     <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
-                        <li role="presentation" class="active" id="t_cargo-menu">
+                        <li role="presentation" id="t_cargo-menu">
                             <a href="#t_cargo-tab" aria-controls="my-tasks" role="tab" data-toggle="tab">
                                 <i class="fa fa-cubes"></i>
                             </a>
@@ -66,7 +66,7 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane transports active cargo-tab" id="t_cargo-tab">
+                        <div class="tab-pane transports cargo-tab" id="t_cargo-tab">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Cargo Details
@@ -94,7 +94,7 @@
                                                 </div>
                                             </div>
                                             <span class="cost-label cargo-label">m</span>
-                                            <div class="col-xs-2 row-4-elem">
+                                            <div class="col-xs-2 row-4-elem col-xs-offset-3">
                                                 <div class="form-group">
                                                     <input class="form-control trunk_volume" type="number" name="trunk_volume" placeholder="" step="0.3" min="0">
                                                 </div>
@@ -109,9 +109,9 @@
                                                         <input class="form-control" type="number" name="package_num" placeholder="5">
                                                     </div>
                                                 </div>
-                                                <div  class="col-xs-6">
+                                                <div  class="col-xs-6" style="padding-right:0;padding-left:30px;">
                                                     <span class="cost-label cargo-label">Total weight</span>
-                                                    <div class="form-group col-xs-2" style="width:78px;">
+                                                    <div class="form-group col-xs-2 col-xs-offset-2" style="width:78px;">
                                                         <input class="form-control" type="number" name="max_weight" placeholder="300">                                                    
                                                     </div>
                                                     <span class="cost-label cargo-label">kg</span>

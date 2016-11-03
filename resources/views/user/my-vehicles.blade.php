@@ -46,7 +46,7 @@
                 </div>
                 <div class="row">
                     <ul class="nav nav-tabs col-xs-12 no-padding" role="tablist">
-                        <li role="presentation" class="active">
+                        <li role="presentation">
                             <a href="#v_cargo-tab" aria-controls="my-vehicles" role="tab" data-toggle="tab">
                                 <i class="fa fa-cubes"></i>
                             </a>
@@ -73,7 +73,7 @@
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane transports active cargo-tab" id="v_cargo-tab">
+                        <div class="tab-pane transports cargo-tab" id="v_cargo-tab">
                             <div class="col-xs-12 no-padding">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">CargoSpace Details
