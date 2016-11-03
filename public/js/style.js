@@ -145,31 +145,28 @@ function setTaskTabs( obj ){
         case '1':
             $('.task-modal .nav-tabs li').css('width', '25%');
             $('.task-modal .nav-tabs li').removeClass('active');
-            $('#t_cargo-menu').addClass("active show");
+            $('#t_cargo-menu').addClass("show");
             $('#t_passenger-menu').addClass("show");
 
             $('.task-modal .tab-pane').removeClass("active");
-            $('#t_cargo-tab').addClass("active");
         break;
         case '2':
             $('.task-modal .nav-tabs li').css('width', '33.3333333%');
             $('.task-modal .nav-tabs li').removeClass('active');
             $('#t_cargo-menu').removeClass("show");
             $('#t_cargo-menu').addClass("hide");
-            $('#t_passenger-menu').addClass("show active");
+            $('#t_passenger-menu').addClass("show");
 
             $('.task-modal .tab-pane').removeClass("active");
-            $('#t_passenger-tab').addClass("active");
         break;
         case '3':
             $('.task-modal .nav-tabs li').css('width', '33.3333333%');
             $('.task-modal .nav-tabs li').removeClass('active');
             $('#t_passenger-menu').removeClass("show");
             $('#t_passenger-menu').addClass("hide");
-            $('#t_cargo-menu').addClass("show active");
+            $('#t_cargo-menu').addClass("show");
 
             $('.task-modal .tab-pane').removeClass("active");
-            $('#t_cargo-tab').addClass("active");
         break;
     }
 }
