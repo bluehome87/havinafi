@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.task-modal').modal('show');
+	//$('.task-modal').modal('show');
 
 	$('.new_vehicle_link').click( function(){
 		$('#vehicle-modal').modal('show');
