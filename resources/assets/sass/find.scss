@@ -74,7 +74,8 @@ $basic-gray 		: #666666;
 				button{
 					color:$basic-gray !important;
 					font-size: 15px;
-					line-height: 15px;}
+					line-height: 15px;
+					outline: 0;}
 				.add_new_link{
 					color: $basic-gray !important;
 					cursor:pointer;
@@ -207,22 +208,6 @@ $icon-size: 26px;
 .icon.temperature {
     background-image: url("/img/temperature_bg.png");
 }
-/*
-.active > .icon.food {
-    background-image: url("/img/food_blue.png");
-}
-
-.active > .icon.crane {
-    background-image: url("/img/crane_blue.png");
-}
-
-.active > .icon.lift {
-    background-image: url("/img/lift_blue.png");
-}
-
-.active > .icon.temperature {
-    background-image: url("/img/temperature_blue.png");
-}*/
 
 .input-time-field{ width:92px;}
 .input-small-field{ width:88px;}

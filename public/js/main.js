@@ -142,19 +142,6 @@ function sendSystemMessage(status, message) {
     });
 }
 
-// show errors in a selected block (e.g. when form was submitted, but some fields have errors)
-function showErrors(errors, block) {
-    response = '<div class="alert alert-danger errors" role="alert">';
-    response += '<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>';
-    response += '<span> Errors: </span><ul>';
-    $.each( errors, function( index, value ){
-        response += '<li>' + value + '</li>';
-    });
-    response += '</ul></div>';
-
-    $('#' + block + ' fieldset').prepend(response);
-}
-
 //
 // END OF GENERAL CONFIGURATION
 //
@@ -487,7 +474,7 @@ function showCreateVehicleForm() {
 
     toggleVehicleTypeQuickControl();
     toggleVehicleTypeControl();
-    toggleVehicleTempControl();
+    toggleTempControl();
 
     $('#my-vehicles #vehicle-cancel').attr('onclick', 'restoreMyVehiclesBlock()');
 }
@@ -640,7 +627,7 @@ function viewVehicle(id) {
                     }
 
                     toggleVehicleTypeControl();
-                    toggleVehicleTempControl();
+                    toggleTempControl();
                 }
                 else if (data['status'] == 'danger') {
                     sendSystemMessage(data['status'], data['message']);
@@ -782,7 +769,7 @@ function restoreViewVehicleBlock(id) {
     }
 
     toggleVehicleTypeControl();
-    toggleVehicleTempControl();
+    toggleTempControl();
 
     $('#my-vehicles .new-vehicle').show();
     $('#my-vehicles .vehicle-selector').show();
@@ -847,31 +834,6 @@ function toggleVehicleTypeControl() {
         }
 
         $('#vehiclePurpose').val($('#vehicle-carry-form label.active').attr('value'));
-    }, 50);
-}
-
-// show or hide Package/Passengers Delivery input fields in Quick mode
-function toggleVehicleTypeQuickControl() {
-    setTimeout(function() {
-        if ($('#quick_vehicle_package_delivery_control').hasClass("active")) {
-            $('#quick_trunk_volume').show();
-            $('#quick_trunk_volume').prop('required', 'required');
-        }
-        else {
-            $('#quick_trunk_volume').hide();
-            $('#quick_trunk_volume').removeAttr('required');
-        }
-
-        if ($('#quick_vehicle_passenger_delivery_control').hasClass("active")) {
-            $('#quick_max_passengers').show();
-            $('#quick_max_passengers').prop('required', 'required');
-        }
-        else {
-            $('#quick_max_passengers').hide();
-            $('#quick_max_passengers').removeAttr('required');
-        }
-
-        $('#vehiclePurpose').val($('#quick-vehicle-carry-form label.active').attr('value'));
     }, 50);
 }
 
@@ -1041,7 +1003,7 @@ function showVehiclePopup(id) {
         url: '/get-vehicle-info/' + id,
         success: function (data) {
             if(data['status'] == 'success') {
-                modal = '<div id="vehicle-modal'+id+'" class="vehicle-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="vehicle-modal'+id+'">';
+                modal = '<div id="vehicle-modal'+id+'" class="popup-modal vehicle-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="vehicle-modal'+id+'">';
                 modal += '<div class="modal-dialog" role="document"><div class="modal-content modal-sm"><div class="modal-header">';
                 modal += '<button type="button" onclick="closeVehicleModal('+id+')" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
                 modal += '<h4 class="modal-title" id="myModalLabel">';
@@ -1788,7 +1750,7 @@ function showTaskPopup(id) {
         url: '/get-task-info/' + id,
         success: function (data) {
             if(data['status'] == 'success') {
-                modal = '<div id="task-modal'+id+'" class="task-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="task-modal'+id+'">';
+                modal = '<div id="task-modal'+id+'" class="popup-modal task-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="task-modal'+id+'">';
                 modal += '<div class="modal-dialog" role="document"><div class="modal-content modal-sm"><div class="modal-header">';
                 modal += '<button type="button" onclick="closeTaskModal('+id+')" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
                 modal += '<h4 class="modal-title" id="myModalLabel">';

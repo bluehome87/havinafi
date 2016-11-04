@@ -429,34 +429,6 @@ header.navbar {
       margin-bottom: 10px; }
     .user #sidebar #cost_eur_task, .user #sidebar #cost_eur_h, .user #sidebar #cost_eur_km, .user #sidebar #total_packages {
       text-align: right; }
-    .user #sidebar .icon.food {
-      background-image: url("/img/food_grey.png");
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      display: block;
-      float: left; }
-    .user #sidebar .icon.crane {
-      background-image: url("/img/crane_grey.png");
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      display: block;
-      float: left; }
-    .user #sidebar .icon.lift {
-      background-image: url("/img/lift_grey.png");
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      display: block;
-      float: left; }
-    .user #sidebar .icon.temperature {
-      background-image: url("/img/temperature_grey.png");
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      display: block;
-      float: left; }
     .user #sidebar .active > .icon.food {
       background-image: url("/img/food_blue.png"); }
     .user #sidebar .active > .icon.crane {

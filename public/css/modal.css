@@ -111,46 +111,7 @@
       display: block;
       float: left;
       width: 100%;
-      margin-top: 4px;
-      /*            .icon.crane {
-                background-image: url("/img/crane_grey.png");
-            }
-
-            .icon.icon-active.crane {
-                background-image: url("/img/crane_blue.png");
-            }
-
-            .icon.lift {
-                background-image: url("/img/lift_grey.png");
-            }
-
-            .icon.icon-active.lift {
-                background-image: url("/img/lift_blue.png");
-            }
-
-            .icon.food {
-                background-image: url("/img/food_grey.png");
-            }
-
-            .icon.icon-active.food {
-                background-image: url("/img/food_blue.png");
-            }
-
-            .icon.temperature {
-                background-image: url("/img/temperature_grey.png");
-            }
-
-            .icon.icon-active.temperature {
-                background-image: url("/img/temperature_blue.png");
-            }*/ }
-      .popup-modal .modal-body .icons .icon {
-        background-size: contain;
-        width: 26px;
-        height: 26px;
-        display: block;
-        float: left;
-        margin-left: 2px;
-        margin-right: 2px; }
+      margin-top: 4px; }
       .popup-modal .modal-body .icons i {
         color: #999999;
         font-size: 26px;
@@ -388,28 +349,6 @@
         display: inline-block;
         float: left; }
       .task-modal .modal-body .packages .weight {
-        display: inline-block;
-        float: right; }
-    .task-modal .modal-body .icons {
-      display: block;
-      float: left;
-      width: 100%;
-      margin-top: 4px; }
-      .task-modal .modal-body .icons .icon {
-        background-size: contain;
-        width: 26px;
-        height: 26px;
-        display: block;
-        float: left;
-        margin-left: 2px;
-        margin-right: 2px; }
-      .task-modal .modal-body .icons i {
-        color: #999999;
-        font-size: 26px;
-        line-height: 26px; }
-      .task-modal .modal-body .icons .icon-active i {
-        color: #0057bd; }
-      .task-modal .modal-body .icons .temp {
         display: inline-block;
         float: right; }
   .task-modal hr {

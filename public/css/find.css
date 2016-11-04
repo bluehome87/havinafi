@@ -68,7 +68,8 @@
       .transport_form .tab-pane .input-group span.form-control button {
         color: #666666 !important;
         font-size: 15px;
-        line-height: 15px; }
+        line-height: 15px;
+        outline: 0; }
       .transport_form .tab-pane .input-group span.form-control .add_new_link {
         color: #666666 !important;
         cursor: pointer;
@@ -164,49 +165,27 @@
       padding-left: 20px;
       padding-right: 5px; } }
 
-.icon.food {
-  background-image: url("/img/food_grey.png");
-  background-size: contain;
+.icon {
+  background-size: 26px;
   width: 26px;
   height: 26px;
   display: block;
   float: left; }
+
+.active > .icon {
+  background-position: 26px 26px; }
+
+.icon.food {
+  background-image: url("/img/food_bg.png"); }
 
 .icon.crane {
-  background-image: url("/img/crane_grey.png");
-  background-size: contain;
-  width: 26px;
-  height: 26px;
-  display: block;
-  float: left; }
+  background-image: url("/img/crane_bg.png"); }
 
 .icon.lift {
-  background-image: url("/img/lift_grey.png");
-  background-size: contain;
-  width: 26px;
-  height: 26px;
-  display: block;
-  float: left; }
+  background-image: url("/img/lift_bg.png"); }
 
 .icon.temperature {
-  background-image: url("/img/temperature_grey.png");
-  background-size: contain;
-  width: 26px;
-  height: 26px;
-  display: block;
-  float: left; }
-
-.active > .icon.food {
-  background-image: url("/img/food_blue.png"); }
-
-.active > .icon.crane {
-  background-image: url("/img/crane_blue.png"); }
-
-.active > .icon.lift {
-  background-image: url("/img/lift_blue.png"); }
-
-.active > .icon.temperature {
-  background-image: url("/img/temperature_blue.png"); }
+  background-image: url("/img/temperature_bg.png"); }
 
 .input-time-field {
   width: 92px; }

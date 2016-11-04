@@ -85,7 +85,44 @@ $(document).ready(function() {
     $('#task-modal .selectpicker').on('change', function (e) {
         setTaskTabs( $(this) );
     });
+
+    $('.new_vehicle_link').click( function(){
+        $('#vehicle-modal').modal('show');
+        $('.modal-body .tab-pane').removeClass('active');
+        $('.modal-body .nav-tabs li').removeClass('active');
+        hideErrors();
+        setTimeout(function() {
+            $('#vehicle-modal .bootstrap-select').addClass('open');
+        }, 50);
+    });
+
+    $('.new_task_link').click( function(){
+        $('#task-modal').modal('show');
+        $('.modal-body .tab-pane').removeClass('active');
+        $('.modal-body .nav-tabs li').removeClass('active');
+        hideErrors();
+        setTimeout(function() {
+            $('#task-modal .bootstrap-select').addClass('open');
+        }, 50);
+    });
 });
+
+// show errors in a selected block (e.g. when form was submitted, but some fields have errors)
+function showErrors(errors, block) {
+    response = '<div class="alert alert-danger errors" role="alert">';
+    response += '<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>';
+    response += '<span> Errors: </span><ul>';
+    $.each( errors, function( index, value ){
+        response += '<li>' + value + '</li>';
+    });
+    response += '</ul></div>';
+
+    $('#' + block + ' fieldset').prepend(response);
+}
+
+function hideErrors(){
+    $('.alert.errors').remove();
+}
 
 function setMaxVehicleSpeed( obj ){
     vehicle_type = obj.val();

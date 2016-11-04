@@ -25,7 +25,6 @@ class VehicleController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'purpose' => 'required',
             'type' => 'required|exists:vehicle_types,id',
             'max_speed' => 'required|integer',
             'from_city' => 'required|max:255',
@@ -37,9 +36,9 @@ class VehicleController extends Controller
             'trunk_length' => 'numeric',
             'trunk_width' => 'numeric',
             'trunk_height' => 'numeric',
-            'quick_trunk_volume' => 'numeric',
+            'trunk_volume' => 'numeric',
             'max_weight' => 'integer',
-            'cost_eur_task' => 'required|numeric|min:0',
+            'cost_eur_task' => 'numeric|min:0',
             'cost_eur_km' => 'required|numeric|min:0',
             'cost_eur_h' => 'required|numeric|min:0',
             'notes' => 'max:1000'
@@ -81,14 +80,9 @@ class VehicleController extends Controller
         $vehicle->to_lon = $coordinates_to['lon'];
         $vehicle->to_lat = $coordinates_to['lat'];
         $vehicle->user_id = Auth::user()->id;
-        if(isset($request->quick_trunk_volume)) {
-            $vehicle->trunk_volume = $request->quick_trunk_volume;
-        }
-        else {
-            $vehicle->trunk_volume = $request->trunk_length * $request->trunk_width * $request->trunk_height;
-        }
-        $vehicle->package_delivery = $request->purpose == 'package_delivery' ? 1 : 0;
-        $vehicle->passenger_delivery = $request->purpose == 'passenger_delivery' ? 1 : 0;
+        $vehicle->trunk_volume = $request->trunk_volume;
+        $vehicle->package_delivery = $request->package_delivery;
+        $vehicle->passenger_delivery = $request->passenger_delivery;
         $vehicle->weather_protection = isset($request->weather_protection) ? 1 : 0;
         $vehicle->food_accepted = isset($request->food_accepted) ? 1 : 0;
         $vehicle->temp_control = isset($request->temp_control) ? 1 : 0;
