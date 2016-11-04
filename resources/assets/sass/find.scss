@@ -2,7 +2,7 @@ $green-bg 			: #83c22c;
 $dark-green-border 	: #408333;
 $white-color 		: #ffffff;
 $basic-gray 		: #666666;
-span:active{ outline: 0;}
+
 #loadingDiv{
 	position: absolute;
     width: 100%;
@@ -158,8 +158,17 @@ span:active{ outline: 0;}
 .btn-primary{ background: #4E98EC; border:1px solid #2D6DB1;
 	&:hover, &:active, &:focus{ background: #3173BA; border:1px solid #1A4777;}
 }
+
 .btn-danger{ background: #f64a4a; border:1px solid #ce0604;
 	&:hover, &:active, &:focus{ background:#de2b2b; border:1px solid #921514;}
+}
+
+.btn-success{ background: #3cb521; border:1px solid #2e8a19;
+	&:hover, &:active, &:focus{ background:#36a41e; border:1px solid #1c540f;}
+}
+
+.btn-warning{ background: #d47500;
+	&:hover, &:active, &:focus{ background:#af7022; }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
