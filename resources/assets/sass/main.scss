@@ -694,42 +694,6 @@ header.navbar {
             text-align: right;
         }
 
-        .icon.food {
-            background-image: url("/img/food_grey.png");
-            background-size: contain;
-            width: 24px;
-            height: 24px;
-            display: block;
-            float: left;
-        }
-
-        .icon.crane {
-            background-image: url("/img/crane_grey.png");
-            background-size: contain;
-            width: 24px;
-            height: 24px;
-            display: block;
-            float: left;
-        }
-
-        .icon.lift {
-            background-image: url("/img/lift_grey.png");
-            background-size: contain;
-            width: 24px;
-            height: 24px;
-            display: block;
-            float: left;
-        }
-
-        .icon.temperature {
-            background-image: url("/img/temperature_grey.png");
-            background-size: contain;
-            width: 24px;
-            height: 24px;
-            display: block;
-            float: left;
-        }
-
         .active > .icon.food {
             background-image: url("/img/food_blue.png");
         }

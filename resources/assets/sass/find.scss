@@ -182,42 +182,32 @@ $basic-gray 		: #666666;
 }
 
 $icon-size: 26px;
-.icon.food {
-    background-image: url("/img/food_grey.png");
-    background-size: contain;
+.icon{
+	background-size: $icon-size;
     width: $icon-size;
     height: $icon-size;
     display: block;
     float: left;
+}
+.active > .icon{
+	background-position: $icon-size $icon-size;
+}
+.icon.food {
+    background-image: url("/img/food_bg.png");
 }
 
 .icon.crane {
-    background-image: url("/img/crane_grey.png");
-    background-size: contain;
-    width: $icon-size;
-    height: $icon-size;
-    display: block;
-    float: left;
+    background-image: url("/img/crane_bg.png");
 }
 
 .icon.lift {
-    background-image: url("/img/lift_grey.png");
-    background-size: contain;
-    width: $icon-size;
-    height: $icon-size;
-    display: block;
-    float: left;
+    background-image: url("/img/lift_bg.png");
 }
 
 .icon.temperature {
-    background-image: url("/img/temperature_grey.png");
-    background-size: contain;
-    width: $icon-size;
-    height: $icon-size;
-    display: block;
-    float: left;
+    background-image: url("/img/temperature_bg.png");
 }
-
+/*
 .active > .icon.food {
     background-image: url("/img/food_blue.png");
 }
@@ -232,7 +222,7 @@ $icon-size: 26px;
 
 .active > .icon.temperature {
     background-image: url("/img/temperature_blue.png");
-}
+}*/
 
 .input-time-field{ width:92px;}
 .input-small-field{ width:88px;}
