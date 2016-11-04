@@ -1,3 +1,6 @@
+span:active {
+  outline: 0; }
+
 #loadingDiv {
   position: absolute;
   width: 100%;
@@ -172,7 +175,7 @@
   display: block;
   float: left; }
 
-.active > .icon {
+.active > .icon, .icon-active.icon {
   background-position: 26px 26px; }
 
 .icon.food {

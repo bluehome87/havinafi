@@ -1015,7 +1015,7 @@ function showVehiclePopup(id) {
                 if(data['data']['notes'].length > 0) {
                     modal += '<textarea class="notes" disabled="">'+data['data']['notes']+'</textarea><hr>';
                 }
-                modal += '<div class="location"><div class="from"><div class="from-address">'+data['data']['from_address']+', '+data['data']['from_city']+'</div>';
+                modal += '<div class="location" style="z-index:100;"><div class="from"><div class="from-address">'+data['data']['from_address']+', '+data['data']['from_city']+'</div>';
                 modal += '<div class="from-time">'+data['data']['from_time'].substring(0, data['data']['from_time'].length - 3)+'</div></div>';
                 modal += '<div class="arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>';
                 modal += '<div class="to"><div class="to-address">'+data['data']['to_address']+', '+data['data']['to_city']+'</div>';
@@ -2251,8 +2251,8 @@ function updateTransjobsList() {
 // view job's driving list by provided ID
 function viewJobTime(id, fresh) {
     if($.isNumeric(id)) {
-        $('#sidebar > div > .nav-tabs > li').removeClass('active');
-        $('#sidebar > div > .nav-tabs > li:eq(2)').addClass('active');
+        $('#top-navbar .nav-tabs > li').removeClass('active');
+        $('#top-navbar .nav-tabs > li.transport_menu').addClass('active');
         $('#sidebar > div > .tab-content > .tab-pane').removeClass('active');
         $('#sidebar > div > .tab-content > #transports').addClass('active');
 

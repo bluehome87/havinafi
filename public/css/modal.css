@@ -60,7 +60,13 @@
       display: inline-block;
       float: right; }
     .popup-modal .modal-body textarea {
+      background: #fff;
+      border: none;
+      outline: none;
+      text-shadow: none;
+      box-shadow: none;
       resize: none;
+      cursor: text;
       width: 100%;
       max-height: 82px; }
     .popup-modal .modal-body .location {
@@ -242,239 +248,30 @@
     margin: 0 auto;
     float: none; }
 
-.task-modal {
-  background-color: transparent; }
-  .task-modal .modal-content {
-    margin: 0 auto;
-    overflow: hidden;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid #83C22C;
-    max-width: 480px; }
-  .task-modal .form-group input {
-    width: 100% !important; }
-  .task-modal .modal-header {
-    background-color: #83C22C;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom: none;
-    padding: 20px 20px; }
-    .task-modal .modal-header .form-group {
-      margin-bottom: 0px; }
-    .task-modal .modal-header .form-control {
-      height: 30px;
-      padding: 3px 12px; }
-    .task-modal .modal-header .modal-title {
-      color: #FFFFFF;
-      text-align: center; }
-      .task-modal .modal-header .modal-title input {
-        color: #666666; }
-      .task-modal .modal-header .modal-title i {
-        float: left;
-        margin-top: 4px;
-        color: #FFFFFF;
-        font-size: 22px; }
-  .task-modal .modal-body {
-    display: block;
-    float: left;
-    width: 100%;
-    background: #FFFFFF;
-    border-top: none;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; }
-    .task-modal .modal-body .row {
-      margin-left: -20px;
-      margin-right: -20px;
-      z-index: 100; }
-    .task-modal .modal-body .address_row {
-      position: relative;
-      margin-bottom: 5px !important;
-      margin-left: -15px;
-      margin-right: -15px; }
-      .task-modal .modal-body .address_row .col-xs-6:first-child {
-        padding-left: 0;
-        padding-right: 20px; }
-      .task-modal .modal-body .address_row .col-xs-6:last-child {
-        padding-left: 20px;
-        padding-right: 0; }
-    .task-modal .modal-body .owner .owner-name {
-      display: inline-block;
-      float: left; }
-    .task-modal .modal-body .owner .owner-phone {
-      display: inline-block;
-      float: right; }
-    .task-modal .modal-body textarea {
-      resize: none;
-      width: 100%;
-      max-height: 82px; }
-    .task-modal .modal-body .location {
-      display: block;
-      float: left;
-      width: 100%;
-      position: relative; }
-      .task-modal .modal-body .location .from {
-        width: 40%;
-        display: inline-block;
-        float: left; }
-      .task-modal .modal-body .location .arrow {
-        width: 20%;
-        display: inline-block;
-        float: left;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 48px;
-        font-size: 40px;
-        margin-top: auto;
-        margin-bottom: auto;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; }
-      .task-modal .modal-body .location .to {
-        width: 40%;
-        display: inline-block;
-        float: left;
-        margin-left: 20%; }
-    .task-modal .modal-body .seats {
-      display: block;
-      float: left;
-      width: 100%; }
-    .task-modal .modal-body .packages {
-      display: block;
-      float: left;
-      width: 100%; }
-      .task-modal .modal-body .packages .size {
-        display: inline-block;
-        float: left; }
-      .task-modal .modal-body .packages .weight {
-        display: inline-block;
-        float: right; }
-  .task-modal hr {
-    display: block;
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .task-modal .glyphicon.glyphicon-chevron-right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 68px;
-    font-size: 48px;
-    margin-top: auto;
-    margin-bottom: auto;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    z-index: -1;
-    color: #CCCCCC; }
-  .task-modal .action_row {
-    border-top: 1px solid #CCCCCC;
-    padding-top: 20px; }
-  .task-modal .nav-tabs {
-    margin-bottom: 0; }
-    .task-modal .nav-tabs li {
-      width: 25%;
-      text-align: center;
-      border: 1px solid #CCCCCC;
-      border-right: 0; }
-    .task-modal .nav-tabs li:last-child {
-      border-right: 1px solid #CCCCCC; }
-    .task-modal .nav-tabs li > a {
-      border-radius: 0;
-      font-size: 26px;
-      padding: 5px 15px; }
-    .task-modal .nav-tabs li > a:hover {
-      width: 100%; }
-    .task-modal .nav-tabs li.active > a {
-      background: #A1DA81;
-      width: 100%; }
-  .task-modal .tab-content .panel-heading {
-    background: #A1DA81;
-    text-align: center;
-    color: #FFFFFF;
-    border-radius: 0;
-    padding: 15px 20px; }
-  .task-modal .tab-pane .panel-body {
-    padding: 20px 10px; }
-  .task-modal .cost-label {
-    margin-left: -20px;
-    display: block;
-    padding: 9px; }
-  .task-modal .cost-label.edit {
-    margin-left: -35px; }
-  .task-modal .cargo-items {
-    position: relative; }
-  .task-modal .cost-label.cargo-label {
-    display: inline-block;
-    float: left;
-    margin-left: -14px;
-    margin-right: -14px; }
-  .task-modal .input-show, .task-modal .select-show {
-    border: none;
-    box-shadow: none;
-    outline: none;
-    cursor: text;
-    background-color: #ffffff;
-    text-overflow: ellipsis; }
-  .task-modal .select-show {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    color: #666666;
-    background-color: #ffffff; }
-  .task-modal .select-show[name="select-vehicle-type"] i {
-    font-size: 24px; }
-  .task-modal .form-group.data-toggle .btn-link {
-    color: #666666;
-    text-decoration: none;
-    box-shadow: none;
-    padding: 5px; }
-  .task-modal .form-group.data-toggle i {
-    color: #999999;
-    font-size: 24px;
-    line-height: 26px; }
-  .task-modal .form-group.data-toggle .active {
-    box-shadow: none; }
-    .task-modal .form-group.data-toggle .active i {
-      color: #0057bd; }
-  .task-modal .form-group.data-toggle .active.btn-link {
-    color: #0057bd; }
-  .task-modal .next-row {
-    margin-left: -25px;
-    margin-right: -25px;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #CCCCCC; }
-  .task-modal .bootstrap-select.btn-group:not(.input-group-btn), .task-modal .bootstrap-select.btn-group[class*="col-"] {
-    float: left; }
-  .task-modal .cargo-items .form-group {
-    margin-bottom: 0 !important; }
-  .task-modal .cargo-items .col-xs-1 {
-    padding-left: 10px;
-    margin-right: 10px; }
-  .task-modal .passenger_content {
-    width: 250px;
-    margin: 0 auto;
-    float: none; }
-  .task-modal .time_content {
-    width: 300px;
-    margin: 0 auto;
-    float: none; }
-  .task-modal #driving-cost input.form-control {
-    width: 58px; }
-  .task-modal #driving-cost .cost-label {
-    margin-left: 1px; }
-  .task-modal .btn-primary {
-    background-color: #83C22C;
-    border-color: #5C8A1C; }
-    .task-modal .btn-primary:hover, .task-modal .btn-primary:active, .task-modal .btn-primary:focus {
-      background-color: #A1DA81;
-      border-color: #83C22C; }
+.task-modal .modal-content {
+  border: 1px solid #83C22C; }
+
+.task-modal .modal-header {
+  background-color: #83C22C; }
+
+.task-modal .nav-tabs li.active > a {
+  background: #A1DA81; }
+
+.task-modal .tab-content .panel-heading {
+  background: #A1DA81; }
+
+.task-modal #driving-cost input.form-control {
+  width: 58px; }
+
+.task-modal #driving-cost .cost-label {
+  margin-left: 1px; }
+
+.task-modal .btn-primary {
+  background-color: #83C22C;
+  border-color: #5C8A1C; }
+  .task-modal .btn-primary:hover, .task-modal .btn-primary:active, .task-modal .btn-primary:focus {
+    background-color: #A1DA81;
+    border-color: #83C22C; }
 
 /* FontAwesome Select Element*/
 .bootstrap-select .filter-option, .bootstrap-select .dropdown-menu li a {
@@ -511,11 +308,6 @@
 .bootstrap-select .dropdown-menu.inner {
   overflow: hidden !important; }
 
-/*.task-modal.fade, .vehicle-modal.fade {
-    -webkit-transition: opacity 0s linear;
-    -o-transition: opacity 0s linear;
-    transition: opacity 0s linear;
-}*/
 .task-modal.fade.in, .vehicle-modal.fade.in {
   background: transparent; }
 

@@ -2,7 +2,7 @@ $green-bg 			: #83c22c;
 $dark-green-border 	: #408333;
 $white-color 		: #ffffff;
 $basic-gray 		: #666666;
-
+span:active{ outline: 0;}
 #loadingDiv{
 	position: absolute;
     width: 100%;
@@ -190,7 +190,7 @@ $icon-size: 26px;
     display: block;
     float: left;
 }
-.active > .icon{
+.active > .icon, .icon-active.icon{
 	background-position: $icon-size $icon-size;
 }
 .icon.food {
@@ -208,6 +208,6 @@ $icon-size: 26px;
 .icon.temperature {
     background-image: url("/img/temperature_bg.png");
 }
-
+ 
 .input-time-field{ width:92px;}
 .input-small-field{ width:88px;}
