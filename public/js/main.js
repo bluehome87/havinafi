@@ -45,7 +45,7 @@ $(document).ready(function() {
     });
 
     // place map controls where they should be when document is open
-    $('#map .leaflet-control-container .leaflet-left').addClass('open');
+    // $('#map .leaflet-control-container .leaflet-left').addClass('open');
     $('#map .leaflet-control-container .leaflet-left').css('transition', 'all ease-in 300ms');
 });
 
@@ -54,7 +54,7 @@ $(window).resize(function() {
     resizeSections();
 
     // resize the map on window resize
-    map.invalidateSize();
+    resizeMap();
 });
 
 // resize front-end sections
@@ -92,30 +92,45 @@ function resizeSections() {
 
 // resize the map on background
 function resizeMap() {
-    /*mapHeight = $(window).height() - $('.navbar').height() - 4;
-    $('#map').css('height', mapHeight);
+    //mapHeight = $(window).height() - $('.navbar').height() - 4;
+    //$('#map').css('height', mapHeight);
 
     setTimeout(
         function() {
+            sidebar_width = $('#sidebar').width();
+            $('#map').css('margin-left', sidebar_width );
+            $('#map').width( $(window).width() - ( sidebar_width ) + 15 );
             map.invalidateSize();
-        }, 200
-    );*/
-    map.invalidateSize();
+        }, 100
+    );
 }
 
 // toggle sidebar when button is clicked
 function toggleSidebar(input) {
     if($('#sidebar').hasClass('closed')) {
+        sidebar_width = $('#sidebar').width();
+        $("#sidebar-toggle").css('left', sidebar_width +10);
+
         $('#sidebar').removeClass('closed');
         $('#sidebar-toggle').removeClass('closed');
         $('#sidebar-toggle').html('<span class="glyphicon glyphicon-chevron-left"></span>');
-        $('#map .leaflet-control-container .leaflet-left').addClass('open');
+        $('#map .leaflet-control-container .leaflet-left').removeClass('open');
 
         if(input == 'mobile') {
             $('#mobile-switcher').removeClass('pressed');
         }
+        resizeMap();
     }
     else {
+        setTimeout(
+            function() {
+                $('#map').css('margin-left', 0 );
+                $('#map').width( '100%' );
+                map.invalidateSize();
+            }, 100
+        );
+        $("#sidebar-toggle").css('left', 0);
+
         $('#sidebar').addClass('closed');
         $('#sidebar-toggle').addClass('closed');
         $('#sidebar-toggle').html('<span class="glyphicon glyphicon-chevron-right"></span>');
