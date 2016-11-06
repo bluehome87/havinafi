@@ -94,52 +94,52 @@ function resizeSections() {
 function resizeMap() {
     //mapHeight = $(window).height() - $('.navbar').height() - 4;
     //$('#map').css('height', mapHeight);
+    sidebar_width = $('#sidebar').width();
 
-    setTimeout(
-        function() {
-            sidebar_width = $('#sidebar').width();
-            $('#map').css('margin-left', sidebar_width );
-            $('#map').width( $(window).width() - ( sidebar_width ) + 15 );
-            map.invalidateSize();
-        }, 100
-    );
+    if($('#sidebar').hasClass('closed')) {      
+        setTimeout(
+            function() {
+                $('#map').css('margin-left', 0 );
+                $('#map').width( '100%' );
+                $("#sidebar-toggle").css('left', 0 );
+                $("#map .leaflet-control-container .leaflet-left").css('left', 0 );
+            }, 50
+        );
+    }
+    else {
+        setTimeout(
+            function() {
+                $('#map').width( $('#main').width() - ( sidebar_width ) / 2 );
+                $('#map').css('margin-left', sidebar_width / 2 );
+                $("#sidebar-toggle").css('left', sidebar_width );
+                $("#map .leaflet-control-container .leaflet-left").css('left', sidebar_width / 2 );
+            }, 50
+        );
+    }
+
+    map.invalidateSize();
 }
 
 // toggle sidebar when button is clicked
 function toggleSidebar(input) {
     if($('#sidebar').hasClass('closed')) {
-        sidebar_width = $('#sidebar').width();
-        $("#sidebar-toggle").css('left', sidebar_width +10);
 
         $('#sidebar').removeClass('closed');
-        $('#sidebar-toggle').removeClass('closed');
         $('#sidebar-toggle').html('<span class="glyphicon glyphicon-chevron-left"></span>');
-        $('#map .leaflet-control-container .leaflet-left').removeClass('open');
 
         if(input == 'mobile') {
             $('#mobile-switcher').removeClass('pressed');
         }
-        resizeMap();
     }
     else {
-        setTimeout(
-            function() {
-                $('#map').css('margin-left', 0 );
-                $('#map').width( '100%' );
-                map.invalidateSize();
-            }, 100
-        );
-        $("#sidebar-toggle").css('left', 0);
-
         $('#sidebar').addClass('closed');
-        $('#sidebar-toggle').addClass('closed');
         $('#sidebar-toggle').html('<span class="glyphicon glyphicon-chevron-right"></span>');
-        $('#map .leaflet-control-container .leaflet-left').removeClass('open');
 
         if(input == 'mobile') {
             $('#mobile-switcher').addClass('pressed');
         }
     }
+    resizeMap();
 }
 
 // send a System Message (on top)

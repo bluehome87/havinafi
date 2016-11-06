@@ -107,8 +107,7 @@ $(document).ready(function() {
     });
 
     // google map init size
-    sidebar_width = $('#sidebar').width();
-    $('#map').css('margin-left', sidebar_width );
+    resizeMap();
 });
 
 // show errors in a selected block (e.g. when form was submitted, but some fields have errors)

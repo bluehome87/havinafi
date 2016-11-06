@@ -454,11 +454,9 @@ header.navbar {
     left: 0;
     width: 100%;
     height: 100%; }
-    .user #general #map .leaflet-control-container .leaflet-left.open {
-      left: 34%; }
   .user #general #sidebar-toggle {
     position: absolute;
-    left: 34%;
+    /*left: 34%;*/
     top: calc(50% - 35px);
     margin-left: 10px;
     text-align: right;
@@ -466,7 +464,8 @@ header.navbar {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
     cursor: pointer;
     border-radius: 4px;
-    transition: all ease-in 300ms; }
+    /*            transition: all ease-in 300ms;
+*/ }
     .user #general #sidebar-toggle span {
       width: 26px;
       color: #000000;
@@ -520,11 +519,7 @@ header.navbar {
   .user #sidebar > div > .tab-content {
     display: block;
     float: left;
-    width: 100%; }
-  .user #general #map .leaflet-control-container .leaflet-left.open {
-    left: 36%; }
-  .user #general #sidebar-toggle {
-    left: 36%; } }
+    width: 100%; } }
 
 /* TABLET/PHONE SM styles */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -542,10 +537,6 @@ header.navbar {
     display: block;
     float: left;
     width: 100%; }
-  .user #general #map .leaflet-control-container .leaflet-left.open {
-    left: 40%; }
-  .user #general #sidebar-toggle {
-    left: 40%; }
   .user #general #section-three {
     z-index: 1052;
     position: relative; } }
@@ -603,10 +594,7 @@ header.navbar {
     display: block;
     float: left;
     width: 100%; }
-  .user #general #map .leaflet-control-container .leaflet-left.open {
-    left: 1%; }
   .user #general #sidebar-toggle {
-    left: 1%;
     display: none; }
   .user #general #section-three {
     top: 0px;
