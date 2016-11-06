@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+    // loading spinner function
+    $(document)
+        .ajaxStart(function() {
+            $('#loadingDiv').show();
+        })
+        .ajaxStop(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxComplete(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxSuccess(function() {
+            $('#loadingDiv').hide();
+        })
+        .ajaxError(function() {
+            $('#loadingDiv').hide();
+        });
+
     $('.job_datepicker').datetimepicker({
         timepicker: false,
         inline: true,
@@ -17,7 +35,7 @@ $(document).ready(function() {
     // Initially reset checkbox
     $('.form-control input[type=checkbox]').prop('checked', false);
 
-    $('.record_name').click( function(){
+    $('.my_vehicle_block .tab-pane').on('click', '.record_name',  function(){
         $(this).parent().toggleClass('checked');
         obj = $(this).parent().find('input[type=checkbox]');
         if( obj.is(':checked') )
@@ -37,24 +55,6 @@ $(document).ready(function() {
             $('#own_delivery_form .button-text').html('FIND ROUTE');
         }
     });
-
-    // loading spinner function
-    $(document)
-        .ajaxStart(function() {
-            $('#loadingDiv').show();
-        })
-        .ajaxStop(function() {
-            $('#loadingDiv').hide();
-        })
-        .ajaxComplete(function() {
-            $('#loadingDiv').hide();
-        })
-        .ajaxSuccess(function() {
-            $('#loadingDiv').hide();
-        })
-        .ajaxError(function() {
-            $('#loadingDiv').hide();
-        });
 
     $('.vehicle-temperature-values, .vehicle-temperature-icon').hide();
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
         setTaskTabs( $(this) );
     });
 
-    $('.new_vehicle_link').click( function(){
+    $('.my_vehicle_block .tab-pane').on('click', '.new_vehicle_link' , function(){
         $('#vehicle-modal').modal('show');
         $('.modal-body .tab-pane').removeClass('active');
         $('.modal-body .nav-tabs li').removeClass('active');
@@ -129,6 +129,10 @@ function hideErrors(){
 
 function setMaxVehicleSpeed( obj ){
     vehicle_type = obj.val();
+    $('#vehicle-modal .btn.dropdown-toggle').css('transform', 'scale(1, 1)');
+    $('#vehicle-modal .btn.dropdown-toggle').css('width', '100%');
+    $('#vehicle-modal .btn.dropdown-toggle').css('margin-left', '0');
+
     switch (vehicle_type){
         case '1':
             max_speed = 100;
@@ -143,6 +147,9 @@ function setMaxVehicleSpeed( obj ){
             max_speed = 80;
         break;
         case '5':
+            //$('#vehicle-modal .btn.dropdown-toggle span').css('transform', 'scale(1.5,1)');
+            //$('#vehicle-modal .btn.dropdown-toggle').css('width', '66.6666%');
+            //$('#vehicle-modal .btn.dropdown-toggle').css('margin-left', '16.6666%');
             max_speed = 80;
         break;
         default:

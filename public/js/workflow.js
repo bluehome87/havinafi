@@ -5,10 +5,6 @@ $(document).ready(function() {
 	    addNewVehicle();
 	    e.preventDefault();
 	});
-
-	$('.fa-question-circle').click( function(){
-		refreshVehicleList();
-	});
 });
 
 function addNewVehicle()
@@ -37,6 +33,7 @@ function addNewVehicle()
                 //restoreMyVehiclesBlock();
                 //updateVehiclesList('id');
                 //updateJobVehiclesList();
+                refreshVehicleList();
                 closeVehicleModal();
             }
         },
@@ -61,11 +58,18 @@ function refreshVehicleList()
                 is_empty = true;
 
                 $.each( data['data'], function( index, value ){
-                    element = '<div class="input-group"><span class="input-group-addon">';
-                    element += '<input type="checkbox" aria-label="own-vehicles'+value['id']+'" name="my_vehicles['+value['id']+']">';
-                    element += '</span><span class="form-control" aria-label="own-vehicles'+value['id']+'">'+value['name'];
-                    element += '<button class="btn-link pull-right"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>';
-                    element += '</button></span></div>';
+                    element = '<div class="input-group">';
+                    element += '    <span class="form-control" aria-label="own-vehicles'+value['id']+'">';
+                    element += vehicleTypeIcon( value['type'] );
+                    element += '        <input type="checkbox" class="vehicle_id" data-vehicle-id="'+value['id']+'">';
+                    element += '        <span class="record_name ellipsis_label">';
+                    element += '            '+value['name']+'';
+                    element += '        </span>';
+                    element += '       <button class="btn-link pull-right" onclick="showVehiclePopup('+value['id']+')" type="button">';
+                    element += '           <i class="fa fa-info-circle"></i>';
+                    element += '        </button>';
+                    element += '   </span>';
+                    element += '</div>';
 
                     container_obj.append(element);
                     is_empty = false;
@@ -78,6 +82,13 @@ function refreshVehicleList()
             else if(data['status'] == 'danger') {
                 container_obj.html('<p>You don\'t have any vehicles.</p>');
             }
+
+            element = '<div class="input-group">';
+            element += '    <span class="form-control">';
+            element += '        <a class="add_new_link new_vehicle_link" href="#"><i class="fa fa-plus"></i> ADD NEW VEHICLE</a>';
+            element += '    </span>';
+            element += '</div>';
+            container_obj.append(element);
         },
         error: function(data)
         {

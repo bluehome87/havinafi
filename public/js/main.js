@@ -679,22 +679,22 @@ function viewVehicle(id) {
 function vehicleTypeIcon(id) {
     switch(parseInt(id)) {
         case 1:
-            html = '<i class="fa fa-bicycle text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-bicycle" aria-hidden="true"></i>';
             break;
         case 2:
-            html = '<i class="fa fa-car text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-car" aria-hidden="true"></i>';
             break;
         case 3:
-            html = '<i class="fa fa-motorcycle text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-motorcycle" aria-hidden="true"></i>';
             break;
         case 4:
-            html = '<i class="fa fa-truck text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-truck" aria-hidden="true"></i>';
             break;
         case 5:
-            html = '<i class="fa fa-truck text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-truck big_truck" aria-hidden="true"></i>';
             break;
         default:
-            html = '<i class="fa fa-truck text-primary" aria-hidden="true"></i>';
+            html = '<i class="fa fa-truck" aria-hidden="true"></i>';
     }
 
     return html;
