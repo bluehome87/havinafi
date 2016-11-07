@@ -295,18 +295,19 @@
   background: #FFFFFF;
   border-color: #CCCCCC;
   max-height: 30px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  outline: none !important; }
   .bootstrap-select .btn.dropdown-toggle:hover {
     background: #DDDDDD;
     border-color: #CCCCCC; }
   .bootstrap-select .btn.dropdown-toggle .bs-caret {
     color: #CCCCCC; }
 
-.bootstrap-select .big_truck {
-  transform: scale(1.5, 1); }
-
 .bootstrap-select .dropdown-menu.inner {
   overflow: hidden !important; }
+
+.big_truck {
+  transform: scale(1.5, 1); }
 
 .task-modal.fade.in, .vehicle-modal.fade.in {
   background: transparent; }

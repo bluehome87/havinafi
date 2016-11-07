@@ -30,17 +30,18 @@ function addNewVehicle()
         {
             sendSystemMessage(data['status'], data['message']);
             if(data['status'] == 'success') {
-                //restoreMyVehiclesBlock();
-                //updateVehiclesList('id');
-                //updateJobVehiclesList();
+                $('#loadingDiv').show();
                 refreshVehicleList();
                 closeVehicleModal();
+                resetVehiclePopup();
+                $('#loadingDiv').hide();
             }
         },
         error: function(data)
         {
             var errors = data.responseJSON;
             showErrors(errors, 'vehicle-modal');
+            $('#loadingDiv').hide();
         }
     });
 }
@@ -95,4 +96,25 @@ function refreshVehicleList()
             container_obj.html('<p>You don\'t have any vehicles.</p>');
         }
     });
+}
+
+function resetVehiclePopup()
+{
+    $('#vehicle-modal').find("input[type=text],input[type=number], textarea").val("");
+    $('#vehicle-modal input:checkbox').removeAttr('checked');
+    $('#select-max-speed').val(80);
+
+    // reset cargo icons
+    $('.cargo-items .btn.btn-link').removeClass('active');
+
+    // reset select picker
+    $('#vehicle-modal .btn.dropdown-toggle span').css('transform', 'scale(1, 1)');
+    $('#vehicle-modal .btn.dropdown-toggle span').css('margin-left', '0');
+    $('#vehicle-modal .selectpicker').selectpicker('deselectAll');
+    $('#vehicle-modal .selectpicker').selectpicker('render');
+    $('#vehicle-modal .selectpicker').selectpicker('refresh');
+
+    // reset temp icon and values
+    $('#vehicle-modal .vehicle-temperature-icon').hide();
+    $('#vehicle-modal .vehicle-temperature-values').hide();
 }

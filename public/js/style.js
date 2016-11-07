@@ -129,10 +129,8 @@ function hideErrors(){
 
 function setMaxVehicleSpeed( obj ){
     vehicle_type = obj.val();
-    $('#vehicle-modal .btn.dropdown-toggle').css('transform', 'scale(1, 1)');
-    $('#vehicle-modal .btn.dropdown-toggle').css('width', '100%');
-    $('#vehicle-modal .btn.dropdown-toggle').css('margin-left', '0');
-
+    $('#vehicle-modal .btn.dropdown-toggle span').css('transform', 'scale(1, 1)');
+    $('#vehicle-modal .btn.dropdown-toggle span').css('margin-left', '0');
     switch (vehicle_type){
         case '1':
             max_speed = 100;
@@ -147,9 +145,8 @@ function setMaxVehicleSpeed( obj ){
             max_speed = 80;
         break;
         case '5':
-            //$('#vehicle-modal .btn.dropdown-toggle span').css('transform', 'scale(1.5,1)');
-            //$('#vehicle-modal .btn.dropdown-toggle').css('width', '66.6666%');
-            //$('#vehicle-modal .btn.dropdown-toggle').css('margin-left', '16.6666%');
+            $('#vehicle-modal .btn.dropdown-toggle span').css('transform', 'scale(1.5,1)');
+            $('#vehicle-modal .btn.dropdown-toggle span').css('margin-left', '10px');
             max_speed = 80;
         break;
         default:

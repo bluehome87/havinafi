@@ -442,18 +442,19 @@ $dark-green : #5C8A1C;
         }
         max-height: 30px;
         padding: 5px 10px;
+        outline:none !important; 
         .bs-caret{
             color: $gray-color;
         }
     }
 
-    .big_truck{
-        transform: scale(1.5,1);
-    }
-
     .dropdown-menu.inner{
         overflow: hidden !important;
     }
+}
+
+.big_truck{
+    transform: scale(1.5,1);
 }
 
 .task-modal.fade.in, .vehicle-modal.fade.in {

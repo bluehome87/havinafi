@@ -27,7 +27,7 @@
                                 @elseif( $my_vehicle->type == 4 )
                                     <i class="fa fa-truck"></i>
                                 @elseif( $my_vehicle->type == 5 )
-                                    <i class="fa fa-truck"></i>
+                                    <i class="fa fa-truck big_truck"></i>
                                 @endif
                                 <input type="checkbox" class="vehicle_id" data-vehicle-id="{{$my_vehicle->id}}">
                                 <span class="record_name ellipsis_label">
